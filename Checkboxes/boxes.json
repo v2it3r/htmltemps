@@ -1,0 +1,10 @@
+[
+  {
+    "id": "cb-neon-slate",
+    "name": "Cyan Matrix Lock",
+    "description": "Smooth blue and white micro-engineered toggle check animation that updates frame states accurately without jarring scale offsets",
+    "html": "<label class=\"cb-slate-wrap\"><input type=\"checkbox\" class=\"cb-slate-input\" /><div class=\"cb-slate-box\"><svg class=\"cb-slate-check\" viewBox=\"0 0 24 24\"><path d=\"M20 6L9 17l-5-5\" /></svg></div><span class=\"cb-slate-label\">Telemetry Track</span></label>",
+    "css": ".cb-slate-wrap { display: inline-flex; align-items: center; gap: 12px; cursor: pointer; user-select: none; font-family: sans-serif; color: #ffffff; font-size: 15px; font-weight: 500; } .cb-slate-input { display: none; } .cb-slate-box { width: 22px; height: 22px; border: 2px solid #3f3f46; border-radius: 6px; background: #09090b; display: flex; align-items: center; justify-content: center; position: relative; transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease; } .cb-slate-check { width: 14px; height: 14px; fill: none; stroke: #ffffff; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 22; stroke-dashoffset: 22; transition: stroke-dashoffset 0.25s cubic-bezier(0.4, 0, 0.2, 1); } .cb-slate-wrap:hover .cb-slate-box { border-color: #52525b; } .cb-slate-input:checked + .cb-slate-box { border-color: #3b82f6; background: #3b82f6; box-shadow: 0 0 12px rgba(59, 130, 246, 0.35); } .cb-slate-input:checked + .cb-slate-box .cb-slate-check { stroke-dashoffset: 0; }",
+    "js": ""
+  }
+]
