@@ -1,0 +1,10 @@
+[
+  {
+    "id": "input-underline",
+    "name": "Underline Focus",
+    "description": "Line draws under on focus",
+    "html": "<div class=\"uf-wrap\"><input class=\"uf\" type=\"text\" placeholder=\"Your name\" /></div>",
+    "css": ".uf-wrap { position: relative; width: 260px; } .uf { width: 100%; background: transparent; border: none; border-bottom: 1.5px solid #333; color: #f5f5f5; font-size: 14px; padding: 10px 0; outline: none; } .uf-wrap::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1.5px; background: #f5f5f5; transition: width 0.3s ease; } .uf:focus ~ .uf-wrap::after, .uf-wrap:focus-within::after { width: 100%; }",
+    "js": ""
+  }
+]
