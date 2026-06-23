@@ -6,5 +6,95 @@
     "html": "<div class=\"ring\"></div>",
     "css": "@keyframes spin { to { transform: rotate(360deg); } } .ring { width: 48px; height: 48px; border: 2.5px solid #1e1e1e; border-top-color: #f5f5f5; border-radius: 50%; animation: spin 0.8s linear infinite; }",
     "js": ""
+  },
+
+  {
+    "id": "spinner-dual-ring",
+    "name": "Dual Ring",
+    "description": "Two rings spinning opposite directions",
+    "html": "<div class=\"dual-ring\"></div>",
+    "css": "@keyframes spin { to { transform: rotate(360deg); } } .dual-ring { width: 48px; height: 48px; border: 2.5px solid transparent; border-top-color: #fff; border-bottom-color: #fff; border-radius: 50%; animation: spin 0.9s linear infinite; }",
+    "js": ""
+  },
+
+  {
+    "id": "spinner-dots",
+    "name": "Three Dots",
+    "description": "Classic bouncing dots",
+    "html": "<div class=\"dots\"><span></span><span></span><span></span></div>",
+    "css": "@keyframes bounce { 0%, 80%, 100% { transform: scale(0); } 40% { transform: scale(1); } } .dots { display: flex; gap: 6px; } .dots span { width: 10px; height: 10px; background: #fff; border-radius: 50%; animation: bounce 1.4s infinite; } .dots span:nth-child(2) { animation-delay: 0.2s; } .dots span:nth-child(3) { animation-delay: 0.4s; }",
+    "js": ""
+  },
+
+  {
+    "id": "spinner-bar",
+    "name": "Bar Pulse",
+    "description": "Vertical bars pulsing",
+    "html": "<div class=\"bars\"><span></span><span></span><span></span><span></span></div>",
+    "css": "@keyframes bar { 0%, 40%, 100% { height: 8px; } 20% { height: 24px; } } .bars { display: flex; gap: 4px; align-items: flex-end; } .bars span { width: 6px; height: 8px; background: #fff; animation: bar 1s infinite; } .bars span:nth-child(2) { animation-delay: 0.1s; } .bars span:nth-child(3) { animation-delay: 0.2s; } .bars span:nth-child(4) { animation-delay: 0.3s; }",
+    "js": ""
+  },
+
+  {
+    "id": "spinner-square",
+    "name": "Square Flip",
+    "description": "Flipping square animation",
+    "html": "<div class=\"sq\"></div>",
+    "css": "@keyframes flip { 0% { transform: rotate(0); } 50% { transform: rotateY(180deg); } 100% { transform: rotateY(180deg) rotateX(180deg); } } .sq { width: 32px; height: 32px; background: #fff; animation: flip 1.2s infinite linear; }",
+    "js": ""
+  },
+
+  {
+    "id": "spinner-wave",
+    "name": "Wave Loader",
+    "description": "Wave-like vertical bars",
+    "html": "<div class=\"wave\"><span></span><span></span><span></span><span></span><span></span></div>",
+    "css": "@keyframes wave { 0%, 40%, 100% { transform: scaleY(0.4); } 20% { transform: scaleY(1); } } .wave { display: flex; gap: 4px; } .wave span { width: 6px; height: 24px; background: #fff; animation: wave 1.2s infinite; } .wave span:nth-child(2) { animation-delay: 0.1s; } .wave span:nth-child(3) { animation-delay: 0.2s; } .wave span:nth-child(4) { animation-delay: 0.3s; } .wave span:nth-child(5) { animation-delay: 0.4s; }",
+    "js": ""
+  },
+
+  {
+    "id": "spinner-ripple",
+    "name": "Ripple",
+    "description": "Expanding ripple circles",
+    "html": "<div class=\"ripple\"></div>",
+    "css": "@keyframes ripple { 0% { transform: scale(0.2); opacity: 1; } 100% { transform: scale(1.4); opacity: 0; } } .ripple { width: 48px; height: 48px; border: 2px solid #fff; border-radius: 50%; animation: ripple 1.2s infinite; }",
+    "js": ""
+  },
+
+  {
+    "id": "spinner-dash",
+    "name": "Dash Loader",
+    "description": "Circular dashed stroke animation",
+    "html": "<svg class=\"dash\" viewBox=\"0 0 50 50\"><circle cx=\"25\" cy=\"25\" r=\"20\" /></svg>",
+    "css": "@keyframes dash { 0% { stroke-dasharray: 1, 150; stroke-dashoffset: 0; } 50% { stroke-dasharray: 90, 150; stroke-dashoffset: -35; } 100% { stroke-dasharray: 90, 150; stroke-dashoffset: -124; } } .dash { width: 48px; height: 48px; } .dash circle { fill: none; stroke: #fff; stroke-width: 3; stroke-linecap: round; animation: dash 1.4s ease-in-out infinite; }",
+    "js": ""
+  },
+
+  {
+    "id": "spinner-orbit",
+    "name": "Orbit",
+    "description": "Dot orbiting around center",
+    "html": "<div class=\"orbit\"><span></span></div>",
+    "css": "@keyframes orbit { to { transform: rotate(360deg); } } .orbit { width: 48px; height: 48px; border-radius: 50%; position: relative; } .orbit span { width: 10px; height: 10px; background: #fff; border-radius: 50%; position: absolute; top: 0; left: 50%; transform: translateX(-50%); animation: orbit 1s linear infinite; transform-origin: 50% 24px; }",
+    "js": ""
+  },
+
+  {
+    "id": "spinner-fade",
+    "name": "Fade Loader",
+    "description": "12 fading dots around a circle",
+    "html": "<div class=\"fade\"></div>",
+    "css": ".fade { width: 48px; height: 48px; position: relative; } .fade::before, .fade::after { content: ''; position: absolute; inset: 0; border-radius: 50%; border: 2px solid transparent; border-top-color: #fff; animation: spin 1s linear infinite; } .fade::after { animation-delay: -0.5s; opacity: 0.5; } @keyframes spin { to { transform: rotate(360deg); } }",
+    "js": ""
+  },
+
+  {
+    "id": "spinner-progress",
+    "name": "Progress Pulse",
+    "description": "Pulsing progress bar",
+    "html": "<div class=\"prog\"></div>",
+    "css": "@keyframes prog { 0% { width: 0%; } 50% { width: 80%; } 100% { width: 0%; } } .prog { height: 4px; width: 0%; background: #fff; animation: prog 1.4s infinite; }",
+    "js": ""
   }
 ]
