@@ -1,0 +1,42 @@
+[
+  {
+    "id": "card-minimal-stark",
+    "name": "Stark Monospace Card",
+    "description": "A clean, high-contrast block layout designed with sharp edges and a structural top border accent.",
+    "html": "<div class=\"cc-stark-card\"><div class=\"cc-stark-header\"><h3 class=\"cc-stark-title\">SYSTEM_METRICS</h3></div><div class=\"cc-stark-body\"><p>Active tracking variables running inside normal operational parameters.</p></div></div>",
+    "css": ".cc-stark-card{background:#000000;border:2px solid #222222;border-top:5px solid #ffffff;padding:16px;box-sizing:border-box;max-width:320px;font-family:monospace}.cc-stark-header{margin-bottom:12px}.cc-stark-title{color:#ffffff;font-size:14px;font-weight:bold;margin:0;letter-spacing:1px}.cc-stark-body{color:#aaaaaa;font-size:12px;font-weight:bold;line-height:1.5;margin:0}",
+    "js": ""
+  },
+  {
+    "id": "card-flat-slate",
+    "name": "Flat Slate Container",
+    "description": "A minimalist dark mode utility panel using explicit right angles and clean bold hierarchy.",
+    "html": "<div class=\"cc-slate-card\"><h3 class=\"cc-slate-title\">CONFIGURATION_PANEL</h3><div class=\"cc-slate-body\"><p>Toggle application obfuscation logic, environment scanners, and automated routine hooks here.</p></div></div>",
+    "css": ".cc-slate-card{background:#111111;border:1px solid #333333;padding:20px;box-sizing:border-box;max-width:320px;font-family:sans-serif}.cc-slate-title{color:#ffffff;font-size:13px;font-weight:bold;margin:0 0 10px 0;letter-spacing:0.5px;border-bottom:1px solid #333333;padding-bottom:6px}.cc-slate-body{color:#888888;font-size:12px;font-weight:bold;line-height:1.4;margin:0}",
+    "js": ""
+  },
+  {
+    "id": "card-bold-perimeter",
+    "name": "Bold Perimeter Box",
+    "description": "High-visibility technical panel utilizing structural separation lines and direct, readable typography.",
+    "html": "<div class=\"cc-bold-card\"><div class=\"cc-bold-header\"><span class=\"cc-bold-tag\">STATUS</span><h3 class=\"cc-bold-title\">MODULE_LOADER</h3></div><div class=\"cc-bold-body\"><p>Core execution matrix initialized successfully. Ready for stream verification steps.</p></div></div>",
+    "css": ".cc-bold-card{background:#000000;border:3px solid #ffffff;padding:16px;box-sizing:border-box;max-width:320px;font-family:monospace}.cc-bold-header{display:flex;flex-direction:column;gap:4px;margin-bottom:12px;border-bottom:2px solid #ffffff;padding-bottom:8px}.cc-bold-tag{background:#ffffff;color:#000000;font-size:9px;font-weight:bold;padding:2px 4px;width:max-content}.cc-bold-title{color:#ffffff;font-size:16px;font-weight:bold;margin:0}.cc-bold-body{color:#ffffff;font-size:12px;font-weight:bold;line-height:1.5;margin:0}",
+    "js": ""
+  },
+  {
+    "id": "card-subtle-bezel",
+    "name": "Recessed Bezel Slate",
+    "description": "A darker micro component layer providing clean depth inside flat terminal environments.",
+    "html": "<div class=\"cc-bezel-card\"><h3 class=\"cc-bezel-title\">NETWORK_STREAM</h3><div class=\"cc-bezel-body\"><p>Inbound telemetry monitoring port parameters actively checking validation parameters.</p></div></div>",
+    "css": ".cc-bezel-card{background:#0a0a0a;border:1px solid #222222;box-shadow:inset 0 0 8px rgba(0,0,0,0.8);padding:14px;box-sizing:border-box;max-width:320px;font-family:monospace}.cc-bezel-title{color:#666666;font-size:11px;font-weight:bold;margin:0 0 8px 0}.cc-bezel-body{color:#999999;font-size:11px;font-weight:bold;line-height:1.4;margin:0}",
+    "js": ""
+  },
+  {
+    "id": "card-split-terminal",
+    "name": "Split Data Terminal",
+    "description": "Dual-compartment technical layout dividing title sections from underlying metadata blocks.",
+    "html": "<div class=\"cc-split-card\"><div class=\"cc-split-aside\"><span class=\"cc-split-num\">01</span></div><div class=\"cc-split-main\"><h3 class=\"cc-split-title\">BYTECODE_MUTATOR</h3><p class=\"cc-split-text\">Shifting register operations dynamically via random custom mutation tables completely.</p></div></div>",
+    "css": ".cc-split-card{background:#000000;border:1px solid #444444;display:flex;max-width:320px;font-family:monospace}.cc-split-aside{background:#111111;border-right:1px solid #444444;padding:12px;display:flex;align-items:flex-start;justify-content:center}.cc-split-num{color:#ffffff;font-size:12px;font-weight:bold}.cc-split-main{padding:12px}.cc-split-title{color:#ffffff;font-size:13px;font-weight:bold;margin:0 0 6px 0}.cc-split-text{color:#888888;font-size:11px;font-weight:bold;line-height:1.4;margin:0}",
+    "js": ""
+  }
+]
