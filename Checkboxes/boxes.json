@@ -1,271 +1,186 @@
 [
   {
-    "id": "cb-minimal-blue",
-    "name": "Standard Checkbox",
-    "description": "A refined, modern checkbox with subtle elevation and a crisp enterprise-blue confirmation state.",
-    "html": "<label class=\"cb-normal-wrap\"><input type=\"checkbox\" class=\"cb-normal-input\" /><div class=\"cb-normal-box\"><svg class=\"cb-normal-check\" viewBox=\"0 0 24 24\"><path d=\"M20 6L9 17l-5-5\" /></svg></div></label>",
-    "css": ".cb-normal-wrap{display:inline-flex;align-items:center;cursor:pointer;user-select:none}.cb-normal-input{display:none}.cb-normal-box{width:18px;height:18px;border:1.5px solid #c7ced9;border-radius:4px;background:linear-gradient(#ffffff,#f7f9fc);display:flex;align-items:center;justify-content:center;transition:border-color .18s ease,background .18s ease,box-shadow .18s ease}.cb-normal-wrap:hover .cb-normal-box{border-color:#3b6fd8}.cb-normal-input:checked + .cb-normal-box{background:linear-gradient(#2f6fe4,#1f5bd1);border-color:#2f6fe4;box-shadow:0 0 0 2px rgba(47,111,228,0.15)}.cb-normal-check{width:12px;height:12px;fill:none;stroke:#fff;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round;opacity:0;transition:opacity .15s ease}.cb-normal-input:checked + .cb-normal-box .cb-normal-check{opacity:1}",
+    "id": "toggle-classic-pill",
+    "name": "Classic Pill Toggle",
+    "description": "The quintessential digital toggle switch featuring a clean sliding knob and traditional gray-to-green state transition.",
+    "html": "<label class=\"tg-pill-wrap\"><input type=\"checkbox\" class=\"tg-pill-input\" /><div class=\"tg-pill-track\"><div class=\"tg-pill-knob\"></div></div></label>",
+    "css": ".tg-pill-wrap{display:inline-flex;align-items:center;cursor:pointer;user-select:none}.tg-pill-input{display:none}.tg-pill-track{width:44px;height:24px;background:#e5e7eb;border-radius:12px;position:relative;border:1px solid #d1d5db;transition:background-color .2s ease,border-color .2s ease}.tg-pill-knob{width:18px;height:18px;background:#ffffff;border-radius:50%;position:absolute;top:2px;left:2px;box-shadow:0 1px 3px rgba(0,0,0,0.15);transition:transform .2s cubic-bezier(0.4,0,0.2,1)}.tg-pill-input:checked + .tg-pill-track{background:#10b981;border-color:#059669}.tg-pill-input:checked + .tg-pill-track .tg-pill-knob{transform:translateX(20px)}",
     "js": ""
   },
-
   {
-    "id": "cb-classic-dark",
-    "name": "Classic Dark Border",
-    "description": "A structured dark-edged checkbox with a strong, confident confirmation fill.",
-    "html": "<label class=\"cb-dark-wrap\"><input type=\"checkbox\" class=\"cb-dark-input\" /><div class=\"cb-dark-box\"><svg viewBox=\"0 0 24 24\"><path d=\"M20 6L9 17l-5-5\" /></svg></div></label>",
-    "css": ".cb-dark-wrap{display:inline-flex;cursor:pointer}.cb-dark-input{display:none}.cb-dark-box{width:18px;height:18px;border:2px solid #1f2937;border-radius:4px;background:#ffffff;display:flex;align-items:center;justify-content:center;transition:border-color .18s ease,background .18s ease}.cb-dark-wrap:hover .cb-dark-box{border-color:#2f5ed1}.cb-dark-box svg{width:12px;height:12px;stroke:#fff;stroke-width:3.5;fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:0;transition:opacity .15s ease}.cb-dark-input:checked + .cb-dark-box{background:#2f5ed1;border-color:#2f5ed1}.cb-dark-input:checked + .cb-dark-box svg{opacity:1}",
+    "id": "toggle-ios-legacy",
+    "name": "iOS Native Legacy",
+    "description": "A meticulous recreation of the classic high-contrast mobile platform switch with smooth, fluid easing.",
+    "html": "<label class=\"tg-ios-wrap\"><input type=\"checkbox\" class=\"tg-ios-input\" /><div class=\"tg-ios-track\"><div class=\"tg-ios-knob\"></div></div></label>",
+    "css": ".tg-ios-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-ios-input{display:none}.tg-ios-track{width:50px;height:30px;background:#e9e9ea;border-radius:15px;position:relative;transition:background-color .25s ease}.tg-ios-knob{width:26px;height:26px;background:#ffffff;border-radius:50%;position:absolute;top:2px;left:2px;box-shadow:0 3px 8px rgba(0,0,0,0.15);transition:transform .25s cubic-bezier(0.33,1,0.68,1)}.tg-ios-input:checked + .tg-ios-track{background:#34c759}.tg-ios-input:checked + .tg-ios-track .tg-ios-knob{transform:translateX(20px)}",
     "js": ""
   },
-
   {
-    "id": "cb-faded-inset",
-    "name": "Classic Inset Shade",
-    "description": "A soft inset-style checkbox with gentle depth and a clean blue activation.",
-    "html": "<label class=\"cb-inset-wrap\"><input type=\"checkbox\" class=\"cb-inset-input\" /><div class=\"cb-inset-box\"><svg viewBox=\"0 0 24 24\"><path d=\"M20 6L9 17l-5-5\" /></svg></div></label>",
-    "css": ".cb-inset-wrap{display:inline-flex;cursor:pointer}.cb-inset-input{display:none}.cb-inset-box{width:19px;height:19px;border:1.5px solid #cbd3df;border-radius:5px;background:#f9fafc;display:flex;align-items:center;justify-content:center;box-shadow:inset 0 1px 2px rgba(0,0,0,0.06);transition:border-color .18s ease,background .18s ease}.cb-inset-box svg{width:11px;height:11px;stroke:#2f6fe4;stroke-width:4;fill:none;opacity:0;transition:opacity .15s ease}.cb-inset-input:checked + .cb-inset-box{background:#ffffff;border-color:#2f6fe4}.cb-inset-input:checked + .cb-inset-box svg{opacity:1}",
+    "id": "toggle-day-night-classic",
+    "name": "Day Night Mode",
+    "description": "Classic system theme utility shifting clean light sky blue over to a deep, dark midnight blue.",
+    "html": "<label class=\"tg-dn-wrap\"><input type=\"checkbox\" class=\"tg-dn-input\" /><div class=\"tg-dn-track\"><div class=\"tg-dn-knob\"></div></div></label>",
+    "css": ".tg-dn-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-dn-input{display:none}.tg-dn-track{width:48px;height:26px;background:#7dd3fc;border-radius:13px;position:relative;transition:background-color .25s ease}.tg-dn-knob{width:20px;height:20px;background:#fef08a;border-radius:50%;position:absolute;top:3px;left:3px;transition:transform .25s cubic-bezier(0.4,0,0.2,1),background-color .25s ease,box-shadow .25s ease}.tg-dn-input:checked + .tg-dn-track{background:#1e1b4b}.tg-dn-input:checked + .tg-dn-track .tg-dn-knob{transform:translateX(22px);background:#e2e8f0;box-shadow:inset -4px -2px 0 0 #94a3b8}",
     "js": ""
   },
-
   {
-    "id": "cb-thick-outline",
-    "name": "Thick Profile Check",
-    "description": "A bold, geometric checkbox with a strong outline and confident activation state.",
-    "html": "<label class=\"cb-thick-wrap\"><input type=\"checkbox\" class=\"cb-thick-input\" /><div class=\"cb-thick-box\"><svg viewBox=\"0 0 24 24\"><path d=\"M20 6L9 17l-5-5\" /></svg></div></label>",
-    "css": ".cb-thick-wrap{display:inline-flex;cursor:pointer}.cb-thick-input{display:none}.cb-thick-box{width:20px;height:20px;border:2.5px solid #9aa4b5;border-radius:4px;background:#ffffff;display:flex;align-items:center;justify-content:center;transition:border-color .18s ease,background .18s ease}.cb-thick-wrap:hover .cb-thick-box{border-color:#1d4ed8}.cb-thick-box svg{width:12px;height:12px;stroke:#fff;stroke-width:4;fill:none;opacity:0;transition:opacity .15s ease}.cb-thick-input:checked + .cb-thick-box{background:#1d4ed8;border-color:#1d4ed8}.cb-thick-input:checked + .cb-thick-box svg{opacity:1}",
+    "id": "toggle-hardware-rocker",
+    "name": "Hardware Rocker",
+    "description": "Physical style dash switch panel that snaps and rotates down on alternate edges depending on the active terminal state.",
+    "html": "<label class=\"tg-rock-wrap\"><input type=\"checkbox\" class=\"tg-rock-input\" /><div class=\"tg-rock-base\"><div class=\"tg-rock-face\"></div></div></label>",
+    "css": ".tg-rock-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-rock-input{display:none}.tg-rock-base{width:54px;height:28px;background:#1f2937;border-radius:4px;padding:2px;box-sizing:border-box}.tg-rock-face{width:24px;height:24px;background:#f3f4f6;border-radius:2px;box-shadow:0 2px 4px rgba(0,0,0,0.25);transition:transform .12s ease-out,background-color .12s ease-out}.tg-rock-input:checked + .tg-rock-base .tg-rock-face{transform:translateX(26px);background:#ffffff}",
     "js": ""
   },
-
   {
-    "id": "cb-sharp-square",
-    "name": "Zero Radius Classic",
-    "description": "A strict right-angle checkbox with a precise, minimal activation mark.",
-    "html": "<label class=\"cb-sharp-wrap\"><input type=\"checkbox\" class=\"cb-sharp-input\" /><div class=\"cb-sharp-box\"><svg viewBox=\"0 0 24 24\"><path d=\"M20 6L9 17l-5-5\" /></svg></div></label>",
-    "css": ".cb-sharp-wrap{display:inline-flex;cursor:pointer}.cb-sharp-input{display:none}.cb-sharp-box{width:18px;height:18px;border:1.5px solid #475569;background:#ffffff;display:flex;align-items:center;justify-content:center;transition:border-color .18s ease}.cb-sharp-box svg{width:12px;height:12px;stroke:#2563eb;stroke-width:4;fill:none;opacity:0;transition:opacity .15s ease}.cb-sharp-input:checked + .cb-sharp-box{border-color:#2563eb}.cb-sharp-input:checked + .cb-sharp-box svg{opacity:1}",
+    "id": "toggle-minimal-dark",
+    "name": "Minimal Dark Switch",
+    "description": "Clean, stark monochromatic aesthetic using simple layout structure tracks without any distracting accent colors.",
+    "html": "<label class=\"tg-min-wrap\"><input type=\"checkbox\" class=\"tg-min-input\" /><div class=\"tg-min-track\"><div class=\"tg-min-knob\"></div></div></label>",
+    "css": ".tg-min-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-min-input{display:none}.tg-min-track{width:40px;height:22px;background:#e5e7eb;border-radius:11px;position:relative;transition:background-color .2s ease}.tg-min-knob{width:16px;height:16px;background:#ffffff;border-radius:50%;position:absolute;top:3px;left:3px;box-shadow:0 1px 2px rgba(0,0,0,0.1);transition:transform .2s cubic-bezier(0.25,1,0.5,1)}.tg-min-input:checked + .tg-min-track{background:#0f172a}.tg-min-input:checked + .tg-min-track .tg-min-knob{transform:translateX(18px)}",
     "js": ""
   },
-
   {
-    "id": "cb-reverse-fill",
-    "name": "Inverted Base Block",
-    "description": "A pre-filled neutral tile that transitions into a strong enterprise-blue state.",
-    "html": "<label class=\"cb-rev-wrap\"><input type=\"checkbox\" class=\"cb-rev-input\" /><div class=\"cb-rev-box\"><svg viewBox=\"0 0 24 24\"><path d=\"M20 6L9 17l-5-5\" /></svg></div></label>",
-    "css": ".cb-rev-wrap{display:inline-flex;cursor:pointer}.cb-rev-input{display:none}.cb-rev-box{width:18px;height:18px;border:1.5px solid #cbd5e1;background:#eef1f5;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:border-color .18s ease,background .18s ease}.cb-rev-box svg{width:12px;height:12px;stroke:#fff;stroke-width:4;fill:none;opacity:0;transition:opacity .15s ease}.cb-rev-input:checked + .cb-rev-box{background:#2f6fe4;border-color:#2f6fe4}.cb-rev-input:checked + .cb-rev-box svg{opacity:1}",
+    "id": "toggle-tactile-plunge",
+    "name": "Tactile Plunge Button",
+    "description": "Mechanical square-format physical button that shifts down vertically to look completely pushed in.",
+    "html": "<label class=\"tg-tac-wrap\"><input type=\"checkbox\" class=\"tg-tac-input\" /><div class=\"tg-tac-base\"><div class=\"tg-tac-button\"></div></div></label>",
+    "css": ".tg-tac-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-tac-input{display:none}.tg-tac-base{width:30px;height:30px;background:#d1d5db;border-radius:4px;box-shadow:inset 0 2px 4px rgba(0,0,0,0.1);padding:2px;box-sizing:border-box}.tg-tac-button{width:100%;height:100%;background:#ffffff;border-radius:2px;box-shadow:0 3px 0 #9ca3af,0 4px 6px rgba(0,0,0,0.1);transition:transform .1s ease,box-shadow .1s ease,background-color .1s ease}.tg-tac-input:checked + .tg-tac-base .tg-tac-button{transform:translateY(3px);box-shadow:0 0 0 transparent,0 1px 2px rgba(0,0,0,0.1);background:#f3f4f6}",
     "js": ""
   },
-
   {
-    "id": "cb-smooth-fade",
-    "name": "Classic Slate Fade",
-    "description": "A smooth-transition checkbox shifting into a deep, refined navy tone.",
-    "html": "<label class=\"cb-fade-wrap\"><input type=\"checkbox\" class=\"cb-fade-input\" /><div class=\"cb-fade-box\"><svg viewBox=\"0 0 24 24\"><path d=\"M20 6L9 17l-5-5\" /></svg></div></label>",
-    "css": ".cb-fade-wrap{display:inline-flex;cursor:pointer}.cb-fade-input{display:none}.cb-fade-box{width:18px;height:18px;border:1.5px solid #94a3b8;background:#ffffff;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:all .18s ease}.cb-fade-box svg{width:12px;height:12px;stroke:#fff;stroke-width:4;fill:none;opacity:0;transition:opacity .15s ease}.cb-fade-input:checked + .cb-fade-box{background:#1e3a8a;border-color:#1e3a8a}.cb-fade-input:checked + .cb-fade-box svg{opacity:1}",
+    "id": "toggle-industrial-lever",
+    "name": "Industrial Slide Lever",
+    "description": "Heavy machinery console layout consisting of an absolute flat channel path track guiding a solid block switch handle.",
+    "html": "<label class=\"tg-ind-wrap\"><input type=\"checkbox\" class=\"tg-ind-input\" /><div class=\"tg-ind-track\"><div class=\"tg-ind-lever\"></div></div></label>",
+    "css": ".tg-ind-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-ind-input{display:none}.tg-ind-track{width:48px;height:14px;background:#374151;border-radius:2px;position:relative;margin:6px 0}.tg-ind-lever{width:16px;height:24px;background:#e5e7eb;border:1px solid #9ca3af;border-radius:2px;position:absolute;top:-5px;left:0;box-shadow:0 2px 4px rgba(0,0,0,0.2);transition:transform .12s linear}.tg-ind-input:checked + .tg-ind-track .tg-ind-lever{transform:translateX(32px);background:#ffffff}",
     "js": ""
   },
-
   {
-    "id": "cb-cross-mark",
-    "name": "Classic Cross Variant",
-    "description": "A professional red cross indicator with a soft error-state background.",
-    "html": "<label class=\"cb-cross-wrap\"><input type=\"checkbox\" class=\"cb-cross-input\" /><div class=\"cb-cross-box\"><svg viewBox=\"0 0 24 24\"><path d=\"M18 6L6 18M6 6l12 12\" /></svg></div></label>",
-    "css": ".cb-cross-wrap{display:inline-flex;cursor:pointer}.cb-cross-input{display:none}.cb-cross-box{width:18px;height:18px;border:1.5px solid #b91c1c;background:#ffffff;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:background .18s ease,border-color .18s ease}.cb-cross-box svg{width:11px;height:11px;stroke:#b91c1c;stroke-width:4;fill:none;opacity:0;transition:opacity .15s ease}.cb-cross-input:checked + .cb-cross-box{background:#fde8e8}.cb-cross-input:checked + .cb-cross-box svg{opacity:1}",
+    "id": "toggle-on-off-text",
+    "name": "On Off Text Switch",
+    "description": "Functional block control utility containing high contrast internal status readings for instant feedback.",
+    "html": "<label class=\"tg-txt-wrap\"><input type=\"checkbox\" class=\"tg-txt-input\" /><div class=\"tg-txt-track\"></div></label>",
+    "css": ".tg-txt-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-txt-input{display:none}.tg-txt-track{width:58px;height:26px;background:#ef4444;border-radius:4px;position:relative;transition:background-color .2s ease}.tg-txt-track::before{content:'OFF';position:absolute;left:3px;top:3px;width:26px;height:20px;background:#ffffff;border-radius:2px;color:#ef4444;font-family:sans-serif;font-size:9px;font-weight:bold;text-align:center;line-height:20px;transition:transform .18s ease,color .18s ease}.tg-txt-input:checked + .tg-txt-track{background:#22c55e}.tg-txt-input:checked + .tg-txt-track::before{transform:translateX(26px);content:'ON';color:#22c55e}",
     "js": ""
   },
-
   {
-    "id": "cb-subtle-dot",
-    "name": "Classic Radio-Box Dot",
-    "description": "A hybrid square checkbox with a clean, centered confirmation dot.",
-    "html": "<label class=\"cb-dot-wrap\"><input type=\"checkbox\" class=\"cb-dot-input\" /><div class=\"cb-dot-box\"><span></span></div></label>",
-    "css": ".cb-dot-wrap{display:inline-flex;cursor:pointer}.cb-dot-input{display:none}.cb-dot-box{width:18px;height:18px;border:1.5px solid #cbd5e1;background:#ffffff;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:border-color .18s ease}.cb-dot-box span{width:8px;height:8px;background:#2f6fe4;border-radius:2px;opacity:0;transition:opacity .15s ease}.cb-dot-input:checked + .cb-dot-box{border-color:#2f6fe4}.cb-dot-input:checked + .cb-dot-box span{opacity:1}",
+    "id": "toggle-rounded-tab",
+    "name": "Rounded Segmented Tab",
+    "description": "Clean circular segmented control option providing explicit choice tracking variables over a flat structural foundation.",
+    "html": "<label class=\"tg-tab-wrap\"><input type=\"checkbox\" class=\"tg-tab-input\" /><div class=\"tg-tab-base\"><div class=\"tg-tab-node\"></div></div></label>",
+    "css": ".tg-tab-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-tab-input{display:none}.tg-tab-base{width:52px;height:28px;background:#f3f4f6;border:1px solid #d1d5db;border-radius:14px;position:relative}.tg-tab-node{width:22px;height:22px;background:#ffffff;border-radius:50%;position:absolute;top:2px;left:2px;box-shadow:0 1px 3px rgba(0,0,0,0.1);transition:transform .18s cubic-bezier(0.2,0,0,1)}.tg-tab-input:checked + .tg-tab-base .tg-tab-node{transform:translateX(24px)}",
     "js": ""
   },
-
   {
-    "id": "cb-pill-toggle",
-    "name": "Micro Pill Tracker",
-    "description": "A compact pill-style toggle with smooth handle motion and subtle shadows.",
-    "html": "<label class=\"cb-pill-wrap\"><input type=\"checkbox\" class=\"cb-pill-input\" /><div class=\"cb-pill-track\"><div class=\"cb-pill-handle\"></div></div></label>",
-    "css": ".cb-pill-wrap{display:inline-flex;cursor:pointer}.cb-pill-input{display:none}.cb-pill-track{width:32px;height:18px;background:#e5e9f0;border-radius:9px;position:relative;border:1px solid #cbd3df;transition:background .18s ease,border-color .18s ease}.cb-pill-handle{width:14px;height:14px;background:#ffffff;border-radius:50%;position:absolute;top:1px;left:1px;box-shadow:0 1px 3px rgba(0,0,0,0.15);transition:left .18s ease}.cb-pill-input:checked + .cb-pill-track{background:#2f6fe4;border-color:#2f6fe4}.cb-pill-input:checked + .cb-pill-track .cb-pill-handle{left:15px}",
+    "id": "toggle-terminal-block",
+    "name": "Terminal Block Toggle",
+    "description": "A sharp, right-angle monochrome micro panel layout operating via binary edge parameter adjustments.",
+    "html": "<label class=\"tg-term-wrap\"><input type=\"checkbox\" class=\"tg-term-input\" /><div class=\"tg-term-frame\"><div class=\"tg-term-block\"></div></div></label>",
+    "css": ".tg-term-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-term-input{display:none}.tg-term-frame{width:42px;height:20px;border:2px solid #000000;background:#ffffff;position:relative}.tg-term-block{width:12px;height:12px;background:#000000;position:absolute;top:2px;left:2px;transition:transform .1s linear}.tg-term-input:checked + .tg-term-frame .tg-term-block{transform:translateX(22px)}",
     "js": ""
   },
-
   {
-    "id": "cb-soft-blue-shadow",
-    "name": "Classic Shadow Depth",
-    "description": "A soft-shadow checkbox with a refined blue highlight and subtle elevation.",
-    "html": "<label class=\"cb-sh-wrap\"><input type=\"checkbox\" class=\"cb-sh-input\" /><div class=\"cb-sh-box\"><svg viewBox=\"0 0 24 24\"><path d=\"M20 6L9 17l-5-5\" /></svg></div></label>",
-    "css": ".cb-sh-wrap{display:inline-flex;cursor:pointer}.cb-sh-input{display:none}.cb-sh-box{width:18px;height:18px;border:1.5px solid #cbd5e1;background:#ffffff;border-radius:4px;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 2px rgba(59,130,246,0.06);transition:border-color .18s ease,box-shadow .18s ease}.cb-sh-box svg{width:12px;height:12px;stroke:#2563eb;stroke-width:4;fill:none;opacity:0;transition:opacity .15s ease}.cb-sh-input:checked + .cb-sh-box{border-color:#2563eb;box-shadow:0 2px 6px rgba(59,130,246,0.15)}.cb-sh-input:checked + .cb-sh-box svg{opacity:1}",
+    "id": "toggle-soft-dimmer",
+    "name": "Soft Dimmer Slider",
+    "description": "Balanced, low-profile gray slider ideal for embedded configurations within larger dashboard panel structures.",
+    "html": "<label class=\"tg-dim-wrap\"><input type=\"checkbox\" class=\"tg-dim-input\" /><div class=\"tg-dim-track\"><div class=\"tg-dim-knob\"></div></div></label>",
+    "css": ".tg-dim-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-dim-input{display:none}.tg-dim-track{width:46px;height:22px;background:#9ca3af;border-radius:11px;position:relative;transition:background-color .2s ease}.tg-dim-knob{width:16px;height:16px;background:#ffffff;border-radius:50%;position:absolute;top:3px;left:3px;transition:transform .2s cubic-bezier(0.4,0,0.2,1)}.tg-dim-input:checked + .tg-dim-track{background:#4b5563}.tg-dim-input:checked + .tg-dim-track .tg-dim-knob{transform:translateX(24px)}",
     "js": ""
   },
-
   {
-    "id": "cb-dim-slate",
-    "name": "Dim Corporate Slate",
-    "description": "A low-luminance slate checkbox with a subtle, professional confirmation mark.",
-    "html": "<label class=\"cb-dim-wrap\"><input type=\"checkbox\" class=\"cb-dim-input\" /><div class=\"cb-dim-box\"><svg viewBox=\"0 0 24 24\"><path d=\"M20 6L9 17l-5-5\" /></svg></div></label>",
-    "css": ".cb-dim-wrap{display:inline-flex;cursor:pointer}.cb-dim-input{display:none}.cb-dim-box{width:18px;height:18px;border:1.5px solid #64748b;background:#ffffff;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:border-color .18s ease,background .18s ease}.cb-dim-box svg{width:12px;height:12px;stroke:#475569;stroke-width:4;fill:none;opacity:0;transition:opacity .15s ease}.cb-dim-input:checked + .cb-dim-box{background:#f1f5f9;border-color:#475569}.cb-dim-input:checked + .cb-dim-box svg{opacity:1}",
+    "id": "toggle-micro-static",
+    "name": "Micro Static Switch",
+    "description": "Ultra compact dashboard layout providing dense adjustments when real estate is limited.",
+    "html": "<label class=\"tg-mic-wrap\"><input type=\"checkbox\" class=\"tg-mic-input\" /><div class=\"tg-mic-track\"><div class=\"tg-mic-knob\"></div></div></label>",
+    "css": ".tg-mic-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-mic-input{display:none}.tg-mic-track{width:32px;height:16px;background:#d1d5db;border-radius:8px;position:relative;transition:background-color .15s ease}.tg-mic-knob{width:12px;height:12px;background:#ffffff;border-radius:50%;position:absolute;top:2px;left:2px;transition:transform .15s ease}.tg-mic-input:checked + .tg-mic-track{background:#3b82f6}.tg-mic-input:checked + .tg-mic-track .tg-mic-knob{transform:translateX(16px)}",
     "js": ""
   },
-
   {
-    "id": "cb-hollow-square",
-    "name": "Hollow Border Step",
-    "description": "A hollow-frame checkbox with a clean, centered activation block.",
-    "html": "<label class=\"cb-hol-wrap\"><input type=\"checkbox\" class=\"cb-hol-input\" /><div class=\"cb-hol-box\"><div class=\"cb-hol-inner\"></div></div></label>",
-    "css": ".cb-hol-wrap{display:inline-flex;cursor:pointer}.cb-hol-input{display:none}.cb-hol-box{width:18px;height:18px;border:2px solid #94a3b8;background:#ffffff;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:border-color .18s ease}.cb-hol-inner{width:8px;height:8px;background:#2f6fe4;border-radius:1px;opacity:0;transition:opacity .15s ease}.cb-hol-wrap:hover .cb-hol-box{border-color:#2f6fe4}.cb-hol-input:checked + .cb-hol-box{border-color:#2f6fe4}.cb-hol-input:checked + .cb-hol-box .cb-hol-inner{opacity:1}",
+    "id": "toggle-bold-border",
+    "name": "Bold Border Frame",
+    "description": "High accessibility switch setup tracking travel coordinates explicitly using high weight perimeter guidelines.",
+    "html": "<label class=\"tg-bld-wrap\"><input type=\"checkbox\" class=\"tg-bld-input\" /><div class=\"tg-bld-frame\"><div class=\"tg-bld-knob\"></div></div></label>",
+    "css": ".tg-bld-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-bld-input{display:none}.tg-bld-frame{width:50px;height:26px;border:3px solid #1f2937;border-radius:13px;position:relative;box-sizing:border-box}.tg-bld-knob{width:14px;height:14px;background:#1f2937;border-radius:50%;position:absolute;top:3px;left:3px;transition:transform .15s ease}.tg-bld-input:checked + .tg-bld-frame .tg-bld-knob{transform:translateX(24px)}",
     "js": ""
   },
-
   {
-    "id": "cb-sky-tint",
-    "name": "Light Sky Contrast",
-    "description": "A soft sky-tinted checkbox with a deep indigo confirmation stroke.",
-    "html": "<label class=\"cb-sky-wrap\"><input type=\"checkbox\" class=\"cb-sky-input\" /><div class=\"cb-sky-box\"><svg viewBox=\"0 0 24 24\"><path d=\"M20 6L9 17l-5-5      /></svg></div></label>",
-    "css": ".cb-sky-wrap{display:inline-flex;cursor:pointer}.cb-sky-input{display:none}.cb-sky-box{width:18px;height:18px;border:1.5px solid #93c5fd;background:#eff6ff;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:border-color .18s ease,background .18s ease}.cb-sky-box svg{width:12px;height:12px;stroke:#1d4ed8;stroke-width:4;fill:none;opacity:0;transition:opacity .15s ease}.cb-sky-input:checked + .cb-sky-box{background:#dbeafe;border-color:#1d4ed8}.cb-sky-input:checked + .cb-sky-box svg{opacity:1}",
+    "id": "toggle-square-split",
+    "name": "Square Split Gate",
+    "description": "Segmented option box alternating simple block selections across clear side containers.",
+    "html": "<label class=\"tg-spt-wrap\"><input type=\"checkbox\" class=\"tg-spt-input\" /><div class=\"tg-spt-box\"><div class=\"tg-spt-left\"></div><div class=\"tg-spt-right\"></div></div></label>",
+    "css": ".tg-spt-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-spt-input{display:none}.tg-spt-box{width:48px;height:24px;background:#f3f4f6;border:1px solid #94a3b8;padding:2px;box-sizing:border-box;display:flex;gap:2px}.tg-spt-left,.tg-spt-right{flex:1;transition:background-color .1s ease}.tg-spt-left{background:#4b5563}.tg-spt-right{background:transparent}.tg-spt-input:checked + .tg-spt-box .tg-spt-left{background:transparent}.tg-spt-input:checked + .tg-spt-box .tg-spt-right{background:#4b5563}",
     "js": ""
   },
-
   {
-    "id": "cb-triple-group",
-    "name": "Multi Matrix Array (3x)",
-    "description": "A structured triple-checkbox row with unified spacing and consistent enterprise styling.",
-    "html": "<div class=\"cb-grp-row\"><label class=\"cb-grp-item\"><input type=\"checkbox\" checked /><div></div></label><label class=\"cb-grp-item\"><input type=\"checkbox\" /><div></div></label><label class=\"cb-grp-item\"><input type=\"checkbox\" /><div></div></label></div>",
-    "css": ".cb-grp-row{display:flex;gap:6px;background:#ffffff;padding:4px;border-radius:6px;border:1px solid #e2e8f0}.cb-grp-item{cursor:pointer;display:flex}.cb-grp-item input{display:none}.cb-grp-item div{width:18px;height:18px;border:1.5px solid #cbd5e1;background:#ffffff;border-radius:4px;transition:border-color .18s ease,background .18s ease}.cb-grp-item input:checked + div{background:#2f6fe4;border-color:#2f6fe4}",
+    "id": "toggle-power-icon",
+    "name": "Classic Power Circle",
+    "description": "Standard hardware power layout turning an entire circular boundary indicator from neutral grey to primary blue.",
+    "html": "<label class=\"tg-pwr-wrap\"><input type=\"checkbox\" class=\"tg-pwr-input\" /><div class=\"tg-pwr-ring\"><div class=\"tg-pwr-line\"></div></div></label>",
+    "css": ".tg-pwr-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-pwr-input{display:none}.tg-pwr-ring{width:32px;height:32px;border:3px solid #cbd5e1;border-radius:50%;position:relative;box-sizing:border-box;transition:border-color .18s ease}.tg-pwr-line{width:3px;height:10px;background:#cbd5e1;position:absolute;top:2px;left:11px;transition:background-color .18s ease}.tg-pwr-input:checked + .tg-pwr-ring{border-color:#2563eb}.tg-pwr-input:checked + .tg-pwr-ring .tg-pwr-line{background:#2563eb}",
     "js": ""
   },
-
   {
-    "id": "cb-dual-horizontal",
-    "name": "Split Multi-Node Block",
-    "description": "A dual segmented control with clean typography and subtle active-state highlighting.",
-    "html": "<div class=\"cb-split-box\"><label class=\"cb-split-side\"><input type=\"checkbox\" /><span>A</span></label><label class=\"cb-split-side\"><input type=\"checkbox\" /><span>B</span></label></div>",
-    "css": ".cb-split-box{display:flex;border:1.5px solid #cbd5e1;border-radius:6px;overflow:hidden;background:#ffffff}.cb-split-side{display:flex;align-items:center;justify-content:center;width:28px;height:24px;cursor:pointer;font-family:sans-serif;font-size:11px;font-weight:600;color:#64748b;transition:background .18s ease,color .18s ease}.cb-split-side input{display:none}.cb-split-side:first-child{border-right:1px solid #e2e8f0}.cb-split-side input:checked + span{color:#2f6fe4;background:#eff6ff;width:100%;height:100%;display:flex;align-items:center;justify-content:center}",
+    "id": "toggle-audio-channel",
+    "name": "Audio Console Slide",
+    "description": "Classic horizontal mixing desk channel controller using a simple track line and centered circular node handle.",
+    "html": "<label class=\"tg-aud-wrap\"><input type=\"checkbox\" class=\"tg-aud-input\" /><div class=\"tg-aud-track\"><div class=\"tg-aud-node\"></div></div></label>",
+    "css": ".tg-aud-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-aud-input{display:none}.tg-aud-track{width:44px;height:6px;background:#cbd5e1;border-radius:3px;position:relative;margin:10px 0;transition:background-color .2s ease}.tg-aud-node{width:18px;height:18px;background:#ffffff;border:1px solid #94a3b8;border-radius:50%;position:absolute;top:-6px;left:0;box-shadow:0 1px 3px rgba(0,0,0,0.15);transition:transform .2s ease}.tg-aud-input:checked + .tg-aud-track{background:#94a3b8}.tg-aud-input:checked + .tg-aud-track .tg-aud-node{transform:translateX(26px)}",
     "js": ""
   },
-
   {
-    "id": "cb-steel-flat",
-    "name": "Industrial Steel Segment",
-    "description": "A hard-edged steel-gray checkbox with a clean inset activation indicator.",
-    "html": "<label class=\"cb-steel-wrap\"><input type=\"checkbox\" class=\"cb-steel-input\" /><div class=\"cb-steel-box\"></div></label>",
-    "css": ".cb-steel-wrap{display:inline-flex;cursor:pointer}.cb-steel-input{display:none}.cb-steel-box{width:18px;height:18px;border:2px solid #475569;background:#ffffff;position:relative;transition:background .18s ease,border-color .18s ease}.cb-steel-input:checked + .cb-steel-box{background:#475569;border-color:#475569}.cb-steel-input:checked + .cb-steel-box::after{content:'';position:absolute;inset:3px;background:#ffffff;border-radius:1px}",
+    "id": "toggle-rotary-notch",
+    "name": "Rotary Notch Dial",
+    "description": "Physical instrument style knob tracking exact ninety degree rotation positions on click operations.",
+    "html": "<label class=\"tg-rot-wrap\"><input type=\"checkbox\" class=\"tg-rot-input\" /><div class=\"tg-rot-dial\"><div class=\"tg-rot-mark\"></div></div></label>",
+    "css": ".tg-rot-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-rot-input{display:none}.tg-rot-dial{width:32px;height:32px;background:#e5e7eb;border:2px solid #9ca3af;border-radius:50%;position:relative;transition:transform .2s ease}.tg-rot-mark{width:2px;height:8px;background:#374151;position:absolute;top:2px;left:13px}.tg-rot-input:checked + .tg-rot-dial{transform:rotate(90deg)}",
     "js": ""
   },
-
   {
-    "id": "cb-navy-fill",
-    "name": "Solid Navy Ground",
-    "description": "A deep navy checkbox with a crisp white checkmark for maximum clarity.",
-    "html": "<label class=\"cb-navy-wrap\"><input type=\"checkbox\" class=\"cb-navy-input\" /><div class=\"cb-navy-box\"><svg viewBox=\"0 0 24 24\"><path d=\"M20 6L9 17l-5-5\" /></svg></div></label>",
-    "css": ".cb-navy-wrap{display:inline-flex;cursor:pointer}.cb-navy-input{display:none}.cb-navy-box{width:18px;height:18px;border:1.5px solid #1e3a8a;background:#ffffff;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:background .18s ease,border-color .18s ease}.cb-navy-box svg{width:12px;height:12px;stroke:#ffffff;stroke-width:4;fill:none;opacity:0;transition:opacity .15s ease}.cb-navy-input:checked + .cb-navy-box{background:#1e3a8a;border-color:#1e3a8a}.cb-navy-input:checked + .cb-navy-box svg{opacity:1}",
+    "id": "toggle-corporate-slate",
+    "name": "Enterprise Block Slate",
+    "description": "Squared, professional rectangular choice node prioritizing explicit corporate tracking parameters.",
+    "html": "<label class=\"tg-corp-wrap\"><input type=\"checkbox\" class=\"tg-corp-input\" /><div class=\"tg-corp-base\"><div class=\"tg-corp-knob\"></div></div></label>",
+    "css": ".tg-corp-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-corp-input{display:none}.tg-corp-base{width:42px;height:22px;background:#e2e8f0;border-radius:3px;position:relative;transition:background-color .15s ease}.tg-corp-knob{width:16px;height:16px;background:#ffffff;border-radius:1px;position:absolute;top:3px;left:3px;box-shadow:0 1px 2px rgba(0,0,0,0.05);transition:transform .15s ease}.tg-corp-input:checked + .tg-corp-base{background:#1e3a8a}.tg-corp-input:checked + .tg-corp-base .tg-corp-knob{transform:translateX(20px)}",
     "js": ""
   },
-
   {
-    "id": "cb-dash-line",
-    "name": "Horizontal Dash Tracker",
-    "description": "A clean indeterminate-style checkbox with a centered horizontal dash.",
-    "html": "<label class=\"cb-dash-wrap\"><input type=\"checkbox\" class=\"cb-dash-input\" /><div class=\"cb-dash-box\"><div class=\"cb-dash-line\"></div></div></label>",
-    "css": ".cb-dash-wrap{display:inline-flex;cursor:pointer}.cb-dash-input{display:none}.cb-dash-box{width:18px;height:18px;border:1.5px solid #cbd5e1;background:#ffffff;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:border-color .18s ease}.cb-dash-line{width:10px;height:2px;background:#2f6fe4;opacity:0;transition:opacity .15s ease}.cb-dash-input:checked + .cb-dash-box{border-color:#2f6fe4}.cb-dash-input:checked + .cb-dash-box .cb-dash-line{opacity:1}",
+    "id": "toggle-checkmark-slide",
+    "name": "Checkmark Slide Track",
+    "description": "Standard infrastructure utility track showing bold success green feedback upon activation steps.",
+    "html": "<label class=\"tg-chk-wrap\"><input type=\"checkbox\" class=\"tg-chk-input\" /><div class=\"tg-chk-track\"><div class=\"tg-chk-knob\"></div></div></label>",
+    "css": ".tg-chk-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-chk-input{display:none}.tg-chk-track{width:46px;height:24px;background:#d1d5db;border-radius:12px;position:relative;transition:background-color .18s ease}.tg-chk-knob{width:18px;height:18px;background:#ffffff;border-radius:50%;position:absolute;top:3px;left:3px;box-shadow:0 1px 3px rgba(0,0,0,0.1);transition:transform .18s ease}.tg-chk-input:checked + .tg-chk-track{background:#059669}.tg-chk-input:checked + .tg-chk-track .tg-chk-knob{transform:translateX(22px)}",
     "js": ""
   },
-
   {
-    "id": "cb-compact-grid",
-    "name": "Quad Cluster Node (4x)",
-    "description": "A compact 2x2 checkbox grid with consistent spacing and clean activation states.",
-    "html": "<div class=\"cb-quad-grid\"><input type=\"checkbox\" checked /><input type=\"checkbox\" /><input type=\"checkbox\" /><input type=\"checkbox\" checked /></div>",
-    "css": ".cb-quad-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:#f8fafc;padding:4px;border:1px solid #e2e8f0;border-radius:6px;width:max-content}.cb-quad-grid input{appearance:none;width:14px;height:14px;border:1.5px solid #cbd5e1;background:#ffffff;border-radius:3px;cursor:pointer;transition:border-color .18s ease,background .18s ease}.cb-quad-grid input:checked{background:#2f6fe4;border-color:#2f6fe4}",
+    "id": "toggle-flat-geometric",
+    "name": "Flat Geometric Tab",
+    "description": "Simple geometric layout exchanging flat color coordinates across crisp round parameters.",
+    "html": "<label class=\"tg-geo-wrap\"><input type=\"checkbox\" class=\"tg-geo-input\" /><div class=\"tg-geo-plate\"><div class=\"tg-geo-node\"></div></div></label>",
+    "css": ".tg-geo-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-geo-input{display:none}.tg-geo-plate{width:50px;height:24px;background:#cbd5e1;border-radius:12px;position:relative;transition:background-color .2s ease}.tg-geo-node{width:18px;height:18px;background:#ffffff;border-radius:50%;position:absolute;top:3px;left:3px;transition:transform .2s cubic-bezier(0.4,0,0.2,1)}.tg-geo-input:checked + .tg-geo-plate{background:#475569}.tg-geo-input:checked + .tg-geo-plate .tg-geo-node{transform:translateX(26px)}",
     "js": ""
   },
-
   {
-    "id": "cb-mono-thick",
-    "name": "Stark Monolith Track",
-    "description": "A heavy-bordered monochrome checkbox with a dense internal activation block.",
-    "html": "<label class=\"cb-mth-wrap\"><input type=\"checkbox\" class=\"cb-mth-input\" /><div class=\"cb-mth-box\"></div></label>",
-    "css": ".cb-mth-wrap{display:inline-flex;cursor:pointer}.cb-mth-input{display:none}.cb-mth-box{width:18px;height:18px;border:2.5px solid #0f172a;background:#ffffff;border-radius:3px;display:flex;align-items:center;justify-content:center;position:relative;transition:border-color .18s ease}.cb-mth-input:checked + .cb-mth-box::before{content:'';width:8px;height:8px;background:#0f172a;border-radius:1px}",
+    "id": "toggle-inset-slot",
+    "name": "Inset Slot Bezel",
+    "description": "Deeply recessed slot styling containing a square structural selection handle blocks.",
+    "html": "<label class=\"tg-bzl-wrap\"><input type=\"checkbox\" class=\"tg-bzl-input\" /><div class=\"tg-bzl-slot\"><div class=\"tg-bzl-block\"></div></div></label>",
+    "css": ".tg-bzl-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-bzl-input{display:none}.tg-bzl-slot{width:44px;height:22px;background:#e5e7eb;border-radius:4px;box-shadow:inset 0 2px 4px rgba(0,0,0,0.15);position:relative}.tg-bzl-block{width:18px;height:18px;background:#ffffff;border:1px solid #cbd5e1;border-radius:2px;position:absolute;top:2px;left:2px;box-shadow:0 1px 2px rgba(0,0,0,0.1);transition:transform .15s ease}.tg-bzl-input:checked + .tg-bzl-slot .tg-bzl-block{transform:translateX(22px)}",
     "js": ""
   },
-
   {
-    "id": "cb-glass-spec",
-    "name": "Classic High-Light White",
-    "description": "A bright white checkbox with a soft-gray checkmark and refined border transitions.",
-    "html": "<label class=\"cb-gl-wrap\"><input type=\"checkbox\" class=\"cb-gl-input\" /><div class=\"cb-gl-box\"><svg viewBox=\"0 0 24 24\"><path d=\"M20 6L9 17l-5-5\" /></svg></div></label>",
-    "css": ".cb-gl-wrap{display:inline-flex;cursor:pointer}.cb-gl-input{display:none}.cb-gl-box{width:18px;height:18px;border:1.5px solid #e2e8f0;background:#ffffff;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:border-color .18s ease}.cb-gl-box svg{width:12px;height:12px;stroke:#94a3b8;stroke-width:4;fill:none;opacity:0;transition:opacity .15s ease}.cb-gl-input:checked + .cb-gl-box{border-color:#64748b}.cb-gl-input:checked + .cb-gl-box svg{opacity:1}",
+    "id": "toggle-mechanical-cord",
+    "name": "Desk Lamp Pull-Cord",
+    "description": "Vertical line switch setup mimicking physical overhead equipment toggle line triggers.",
+    "html": "<label class=\"tg-crd-wrap\"><input type=\"checkbox\" class=\"tg-crd-input\" /><div class=\"tg-crd-line\"><div class=\"tg-crd-fob\"></div></div></label>",
+    "css": ".tg-crd-wrap{display:inline-flex;cursor:pointer;user-select:none;padding:0 8px}.tg-crd-input{display:none}.tg-crd-line{width:2px;height:30px;background:#9ca3af;position:relative;transition:height .1s ease,background-color .1s ease}.tg-crd-fob{width:10px;height:10px;background:#374151;border-radius:50%;position:absolute;bottom:-8px;left:-4px;transition:background-color .1s ease}.tg-crd-input:checked + .tg-crd-line{height:40px;background:#2563eb}.tg-crd-input:checked + .tg-crd-line .tg-crd-fob{background:#2563eb}",
     "js": ""
   },
-
   {
-    "id": "cb-slanted-check",
-    "name": "Classic Slant Dynamic",
-    "description": "A slightly angled checkmark inside a clean, modern checkbox frame.",
-    "html": "<label class=\"cb-sl-wrap\"><input type=\"checkbox\" class=\"cb-sl-input\" /><div class=\"cb-sl-box\"><svg viewBox=\"0 0 24 24\"><path d=\"M20 6L9 17l-5-5\" /></svg></div></label>",
-    "css": ".cb-sl-wrap{display:inline-flex;cursor:pointer}.cb-sl-input{display:none}.cb-sl-box{width:18px;height:18px;border:1.5px solid #cbd5e1;background:#ffffff;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:border-color .18s ease}.cb-sl-box svg{width:12px;height:12px;stroke:#2563eb;stroke-width:5;fill:none;transform:rotate(-5deg);opacity:0;transition:opacity .15s ease}.cb-sl-input:checked + .cb-sl-box{border-color:#2563eb}.cb-sl-input:checked + .cb-sl-box svg{opacity:1}",
-    "js": ""
-  },
-
-  {
-    "id": "cb-clean-row-triple",
-    "name": "Inline Segment Multi",
-    "description": "A segmented horizontal selector with bold typography and clean active states.",
-    "html": "<div class=\"cb-ribbon\"><label><input type=\"checkbox\" checked /><span>X</span></label><label><input type=\"checkbox\" /><span>Y</span></label><label><input type=\"checkbox\" /><span>Z</span></label></div>",
-    "css": ".cb-ribbon{display:flex;border:1.5px solid #d1d5db;border-radius:4px;overflow:hidden;background:#ffffff}.cb-ribbon label{cursor:pointer;display:flex}.cb-ribbon input{display:none}.cb-ribbon span{padding:4px 10px;font-size:11px;font-weight:600;font-family:sans-serif;color:#4b5563;transition:background .18s ease,color .18s ease}.cb-ribbon input:checked + span{background:#2563eb;color:#ffffff}.cb-ribbon label:not(:last-child){border-right:1px solid #d1d5db}",
-    "js": ""
-  },
-
-  {
-    "id": "cb-micro-dot-slate",
-    "name": "Slate Matrix Node",
-    "description": "A compact slate-gray checkbox with a centered micro-dot indicator.",
-    "html": "<label class=\"cb-ms-wrap\"><input type=\"checkbox\" class=\"cb-ms-input\" /><div class=\"cb-ms-box\"><div></div></div></label>",
-    "css": ".cb-ms-wrap{display:inline-flex;cursor:pointer}.cb-ms-input{display:none}.cb-ms-box{width:16px;height:16px;border:1.5px solid #94a3b8;background:#ffffff;border-radius:3px;display:flex;align-items:center;justify-content:center;transition:border-color .18s ease}.cb-ms-box div{width:6px;height:6px;background:#475569;border-radius:1px;opacity:0;transition:opacity .15s ease}.cb-ms-input:checked + .cb-ms-box{border-color:#475569}.cb-ms-input:checked + .cb-ms-box div{opacity:1}",
-    "js": ""
-  },
-
-  {
-    "id": "cb-soft-blue-rim",
-    "name": "Classic Rim Shade",
-    "description": "A clean bordered checkbox with an inner blue activation ring.",
-    "html": "<label class=\"cb-rim-wrap\"><input type=\"checkbox\" class=\"cb-rim-input\" /><div class=\"cb-rim-box\"></div></label>",
-    "css": ".cb-rim-wrap{display:inline-flex;cursor:pointer}.cb-rim-input{display:none}.cb-rim-box{width:18px;height:18px;border:1.5px solid #cbd5e1;background:#ffffff;border-radius:4px;position:relative;transition:border-color .18s ease}.cb-rim-input:checked + .cb-rim-box{border-color:#2f6fe4}.cb-rim-input:checked + .cb-rim-box::after{content:'';position:absolute;inset:2px;border:2px solid #2f6fe4;border-radius:2px}",
-    "js": ""
-  },
-
-  {
-    "id": "cb-corporate-thick",
-    "name": "Enterprise Grid Unit",
-    "description": "A bold, enterprise-grade checkbox with a strong slate checkmark.",
-    "html": "<label class=\"cb-ent-wrap\"><input type=\"checkbox\" class=\"cb-ent-input\" /><div class=\"cb-ent-box\"><svg viewBox=\"0 0 24 24\"><path d=\"M20 6L9 17l-5-5\" /></svg></div></label>",
-    "css": ".cb-ent-wrap{display:inline-flex;cursor:pointer}.cb-ent-input{display:none}.cb-ent-box{width:18px;height:18px;border:2px solid #334155;background:#ffffff;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:border-color .18s ease,background .18s ease}.cb-ent-box svg{width:12px;height:12px;stroke:#334155;stroke-width:4;fill:none;opacity:0;transition:opacity .15s ease}.cb-ent-input:checked + .cb-ent-box{background:#f8fafc}.cb-ent-input:checked + .cb-ent-box svg{opacity:1}",
-    "js": ""
-  },
-
-  {
-    "id": "cb-deep-indigo",
-    "name": "Indigo Core Flat",
-    "description": "A deep indigo checkbox with a clean white checkmark and flat styling.",
-    "html": "<label class=\"cb-ind-wrap\"><input type=\"checkbox\" class=\"cb-ind-input\" /><div class=\"cb-ind-box\"><svg viewBox=\"0 0 24 24\"><path d=\"M20 6L9 17l-5-5\" /></svg></div></label>",
-    "css": ".cb-ind-wrap{display:inline-flex;cursor:pointer}.cb-ind-input{display:none}.cb-ind-box{width:18px;height:18px;border:1.5px solid #4338ca;background:#ffffff;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:border-color .18s ease,background .18s ease}.cb-ind-box svg{width:12px;height:12px;stroke:#ffffff;stroke-width:4;fill:none;opacity:0;transition:opacity .15s ease}.cb-ind-input:checked + .cb-ind-box{background:#4338ca}.cb-ind-input:checked + .cb-ind-box svg{opacity:1}",
-    "js": ""
-  },
-
-  {
-    "id": "cb-simple-border-switch",
-    "name": "Classic Stroke Alternate",
-    "description": "A border-weight shifting checkbox with a clean, minimal activation effect.",
-    "html": "<label class=\"cb-sw-wrap\"><input type=\"checkbox\" class=\"cb-sw-input\" /><div class=\"cb-sw-box\"></div></label>",
-    "css": ".cb-sw-wrap{display:inline-flex;cursor:pointer}.cb-sw-input{display:none}.cb-sw-box{width:18px;height:18px;border:2px solid #cbd5e1;background:#ffffff;border-radius:4px;transition:border-color .18s ease,border-width .18s ease}.cb-sw-wrap:hover .cb-sw-box{border-color:#94a3b8}.cb-sw-input:checked + .cb-sw-box{border-color:#2563eb;border-width:6px}",
-    "js": ""
-  },
-
-  {
-    "id": "cb-dual-vertical-stack",
-    "name": "Vertical Compact Cluster (2x)",
-    "description": "A vertical pair of compact checkboxes with consistent spacing and clean activation.",
-    "html": "<div class=\"cb-vstack\"><label><input type=\"checkbox\" /><div></div></label><label><input type=\"checkbox\" checked /><div></div></label></div>",
-    "css": ".cb-vstack{display:flex;flex-direction:column;gap:4px;background:#ffffff;padding:4px;border:1px solid #e2e8f0;border-radius:5px;width:max-content}.cb-vstack label{cursor:pointer;display:flex}.cb-vstack input{display:none}.cb-vstack div{width:16px;height:16px;border:1.5px solid #cbd5e1;background:#ffffff;border-radius:3px;transition:border-color .18s ease,background .18s ease}.cb-vstack input:checked + div{background:#2f6fe4;border-color:#2f6fe4}",
+    "id": "toggle-stark-monolith",
+    "name": "Stark Monolith Slide",
+    "description": "Hard outlines matched with swift transition block tracking indicators built for minimal UI styles.",
+    "html": "<label class=\"tg-mono-wrap\"><input type=\"checkbox\" class=\"tg-mono-input\" /><div class=\"tg-mono-frame\"><div class=\"tg-mono-knob\"></div></div></label>",
+    "css": ".tg-mono-wrap{display:inline-flex;cursor:pointer;user-select:none}.tg-mono-input{display:none}.tg-mono-frame{width:46px;height:22px;border:2px solid #0f172a;position:relative;background:#ffffff}.tg-mono-knob{width:14px;height:14px;background:#0f172a;position:absolute;top:2px;left:2px;transition:transform .12s cubic-bezier(0.16,1,0.3,1)}.tg-mono-input:checked + .tg-mono-frame .tg-mono-knob{transform:translateX(24px)}",
     "js": ""
   }
 ]
