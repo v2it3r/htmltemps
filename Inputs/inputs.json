@@ -2,99 +2,227 @@
   {
     "id": "input-underline",
     "name": "Underline Focus",
-    "description": "Line draws under on focus",
+    "description": "Smooth expanding precision anchor line accent",
     "html": "<div class=\"uf-wrap\"><input class=\"uf\" type=\"text\" placeholder=\"Your name\" /></div>",
-    "css": ".uf-wrap { position: relative; width: 260px; } .uf { width: 100%; background: transparent; border: none; border-bottom: 1.5px solid #333; color: #f5f5f5; font-size: 14px; padding: 10px 0; outline: none; } .uf-wrap::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1.5px; background: #f5f5f5; transition: width 0.3s ease; } .uf:focus ~ .uf-wrap::after, .uf-wrap:focus-within::after { width: 100%; }",
+    "css": ".uf-wrap { position: relative; width: 100%; max-width: 320px; } .uf { width: 100%; background: transparent; border: none; border-bottom: 2px solid #2d3748; color: #f5f5f5; font-size: 15px; padding: 12px 0; outline: none; transition: border-color 0.3s; } .uf::placeholder { color: #4a5568; } .uf-wrap::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: #6366f1; transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1); } .uf:focus + .uf-wrap::after, .uf-wrap:focus-within::after { width: 100%; }",
     "js": ""
   },
-
   {
     "id": "input-outline",
     "name": "Outline Glow",
-    "description": "Soft glowing border on focus",
-    "html": "<input class=\"in-outline\" type=\"text\" placeholder=\"Email\" />",
-    "css": ".in-outline { width: 260px; padding: 12px 14px; background: transparent; border: 1.5px solid #444; border-radius: 6px; color: #f5f5f5; font-size: 14px; transition: 0.25s; } .in-outline:focus { border-color: #fff; box-shadow: 0 0 6px rgba(255,255,255,0.4); outline: none; }",
-    "js": ""
+    "description": "Soft crisp volumetric border glow layout",
+    "html": "<input class=\"in-outline\" type=\"text\" placeholder=\"Email address\" />",
+    "css": ".in-outline { width: 100%; max-width: 320px; padding: 14px 16px; background: transparent; border: 1.5px solid #3f3f46; border-radius: 8px; color: #f5f5f5; font-size: 15px; transition: all 0.2s ease; } .in-outline::placeholder { color: #52525b; } .in-outline:hover { border-color: #52525b; } .in-outline:focus { border-color: #3b82f6; box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15); outline: none; }"
   },
-
   {
     "id": "input-filled",
     "name": "Soft Filled",
-    "description": "Muted filled input with hover + focus lift",
+    "description": "Muted background with tactical elevation transition",
     "html": "<input class=\"in-filled\" type=\"text\" placeholder=\"Username\" />",
-    "css": ".in-filled { width: 260px; padding: 12px 14px; background: #1a1a1a; border: none; border-radius: 6px; color: #fff; font-size: 14px; transition: 0.25s; } .in-filled:hover { background: #222; } .in-filled:focus { background: #262626; outline: 1.5px solid #fff; }",
-    "js": ""
+    "css": ".in-filled { width: 100%; max-width: 320px; padding: 14px 16px; background: #18181b; border: 1px solid #27272a; border-radius: 8px; color: #fff; font-size: 15px; transition: all 0.2s; } .in-filled::placeholder { color: #52525b; } .in-filled:hover { background: #202024; border-color: #3f3f46; } .in-filled:focus { background: #09090b; border-color: #a855f7; outline: none; box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.15); }"
   },
-
   {
     "id": "input-pill",
     "name": "Pill Input",
-    "description": "Rounded pill with subtle shadow",
-    "html": "<input class=\"in-pill\" type=\"text\" placeholder=\"Search\" />",
-    "css": ".in-pill { width: 260px; padding: 12px 20px; background: #111; border: none; border-radius: 999px; color: #fff; font-size: 14px; transition: 0.25s; } .in-pill:focus { background: #222; outline: none; box-shadow: 0 0 8px rgba(255,255,255,0.3); }",
-    "js": ""
+    "description": "Fully rounded core capsule with micro depth shadow",
+    "html": "<input class=\"in-pill\" type=\"text\" placeholder=\"Search database...\" />",
+    "css": ".in-pill { width: 100%; max-width: 320px; padding: 14px 24px; background: #111; border: 1px solid #222; border-radius: 999px; color: #fff; font-size: 15px; transition: all 0.25s; } .in-pill::placeholder { color: #444; } .in-pill:hover { border-color: #333; } .in-pill:focus { background: #161616; border-color: #06b6d4; outline: none; box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.15); }"
   },
-
   {
     "id": "input-bottom-glow",
     "name": "Bottom Glow",
-    "description": "Glowing bottom bar on focus",
+    "description": "Vibrant custom neon underline drop glow projection",
     "html": "<input class=\"in-bglow\" type=\"text\" placeholder=\"Your city\" />",
-    "css": ".in-bglow { width: 260px; padding: 12px 0; background: transparent; border: none; border-bottom: 1.5px solid #444; color: #fff; font-size: 14px; transition: 0.25s; } .in-bglow:focus { border-bottom-color: #0ff; box-shadow: 0 4px 12px rgba(0,255,255,0.4); outline: none; }",
-    "js": ""
+    "css": ".in-bglow { width: 100%; max-width: 320px; padding: 14px 0; background: transparent; border: none; border-bottom: 2px solid #27272a; color: #fff; font-size: 15px; transition: all 0.25s; } .in-bglow::placeholder { color: #52525b; } .in-bglow:focus { border-bottom-color: #06b6d4; box-shadow: 0 4px 16px -4px rgba(6, 182, 212, 0.35); outline: none; }"
   },
-
   {
     "id": "input-floating-label",
     "name": "Floating Label",
-    "description": "Label floats upward on focus or typing",
-    "html": "<div class=\"fl-wrap\"><input class=\"fl\" type=\"text\" required /><label>Your name</label></div>",
-    "css": ".fl-wrap { position: relative; width: 260px; } .fl { width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1.5px solid #444; color: #fff; font-size: 14px; outline: none; } .fl + label { position: absolute; left: 0; top: 12px; color: #777; font-size: 14px; pointer-events: none; transition: 0.25s; } .fl:focus + label, .fl:not(:placeholder-shown) + label { top: -8px; font-size: 11px; color: #fff; }",
-    "js": ""
+    "description": "Interactive layout label scales upward fluidly",
+    "html": "<div class=\"fl-wrap\"><input class=\"fl\" type=\"text\" placeholder=\" \" required /><label>Your Email</label></div>",
+    "css": ".fl-wrap { position: relative; width: 100%; max-width: 320px; } .fl { width: 100%; padding: 14px 0; background: transparent; border: none; border-bottom: 2px solid #27272a; color: #fff; font-size: 15px; outline: none; transition: border-color 0.25s; } .fl:focus { border-bottom-color: #6366f1; } .fl + label { position: absolute; left: 0; top: 14px; color: #52525b; font-size: 15px; pointer-events: none; transition: all 0.2s ease; } .fl:focus + label, .fl:not(:placeholder-shown) + label { transform: translateY(-24px) scale(0.8); transform-origin: top left; color: #6366f1; font-weight: 600; }"
   },
-
   {
     "id": "input-neon",
-    "name": "Neon Input",
-    "description": "Cyberpunk neon border + glow",
-    "html": "<input class=\"in-neon\" type=\"text\" placeholder=\"Access code\" />",
-    "css": ".in-neon { width: 260px; padding: 12px 14px; background: #000; border: 2px solid #0ff; color: #0ff; font-size: 14px; transition: 0.25s; } .in-neon:focus { box-shadow: 0 0 12px #0ff, 0 0 24px #0ff; outline: none; }",
-    "js": ""
+    "name": "Neon Cyber",
+    "description": "High voltage technical layout with intense grid bleed",
+    "html": "<input class=\"in-neon\" type=\"text\" placeholder=\"ACCESS CODE\" />",
+    "css": ".in-neon { width: 100%; max-width: 320px; padding: 14px 16px; background: #000; border: 2px solid #f43f5e; color: #f43f5e; font-family: monospace; font-size: 14px; font-weight: 700; letter-spacing: 1.5px; transition: all 0.2s ease; } .in-neon::placeholder { color: rgba(244, 63, 94, 0.4); } .in-neon:focus { box-shadow: 0 0 14px rgba(244, 63, 94, 0.5), inset 0 0 6px rgba(244, 63, 94, 0.3); outline: none; }"
   },
-
   {
     "id": "input-soft-ui",
-    "name": "Soft UI",
-    "description": "Neumorphic inset input",
-    "html": "<input class=\"in-soft\" type=\"text\" placeholder=\"Soft UI\" />",
-    "css": ".in-soft { width: 260px; padding: 12px 14px; background: #e0e0e0; border-radius: 12px; border: none; color: #111; font-size: 14px; box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff; transition: 0.25s; } .in-soft:focus { box-shadow: inset 2px 2px 4px #bebebe, inset -2px -2px 4px #ffffff; outline: none; }",
-    "js": ""
+    "name": "Neumorphic Inset",
+    "description": "Tactile micro-bevel architectural inset panel",
+    "html": "<input class=\"in-soft\" type=\"text\" placeholder=\"Soft UI Token\" />",
+    "css": ".in-soft { width: 100%; max-width: 320px; padding: 14px 18px; background: #e0e0e0; border-radius: 14px; border: none; color: #1a1a1a; font-size: 15px; box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff; transition: all 0.25s ease; } .in-soft::placeholder { color: #8e8e8e; } .in-soft:focus { box-shadow: inset 2px 2px 5px #bebebe, inset -2px -2px 5px #ffffff; outline: none; background: #e3e3e3; }"
   },
-
   {
     "id": "input-icon-left",
-    "name": "Icon Left",
-    "description": "Input with left icon slot",
-    "html": "<div class=\"il-wrap\"><span>🔍</span><input class=\"il\" type=\"text\" placeholder=\"Search\" /></div>",
-    "css": ".il-wrap { display: flex; align-items: center; gap: 10px; width: 260px; padding: 10px 14px; background: #111; border-radius: 6px; } .il-wrap span { color: #fff; } .il { flex: 1; background: transparent; border: none; color: #fff; font-size: 14px; outline: none; }",
-    "js": ""
+    "name": "Vector Left Slot",
+    "description": "Integrated crisp vector geometry utility track",
+    "html": "<div class=\"il-wrap\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#6b7280\" stroke-width=\"2.5\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"M21 21l-4.3-4.3\"/></svg><input class=\"il\" type=\"text\" placeholder=\"Search components...\" /></div>",
+    "css": ".il-wrap { display: flex; align-items: center; gap: 12px; width: 100%; max-width: 320px; padding: 14px 18px; background: #09090b; border: 1px solid #27272a; border-radius: 10px; transition: all 0.2s; } .il-wrap:focus-within { border-color: #3b82f6; box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1); } .il-wrap:focus-within svg { stroke: #3b82f6; } .il { flex: 1; background: transparent; border: none; color: #fff; font-size: 15px; outline: none; } .il::placeholder { color: #52525b; }"
   },
-
   {
-    "id": "input-ripple",
-    "name": "Ripple Input",
-    "description": "Ripple animation on click inside input",
-    "html": "<div class=\"rip-wrap\"><input class=\"rip\" type=\"text\" placeholder=\"Click inside\" /></div>",
-    "css": ".rip-wrap { position: relative; width: 260px; } .rip { width: 100%; padding: 12px 14px; background: #111; border: none; border-radius: 6px; color: #fff; font-size: 14px; outline: none; position: relative; overflow: hidden; } .rip::after { content: ''; position: absolute; width: 10px; height: 10px; background: rgba(255,255,255,0.4); border-radius: 50%; transform: scale(0); opacity: 0; transition: transform 0.4s, opacity 0.8s; } .rip:active::after { transform: scale(20); opacity: 1; left: var(--x); top: var(--y); }",
-    "js": "document.addEventListener('click', e => { if(e.target.classList.contains('rip')) { const rect = e.target.getBoundingClientRect(); e.target.style.setProperty('--x', (e.clientX - rect.left) + 'px'); e.target.style.setProperty('--y', (e.clientY - rect.top) + 'px'); }});"
+    "id": "input-glass",
+    "name": "Glassmorphism",
+    "description": "Frosted crystalline layer boundary framing",
+    "html": "<input class=\"in-glass\" type=\"text\" placeholder=\"Secure pass\" />",
+    "css": ".in-glass { width: 100%; max-width: 320px; padding: 14px 16px; background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; color: #fff; font-size: 15px; transition: all 0.25s; } .in-glass::placeholder { color: rgba(255,255,255,0.25); } .in-glass:hover { background: rgba(255, 255, 255, 0.06); border-color: rgba(255,255,255,0.15); } .in-glass:focus { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.3); outline: none; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); }"
   },
-
   {
     "id": "input-minimal",
     "name": "Minimal Line",
-    "description": "Ultra minimal single-line input",
-    "html": "<input class=\"in-min\" type=\"text\" placeholder=\"Type...\" />",
-    "css": ".in-min { width: 260px; padding: 10px 0; background: transparent; border: none; border-bottom: 1px solid #555; color: #fff; font-size: 14px; transition: 0.25s; } .in-min:focus { border-bottom-color: #fff; outline: none; }",
-    "js": ""
+    "description": "Ultra clean typographic core structure boundary",
+    "html": "<input class=\"in-min\" type=\"text\" placeholder=\"Type here...\" />",
+    "css": ".in-min { width: 100%; max-width: 320px; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid #3f3f46; color: #fff; font-size: 15px; transition: border-color 0.2s; } .in-min::placeholder { color: #52525b; } .in-min:focus { border-bottom-color: #ffffff; outline: none; }"
+  },
+  {
+    "id": "input-retro",
+    "name": "Retro 3D Box",
+    "description": "Brutalist block edge outline with drop displacement",
+    "html": "<input class=\"in-retro\" type=\"text\" placeholder=\"Enter query\" />",
+    "css": ".in-retro { width: 100%; max-width: 320px; padding: 14px 16px; background: #fff; border: 2.5px solid #000; color: #000; font-size: 15px; font-weight: 600; box-shadow: 4px 4px 0px #000; transition: all 0.15s; } .in-retro::placeholder { color: #71717a; } .in-retro:focus { transform: translate(-2px, -2px); box-shadow: 6px 6px 0px #000; outline: none; }"
+  },
+  {
+    "id": "input-badge",
+    "name": "Counter Track",
+    "description": "Dynamic dynamic text counter embedded metadata line",
+    "html": "<div class=\"ib-wrap\"><input class=\"ib-input\" type=\"text\" maxlength=\"20\" placeholder=\"Username\" /><span class=\"ib-counter\">0/20</span></div>",
+    "css": ".ib-wrap { position: relative; width: 100%; max-width: 320px; } .ib-input { width: 100%; padding: 14px 60px 14px 16px; background: #09090b; border: 1px solid #27272a; border-radius: 8px; color: #fff; font-size: 15px; transition: all 0.2s; } .ib-input::placeholder { color: #52525b; } .ib-input:focus { border-color: #6366f1; outline: none; } .ib-counter { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); font-size: 12px; font-weight: 600; color: #52525b; font-family: monospace; pointer-events: none; }",
+    "js": "document.querySelectorAll('.ib-input').forEach(input => { const counter = input.nextElementSibling; input.addEventListener('input', () => { counter.textContent = `${input.value.length}/${input.maxLength}`; }); });"
+  },
+  {
+    "id": "input-slide-bar",
+    "name": "Center Slide Line",
+    "description": "Bi-directional scaling structural focal line design",
+    "html": "<div class=\"sb-wrap\"><input class=\"sb-input\" type=\"text\" placeholder=\"Search tags...\" /><span class=\"sb-line\"></span></div>",
+    "css": ".sb-wrap { position: relative; width: 100%; max-width: 320px; } .sb-input { width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 2px solid #27272a; color: #fff; font-size: 15px; outline: none; } .sb-input::placeholder { color: #52525b; } .sb-line { position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background: #ec4899; transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); } .sb-input:focus ~ .sb-line { width: 100%; left: 0; }"
+  },
+  {
+    "id": "input-gradient-border",
+    "name": "Gradient Border",
+    "description": "Multi-colored ambient mask responsive frame rail",
+    "html": "<div class=\"gb-wrap\"><input class=\"gb-input\" type=\"text\" placeholder=\"Premium key\" /></div>",
+    "css": ".gb-wrap { position: relative; width: 100%; max-width: 320px; border-radius: 8px; padding: 1.5px; background: #27272a; transition: background 0.3s; } .gb-wrap:focus-within { background: linear-gradient(90deg, #f43f5e, #8b5cf6, #06b6d4); } .gb-input { width: 100%; padding: 13px 16px; background: #09090b; border: none; border-radius: 7px; color: #fff; font-size: 15px; outline: none; }"
+  },
+  {
+    "id": "input-monochrome",
+    "name": "Mono High Contrast",
+    "description": "Crisp block framing layout for stark minimal layouts",
+    "html": "<input class=\"in-mono\" type=\"text\" placeholder=\"System terminal\" />",
+    "css": ".in-mono { width: 100%; max-width: 320px; padding: 14px 16px; background: transparent; border: 2px solid #27272a; border-radius: 4px; color: #fff; font-family: monospace; font-size: 15px; transition: all 0.15s; } .in-mono::placeholder { color: #52525b; } .in-mono:focus { border-color: #ffffff; background: #ffffff; color: #000000; outline: none; }"
+  },
+  {
+    "id": "input-material",
+    "name": "Dynamic Box Float",
+    "description": "Fully encased border frame with label intersection grid",
+    "html": "<div class=\"mat-wrap\"><input class=\"mat-input\" type=\"text\" placeholder=\" \" required /><label class=\"mat-label\">Billing Node</label></div>",
+    "css": ".mat-wrap { position: relative; width: 100%; max-width: 320px; } .mat-input { width: 100%; padding: 16px; background: transparent; border: 1.5px solid #3f3f46; border-radius: 6px; color: #fff; font-size: 15px; outline: none; transition: border-color 0.2s; } .mat-input:focus { border-color: #3b82f6; } .mat-label { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); background: #020202; padding: 0 6px; color: #a1a1aa; font-size: 15px; pointer-events: none; transition: transform 0.2s, top 0.2s, font-size 0.2s, color 0.2s; } .mat-input:focus + .mat-label, .mat-input:not(:placeholder-shown) + .mat-label { top: 0; transform: translateY(-50%) scale(0.85); color: #3b82f6; font-weight: 600; }"
+  },
+  {
+    "id": "input-tag",
+    "name": "Prepend Unit Label",
+    "description": "Fixed protocol namespace accent block entry track",
+    "html": "<div class=\"in-tag-wrap\"><span class=\"in-tag-lbl\">https://</span><input class=\"in-tag-field\" type=\"text\" placeholder=\"domain.com\" /></div>",
+    "css": ".in-tag-wrap { display: flex; align-items: stretch; width: 100%; max-width: 320px; border: 1px solid #27272a; border-radius: 8px; overflow: hidden; background: #09090b; transition: border-color 0.2s; } .in-tag-wrap:focus-within { border-color: #10b981; } .in-tag-lbl { display: flex; align-items: center; background: #18181b; padding: 0 14px; border-right: 1px solid #27272a; color: #71717a; font-size: 14px; font-weight: 600; user-select: none; } .in-tag-field { flex: 1; background: transparent; border: none; padding: 14px; color: #fff; font-size: 15px; outline: none; } .in-tag-field::placeholder { color: #444; }"
+  },
+  {
+    "id": "input-mac",
+    "name": "OS Matte Overlay",
+    "description": "Soft light luxury micro canvas depth design",
+    "html": "<input class=\"in-mac\" type=\"text\" placeholder=\"Search preferences...\" />",
+    "css": ".in-mac { width: 100%; max-width: 320px; padding: 12px 14px; background: rgba(255,255,255,0.06); border: 1px solid rgba(0,0,0,0.3); border-radius: 6px; color: #fff; font-size: 14px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.2), 0 1px 0 rgba(255,255,255,0.05); transition: background 0.15s; } .in-mac::placeholder { color: #71717a; } .in-mac:focus { background: rgba(255,255,255,0.1); border-color: #3b82f6; box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 0 3px rgba(59,130,246,0.3); outline: none; }"
+  },
+  {
+    "id": "input-dashed",
+    "name": "Dashed Boundary",
+    "description": "Clean dashed utility style frame structure focus line",
+    "html": "<input class=\"in-dashed\" type=\"text\" placeholder=\"Drop parameters...\" />",
+    "css": ".in-dashed { width: 100%; max-width: 320px; padding: 14px 16px; background: transparent; border: 2px dashed #3f3f46; border-radius: 8px; color: #fff; font-size: 15px; transition: all 0.2s ease; } .in-dashed::placeholder { color: #52525b; } .in-dashed:focus { border-color: #f59e0b; border-style: solid; box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.1); outline: none; }"
+  },
+  {
+    "id": "input-split-focus",
+    "name": "Dual Tone Split",
+    "description": "Dynamic contrasting split tone background focus flip",
+    "html": "<input class=\"in-split\" type=\"text\" placeholder=\"Proxy cluster\" />",
+    "css": ".in-split { width: 100%; max-width: 320px; padding: 14px 16px; background: #111; border: 1px solid #222; border-left: 4px solid #6b7280; color: #fff; font-size: 15px; transition: all 0.2s; } .in-split::placeholder { color: #444; } .in-split:focus { background: #1a1a1a; border-color: #3b82f6; border-left-color: #3b82f6; outline: none; }"
+  },
+  {
+    "id": "input-success",
+    "name": "Validation Secure",
+    "description": "Color-coded micro positive check accent boundary",
+    "html": "<div class=\"isc-wrap\"><input class=\"isc-input\" type=\"text\" value=\"verified_node_01\" /><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"3\"><path d=\"M20 6L9 17l-5-5\"/></svg></div>",
+    "css": ".isc-wrap { position: relative; width: 100%; max-width: 320px; } .isc-input { width: 100%; padding: 14px 44px 14px 16px; background: rgba(16, 185, 129, 0.03); border: 1.5px solid #10b981; border-radius: 8px; color: #fff; font-size: 15px; outline: none; box-shadow: 0 0 10px rgba(16, 185, 129, 0.05); } .isc-wrap svg { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); }"
+  },
+  {
+    "id": "input-error",
+    "name": "Validation Alert",
+    "description": "Attention vector perimeter flash error design",
+    "html": "<div class=\"ier-wrap\"><input class=\"ier-input\" type=\"text\" value=\"invalid_token_format\" /><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"12\"/><line x1=\"12\" y1=\"16\" x2=\"12.01\" y2=\"16\"/></svg></div>",
+    "css": ".ier-wrap { position: relative; width: 100%; max-width: 320px; } .ier-input { width: 100%; padding: 14px 44px 14px 16px; background: rgba(239, 68, 68, 0.03); border: 1.5px solid #ef4444; border-radius: 8px; color: #fff; font-size: 15px; outline: none; box-shadow: 0 0 10px rgba(239, 68, 68, 0.05); } .ier-wrap svg { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); }"
+  },
+  {
+    "id": "input-icon-right",
+    "name": "Vector Right Slot",
+    "description": "Trailing metadata indicator block action frame",
+    "html": "<div class=\"ir-wrap\"><input class=\"ir-field\" type=\"text\" placeholder=\"Secure deployment\" /><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#52525b\" stroke-width=\"2.5\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\" ry=\"2\"/><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"/></svg></div>",
+    "css": ".ir-wrap { display: flex; align-items: center; gap: 12px; width: 100%; max-width: 320px; padding: 14px 18px; background: #09090b; border: 1px solid #27272a; border-radius: 10px; transition: all 0.2s; } .ir-wrap:focus-within { border-color: #f59e0b; } .ir-wrap:focus-within svg { stroke: #f59e0b; } .ir-field { flex: 1; background: transparent; border: none; color: #fff; font-size: 15px; outline: none; } .ir-field::placeholder { color: #52525b; }"
+  },
+  {
+    "id": "input-thick-focus",
+    "name": "Thick Rim Framework",
+    "description": "Heavy geometric outline perimeter mapping shift",
+    "html": "<input class=\"in-thick\" type=\"text\" placeholder=\"Scale factor\" />",
+    "css": ".in-thick { width: 100%; max-width: 320px; padding: 14px 16px; background: #111; border: 2px solid #27272a; border-radius: 6px; color: #fff; font-size: 15px; transition: all 0.15s ease-out; } .in-thick::placeholder { color: #52525b; } .in-thick:focus { border-color: #fff; border-width: 3px; padding: 13px 15px; outline: none; }"
+  },
+  {
+    "id": "input-corners",
+    "name": "Bracket Tech",
+    "description": "Corner bounding line brackets that cinch tight on focus",
+    "html": "<div class=\"ic-bracket-wrap\"><span class=\"corner-tl\"></span><span class=\"corner-br\"></span><input class=\"ic-bracket-input\" type=\"text\" placeholder=\"Target coordinate\" /></div>",
+    "css": ".ic-bracket-wrap { position: relative; width: 100%; max-width: 320px; padding: 2px; } .ic-bracket-input { width: 100%; padding: 12px 14px; background: transparent; border: 1px solid #27272a; color: #fff; font-family: monospace; font-size: 15px; outline: none; transition: border-color 0.3s; } .ic-bracket-wrap .corner-tl, .ic-bracket-wrap .corner-br { position: absolute; width: 10px; height: 10px; border: 2px solid transparent; transition: all 0.3s ease; pointer-events: none; } .ic-bracket-wrap .corner-tl { top: 0; left: 0; border-top-color: #3b82f6; border-left-color: #3b82f6; } .ic-bracket-wrap .corner-br { bottom: 0; right: 0; border-bottom-color: #3b82f6; border-right-color: #3b82f6; } .ic-bracket-input:focus { border-color: transparent; } .ic-bracket-input:focus ~ .corner-tl { width: 100%; height: 100%; } .ic-bracket-input:focus ~ .corner-br { width: 100%; height: 100%; }"
+  },
+  {
+    "id": "input-fade-fill",
+    "name": "Luminous Chamber",
+    "description": "Internal luminous background fade activation track",
+    "html": "<input class=\"in-fadeff\" type=\"text\" placeholder=\"Database query\" />",
+    "css": ".in-fadeff { width: 100%; max-width: 320px; padding: 14px 16px; background: transparent; border: 1px solid #27272a; border-radius: 8px; color: #fff; font-size: 15px; transition: all 0.3s ease; } .in-fadeff::placeholder { color: #52525b; } .in-fadeff:focus { background: rgba(99, 102, 241, 0.05); border-color: #6366f1; box-shadow: inset 0 1px 10px rgba(99, 102, 241, 0.1); outline: none; }"
+  },
+  {
+    "id": "input-sharp-brutalist",
+    "name": "Raw Industrial",
+    "description": "Flat high visibility architectural canvas border block",
+    "html": "<input class=\"in-sharpb\" type=\"text\" placeholder=\"COMMAND NODE\" />",
+    "css": ".in-sharpb { width: 100%; max-width: 320px; padding: 14px 16px; background: #000; border: 2px solid #3f3f46; color: #fff; font-family: monospace; font-size: 15px; text-transform: uppercase; outline: none; transition: border-color 0.2s; } .in-sharpb::placeholder { color: #52525b; } .in-sharpb:focus { border-color: #eab308; background: #111; }"
+  },
+  {
+    "id": "input-shaded-rim",
+    "name": "Inset Gradient Ridge",
+    "description": "Premium internal ambient gradient depth mapping layout",
+    "html": "<input class=\"in-srim\" type=\"text\" placeholder=\"Access key\" />",
+    "css": ".in-srim { width: 100%; max-width: 320px; padding: 14px 16px; background: #09090b; border: 1px solid #27272a; border-radius: 8px; color: #fff; font-size: 15px; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6); outline: none; transition: all 0.2s; } .in-srim::placeholder { color: #3f3f46; } .in-srim:focus { border-color: #4b5563; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 12px rgba(255,255,255,0.05); }"
+  },
+  {
+    "id": "input-double-line",
+    "name": "Framed Rail Tracker",
+    "description": "Double tracking line boundaries with clean transition",
+    "html": "<div class=\"dl-wrap\"><input class=\"dl-field\" type=\"text\" placeholder=\"Configuration matrix\" /></div>",
+    "css": ".dl-wrap { position: relative; width: 100%; max-width: 320px; border-bottom: 1px solid #27272a; padding-bottom: 2px; } .dl-wrap::before { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #27272a; } .dl-field { width: 100%; background: transparent; border: none; color: #fff; font-size: 15px; padding: 10px 0; outline: none; } .dl-field::placeholder { color: #52525b; } .dl-wrap::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: #f43f5e; transition: width 0.3s ease; } .dl-field:focus + .dl-wrap::after, .dl-wrap:focus-within::after { width: 100%; }"
+  },
+  {
+    "id": "input-reveal-glow",
+    "name": "Luminous Trace",
+    "description": "Dynamic structural track line expansion focus filter",
+    "html": "<div class=\"rg-wrap\"><input class=\"rg-field\" type=\"text\" placeholder=\"Cluster cluster ID\" /></div>",
+    "css": ".rg-wrap { position: relative; width: 100%; max-width: 320px; background: #09090b; border-radius: 8px; border: 1px solid #27272a; overflow: hidden; } .rg-field { width: 100%; padding: 14px 16px; background: transparent; border: none; color: #fff; font-size: 15px; outline: none; position: relative; z-index: 2; } .rg-field::placeholder { color: #52525b; } .rg-wrap::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 0; background: linear-gradient(180deg, transparent, rgba(59, 130, 246, 0.08)); z-index: 1; transition: height 0.25s ease; } .rg-wrap:focus-within { border-color: #3b82f6; } .rg-wrap:focus-within::after { height: 100%; }"
+  },
+  {
+    "id": "input-focus-slide-bg",
+    "name": "Inverted Shift Box",
+    "description": "Background color block swap on dynamic interaction",
+    "html": "<input class=\"in-fslide\" type=\"text\" placeholder=\"Inverted focus track\" />",
+    "css": ".in-fslide { width: 100%; max-width: 320px; padding: 14px 16px; background: transparent; border: 2px solid #fff; border-radius: 0; color: #fff; font-size: 15px; font-weight: 600; transition: all 0.25s ease; } .in-fslide::placeholder { color: #a1a1aa; } .in-fslide:focus { background: #ffffff; color: #000000; outline: none; }"
   }
 ]
