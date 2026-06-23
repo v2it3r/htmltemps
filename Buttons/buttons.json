@@ -6,5 +6,95 @@
     "html": "<button class=\"btn\">Click me</button>",
     "css": ".btn { background: #f5f5f5; color: #080808; border: none; padding: 12px 28px; cursor: pointer; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; transition: all 0.2s; } .btn:hover { background: #080808; color: #f5f5f5; outline: 1.5px solid #f5f5f5; }",
     "js": ""
+  },
+
+  {
+    "id": "btn-outline",
+    "name": "Outline",
+    "description": "Transparent button with border + color invert on hover",
+    "html": "<button class=\"btn-outline\">Click me</button>",
+    "css": ".btn-outline { background: transparent; color: #080808; border: 2px solid #080808; padding: 12px 28px; cursor: pointer; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; transition: all 0.25s; } .btn-outline:hover { background: #080808; color: #fff; }",
+    "js": ""
+  },
+
+  {
+    "id": "btn-gradient",
+    "name": "Gradient",
+    "description": "Smooth gradient background with glow hover",
+    "html": "<button class=\"btn-gradient\">Click me</button>",
+    "css": ".btn-gradient { background: linear-gradient(135deg, #ff7a18, #af002d 70%); color: #fff; border: none; padding: 12px 28px; cursor: pointer; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; transition: 0.25s; } .btn-gradient:hover { filter: brightness(1.15); box-shadow: 0 0 12px rgba(255, 122, 24, 0.6); }",
+    "js": ""
+  },
+
+  {
+    "id": "btn-pill",
+    "name": "Pill",
+    "description": "Rounded pill button with soft hover",
+    "html": "<button class=\"btn-pill\">Click me</button>",
+    "css": ".btn-pill { background: #111; color: #fff; border: none; padding: 12px 32px; border-radius: 999px; cursor: pointer; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; transition: 0.25s; } .btn-pill:hover { background: #333; }",
+    "js": ""
+  },
+
+  {
+    "id": "btn-ghost",
+    "name": "Ghost",
+    "description": "Minimal ghost button with subtle hover fill",
+    "html": "<button class=\"btn-ghost\">Click me</button>",
+    "css": ".btn-ghost { background: transparent; color: #111; border: 1px solid transparent; padding: 12px 28px; cursor: pointer; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; transition: 0.25s; } .btn-ghost:hover { border-color: #111; background: rgba(0,0,0,0.05); }",
+    "js": ""
+  },
+
+  {
+    "id": "btn-neon",
+    "name": "Neon Glow",
+    "description": "Cyberpunk neon glow hover",
+    "html": "<button class=\"btn-neon\">Click me</button>",
+    "css": ".btn-neon { background: #0d0d0d; color: #0ff; border: 2px solid #0ff; padding: 12px 28px; cursor: pointer; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; transition: 0.25s; } .btn-neon:hover { box-shadow: 0 0 12px #0ff, 0 0 24px #0ff; }",
+    "js": ""
+  },
+
+  {
+    "id": "btn-3d",
+    "name": "3D Press",
+    "description": "3D button that presses down",
+    "html": "<button class=\"btn-3d\">Click me</button>",
+    "css": ".btn-3d { background: #4a4a4a; color: #fff; border: none; padding: 12px 28px; cursor: pointer; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; box-shadow: 0 4px 0 #2e2e2e; transition: 0.15s; } .btn-3d:active { transform: translateY(4px); box-shadow: 0 0 0 #2e2e2e; }",
+    "js": ""
+  },
+
+  {
+    "id": "btn-border-anim",
+    "name": "Animated Border",
+    "description": "Border draws itself on hover",
+    "html": "<button class=\"btn-border-anim\">Click me</button>",
+    "css": ".btn-border-anim { background: transparent; color: #111; padding: 12px 28px; border: none; position: relative; cursor: pointer; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; } .btn-border-anim::before, .btn-border-anim::after { content: ''; position: absolute; width: 0; height: 2px; background: #111; transition: 0.3s; } .btn-border-anim::before { left: 0; bottom: 0; } .btn-border-anim::after { right: 0; top: 0; } .btn-border-anim:hover::before, .btn-border-anim:hover::after { width: 100%; }",
+    "js": ""
+  },
+
+  {
+    "id": "btn-ripple",
+    "name": "Ripple",
+    "description": "Material-style ripple effect",
+    "html": "<button class=\"btn-ripple\">Click me</button>",
+    "css": ".btn-ripple { background: #222; color: #fff; border: none; padding: 12px 28px; cursor: pointer; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; position: relative; overflow: hidden; } .btn-ripple::after { content: ''; position: absolute; width: 10px; height: 10px; background: rgba(255,255,255,0.4); border-radius: 50%; transform: scale(0); opacity: 0; transition: transform 0.4s, opacity 0.8s; } .btn-ripple:active::after { transform: scale(20); opacity: 1; left: var(--x); top: var(--y); }",
+    "js": "document.addEventListener('click', e => { if(e.target.classList.contains('btn-ripple')) { const rect = e.target.getBoundingClientRect(); e.target.style.setProperty('--x', (e.clientX - rect.left) + 'px'); e.target.style.setProperty('--y', (e.clientY - rect.top) + 'px'); }});"
+  },
+
+  {
+    "id": "btn-icon-left",
+    "name": "Icon Left",
+    "description": "Button with left icon slot",
+    "html": "<button class=\"btn-icon-left\"><span>⭐</span>Click me</button>",
+    "css": ".btn-icon-left { background: #111; color: #fff; border: none; padding: 12px 28px; cursor: pointer; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; display: flex; align-items: center; gap: 10px; transition: 0.25s; } .btn-icon-left:hover { background: #333; }",
+    "js": ""
+  },
+
+  {
+    "id": "btn-soft",
+    "name": "Soft UI",
+    "description": "Neumorphic soft shadow button",
+    "html": "<button class=\"btn-soft\">Click me</button>",
+    "css": ".btn-soft { background: #e0e0e0; color: #111; border: none; padding: 12px 28px; cursor: pointer; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; border-radius: 12px; box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff; transition: 0.25s; } .btn-soft:hover { box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff; }",
+    "js": ""
   }
 ]
