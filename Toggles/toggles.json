@@ -1,0 +1,186 @@
+[
+  {
+    "id": "toggle-standard",
+    "name": "Standard Toggle",
+    "description": "The classic, clean digital toggle switch with a smooth sliding pill indicator.",
+    "html": "<label class=\"classic-flat\"><input type=\"checkbox\"><span class=\"slider\"></span></label>",
+    "css": ".classic-flat { position: relative; display: inline-block; width: 46px; height: 26px; } .classic-flat input { opacity: 0; width: 0; height: 0; } .classic-flat .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #e5e7eb; border-radius: 26px; transition: background-color 0.25s ease; } .classic-flat .slider:before { position: absolute; content: ''; height: 20px; width: 20px; left: 3px; bottom: 3px; background-color: #ffffff; border-radius: 50%; transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 1px 3px rgba(0,0,0,0.15); } .classic-flat input:checked + .slider { background-color: #10b981; } .classic-flat input:checked + .slider:before { transform: translateX(20px); }",
+    "js": ""
+  },
+  {
+    "id": "toggle-ios-native",
+    "name": "iOS Style Switch",
+    "description": "Classic mobile interface toggle with standard smooth fluid transition metrics.",
+    "html": "<label class=\"ios-switch\"><input type=\"checkbox\"><span class=\"track\"></span></label>",
+    "css": ".ios-switch { position: relative; display: inline-block; width: 51px; height: 31px; } .ios-switch input { opacity: 0; width: 0; height: 0; } .ios-switch .track { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #e9e9ea; border-radius: 31px; transition: background-color 0.3s ease; } .ios-switch .track:before { position: absolute; content: ''; height: 27px; width: 27px; left: 2px; top: 2px; background-color: #ffffff; border-radius: 50%; transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1); box-shadow: 0 3px 8px rgba(0,0,0,0.15); } .ios-switch input:checked + .track { background-color: #34c759; } .ios-switch input:checked + .track:before { transform: translateX(20px); }",
+    "js": ""
+  },
+  {
+    "id": "toggle-day-night",
+    "name": "Day Night Switch",
+    "description": "Classic light to dark mode transition layout using standard sliding mechanics.",
+    "html": "<label class=\"day-night\"><input type=\"checkbox\"><span class=\"scene\"></span></label>",
+    "css": ".day-night { position: relative; display: inline-block; width: 54px; height: 28px; } .day-night input { opacity: 0; width: 0; height: 0; } .day-night .scene { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #7dd3fc; border-radius: 28px; transition: background-color 0.35s ease; } .day-night .scene:before { position: absolute; content: ''; height: 22px; width: 22px; left: 3px; bottom: 3px; background-color: #fef08a; border-radius: 50%; transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.35s ease, box-shadow 0.35s ease; } .day-night input:checked + .scene { background-color: #1e1b4b; } .day-night input:checked + .scene:before { transform: translateX(26px); background-color: #e2e8f0; box-shadow: inset -4px -2px 0px 0px #94a3b8; }",
+    "js": ""
+  },
+  {
+    "id": "toggle-hardware-rocker",
+    "name": "Hardware Rocker",
+    "description": "Physical style rocker button that tips back and forth depending on active state.",
+    "html": "<label class=\"rocker-switch\"><input type=\"checkbox\"><span class=\"button\"></span></label>",
+    "css": ".rocker-switch { position: relative; display: inline-block; width: 60px; height: 30px; background-color: #1f2937; border-radius: 4px; padding: 2px; } .rocker-switch input { opacity: 0; width: 0; height: 0; } .rocker-switch .button { position: absolute; top: 2px; left: 2px; width: 26px; height: 26px; background-color: #f3f4f6; border-radius: 2px; cursor: pointer; transition: transform 0.15s ease-out; box-shadow: 0 2px 4px rgba(0,0,0,0.3); } .rocker-switch input:checked + .button { transform: translateX(30px); background-color: #ffffff; }",
+    "js": ""
+  },
+  {
+    "id": "toggle-minimal-white",
+    "name": "Minimal White Slider",
+    "description": "Clean, high-end white-on-grey modern UI switch utilizing simple structural lines.",
+    "html": "<label class=\"min-white\"><input type=\"checkbox\"><span class=\"bg\"><span class=\"dot\"></span></span></label>",
+    "css": ".min-white { display: inline-block; cursor: pointer; } .min-white input { display: none; } .min-white .bg { display: block; width: 40px; height: 22px; background: #e5e7eb; border-radius: 11px; position: relative; transition: background 0.2s ease; } .min-white .dot { position: absolute; top: 3px; left: 3px; width: 16px; height: 16px; background: #ffffff; border-radius: 50%; transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1); box-shadow: 0 1px 2px rgba(0,0,0,0.1); } .min-white input:checked + .bg { background: #000000; } .min-white input:checked + .bg .dot { transform: translateX(18px); }",
+    "js": ""
+  },
+  {
+    "id": "toggle-tactile-button",
+    "name": "Tactile Push Button",
+    "description": "A traditional push-in, push-out mechanical button layout with physical depth styling.",
+    "html": "<label class=\"tactile-btn\"><input type=\"checkbox\"><span class=\"btn-face\"></span></label>",
+    "css": ".tactile-btn { display: inline-block; position: relative; width: 32px; height: 32px; background: #d1d5db; border-radius: 4px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); padding: 2px; box-sizing: border-box; } .tactile-btn input { opacity: 0; width: 0; height: 0; } .tactile-btn .btn-face { display: block; width: 100%; height: 100%; background: #ffffff; border-radius: 2px; cursor: pointer; box-shadow: 0 3px 0 #9ca3af, 0 4px 6px rgba(0,0,0,0.1); transition: all 0.1s ease; } .tactile-btn input:checked + .btn-face { transform: translateY(3px); box-shadow: 0 0px 0 transparent, 0 1px 2px rgba(0,0,0,0.1); background: #f3f4f6; }",
+    "js": ""
+  },
+  {
+    "id": "toggle-radio-check",
+    "name": "Classic Checkbox Node",
+    "description": "Standard form interface layout styling that fills up dynamically from the center.",
+    "html": "<label class=\"radio-check\"><input type=\"checkbox\"><span class=\"box\"></span></label>",
+    "css": ".radio-check { display: inline-block; cursor: pointer; } .radio-check input { display: none; } .radio-check .box { display: block; width: 22px; height: 22px; border: 2px solid #9ca3af; border-radius: 4px; position: relative; transition: all 0.2s ease; } .radio-check .box:after { content: ''; position: absolute; opacity: 0; top: 4px; left: 4px; width: 10px; height: 10px; background: #2563eb; border-radius: 1px; transform: scale(0.6); transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); } .radio-check input:checked + .box { border-color: #2563eb; } .radio-check input:checked + .box:after { opacity: 1; transform: scale(1); }",
+    "js": ""
+  },
+  {
+    "id": "toggle-industrial-slide",
+    "name": "Industrial Slide Lever",
+    "description": "Heavy instrumentation channel frame carrying a simple rectangular sliding element.",
+    "html": "<label class=\"ind-slide\"><input type=\"checkbox\"><span class=\"track\"><span class=\"lever\"></span></span></label>",
+    "css": ".ind-slide { display: inline-block; cursor: pointer; } .ind-slide input { display: none; } .ind-slide .track { display: block; width: 50px; height: 16px; background: #374151; border-radius: 2px; position: relative; margin: 6px 0; } .ind-slide .lever { position: absolute; top: -5px; left: 0; width: 18px; height: 26px; background: #e5e7eb; border: 1px solid #9ca3af; border-radius: 2px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); transition: transform 0.15s linear; } .ind-slide input:checked + .track .lever { transform: translateX(32px); background: #ffffff; }",
+    "js": ""
+  },
+  {
+    "id": "toggle-on-off-text",
+    "name": "On Off Text Switch",
+    "description": "Standard textual status utility displaying direct state readings inside the layout track.",
+    "html": "<label class=\"on-off-switch\"><input type=\"checkbox\"><span class=\"slider-text\"></span></label>",
+    "css": ".on-off-switch { position: relative; display: inline-block; width: 62px; height: 28px; } .on-off-switch input { opacity: 0; width: 0; height: 0; } .on-off-switch .slider-text { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ef4444; border-radius: 4px; transition: 0.25s; } .on-off-switch .slider-text:before { position: absolute; content: 'OFF'; font-family: sans-serif; font-size: 10px; font-weight: bold; color: #ef4444; text-align: center; line-height: 20px; height: 20px; width: 28px; left: 4px; bottom: 4px; background-color: #ffffff; border-radius: 2px; transition: transform 0.2s ease, content 0s; } .on-off-switch input:checked + .slider-text { background-color: #22c55e; } .on-off-switch input:checked + .slider-text:before { transform: translateX(26px); content: 'ON'; color: #22c55e; }",
+    "js": ""
+  },
+  {
+    "id": "toggle-rounded-button",
+    "name": "Classic Rounded Tab",
+    "description": "A simple segmented control pill option layout with a basic toggle shift animation.",
+    "html": "<label class=\"rounded-tab\"><input type=\"checkbox\"><span class=\"base\"><span class=\"tab\"></span></span></label>",
+    "css": ".rounded-tab { display: inline-block; cursor: pointer; } .rounded-tab input { display: none; } .rounded-tab .base { display: block; width: 56px; height: 30px; background: #f3f4f6; border: 1px solid #d1d5db; border-radius: 15px; position: relative; padding: 2px; box-sizing: border-box; } .rounded-tab .tab { position: absolute; top: 2px; left: 2px; width: 24px; height: 24px; background: #ffffff; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1); } .rounded-tab input:checked + .base .tab { transform: translateX(26px); }",
+    "js": ""
+  },
+  {
+    "id": "toggle-terminal-pill",
+    "name": "Terminal Pill Toggle",
+    "description": "Retro instrumentation look using stark contrast monochrome structural states.",
+    "html": "<label class=\"term-pill\"><input type=\"checkbox\"><span class=\"frame\"><span class=\"block\"></span></span></label>",
+    "css": ".term-pill { display: inline-block; cursor: pointer; } .term-pill input { display: none; } .term-pill .frame { display: block; width: 44px; height: 20px; border: 2px solid #000000; background: #ffffff; position: relative; } .term-pill .block { position: absolute; top: 2px; left: 2px; width: 12px; height: 12px; background: #000000; transition: transform 0.1s linear; } .term-pill input:checked + .frame .block { transform: translateX(24px); }",
+    "js": ""
+  },
+  {
+    "id": "toggle-soft-dimmer",
+    "name": "Soft Dimmer Slider",
+    "description": "Smooth ambient system dashboard utility mapping clean greyscale tone updates.",
+    "html": "<label class=\"soft-dimmer\"><input type=\"checkbox\"><span class=\"track\"></span></label>",
+    "css": ".soft-dimmer { position: relative; display: inline-block; width: 48px; height: 24px; } .soft-dimmer input { opacity: 0; width: 0; height: 0; } .soft-dimmer .track { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #9ca3af; border-radius: 12px; cursor: pointer; transition: background 0.3s ease; } .soft-dimmer .track:before { position: absolute; content: ''; height: 18px; width: 18px; left: 3px; bottom: 3px; background: #ffffff; border-radius: 50%; transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1); } .soft-dimmer input:checked + .track { background: #4b5563; } .soft-dimmer input:checked + .track:before { transform: translateX(24px); }",
+    "js": ""
+  },
+  {
+    "id": "toggle-micro-switch",
+    "name": "Micro Static Switch",
+    "description": "Ultra compact status layout designed for dense system settings panels.",
+    "html": "<label class=\"micro-switch\"><input type=\"checkbox\"><span class=\"base\"></span></label>",
+    "css": ".micro-switch { position: relative; display: inline-block; width: 34px; height: 18px; } .micro-switch input { opacity: 0; width: 0; height: 0; } .micro-switch .base { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #d1d5db; border-radius: 9px; cursor: pointer; transition: background 0.2s; } .micro-switch .base:before { position: absolute; content: ''; height: 14px; width: 14px; left: 2px; bottom: 2px; background: #ffffff; border-radius: 50%; transition: transform 0.2s; } .micro-switch input:checked + .base { background: #4f46e5; } .micro-switch input:checked + .base:before { transform: translateX(16px); }",
+    "js": ""
+  },
+  {
+    "id": "toggle-bold-border",
+    "name": "Bold Border Frame",
+    "description": "High accessibility line layout using clear thick borders and precise indicator travel.",
+    "html": "<label class=\"bold-border\"><input type=\"checkbox\"><span class=\"box\"><span class=\"handle\"></span></span></label>",
+    "css": ".bold-border { display: inline-block; cursor: pointer; } .bold-border input { display: none; } .bold-border .box { display: block; width: 52px; height: 28px; border: 3px solid #1f2937; border-radius: 14px; background: transparent; position: relative; box-sizing: border-box; } .bold-border .handle { position: absolute; top: 3px; left: 3px; width: 16px; height: 16px; background: #1f2937; border-radius: 50%; transition: transform 0.15s ease; } .bold-border input:checked + .box .handle { transform: translateX(24px); }",
+    "js": ""
+  },
+  {
+    "id": "toggle-square-split",
+    "name": "Square Segmented Gate",
+    "description": "Two distinct blocks that alternate highlights to indicate system active state.",
+    "html": "<label class=\"square-split\"><input type=\"checkbox\"><span class=\"container\"><span class=\"left\"></span><span class=\"right\"></span></span></label>",
+    "css": ".square-split { display: inline-block; cursor: pointer; } .square-split input { display: none; } .square-split .container { display: flex; width: 50px; height: 26px; background: #f3f4f6; border: 1px solid #cdcdd2; padding: 2px; box-sizing: border-box; gap: 2px; } .square-split .container span { flex: 1; transition: background 0.1s ease; } .square-split .left { background: #4b5563; } .square-split .right { background: transparent; } .square-split input:checked + .container .left { background: transparent; } .square-split input:checked + .container .right { background: #4b5563; }",
+    "js": ""
+  },
+  {
+    "id": "toggle-power-icon",
+    "name": "Classic Power Button",
+    "description": "Traditional universal circular power symbol mapping system running parameters.",
+    "html": "<label class=\"power-icon\"><input type=\"checkbox\"><div class=\"ring\"></div></label>",
+    "css": ".power-icon { display: inline-block; cursor: pointer; } .power-icon input { display: none; } .power-icon .ring { width: 36px; height: 36px; border-radius: 50%; border: 3px solid #d1d5db; box-sizing: border-box; position: relative; transition: all 0.2s ease; } .power-icon .ring:before { content: ''; position: absolute; top: 2px; left: 14px; width: 3px; height: 12px; background: #d1d5db; transition: all 0.2s ease; } .power-icon input:checked + .ring { border-color: #2563eb; } .power-icon input:checked + .ring:before { background: #2563eb; }",
+    "js": ""
+  },
+  {
+    "id": "toggle-volume-mute",
+    "name": "Volume Action Switch",
+    "description": "Audio console style status slide running along a standard inset channel track.",
+    "html": "<label class=\"vol-mute\"><input type=\"checkbox\"><span class=\"track\"><span class=\"node\"></span></span></label>",
+    "css": ".vol-mute { display: inline-block; cursor: pointer; } .vol-mute input { display: none; } .vol-mute .track { display: block; width: 46px; height: 8px; background: #cbd5e1; border-radius: 4px; position: relative; margin: 10px 0; } .vol-mute .node { position: absolute; top: -6px; left: 0; width: 20px; height: 20px; background: #ffffff; border: 1px solid #94a3b8; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1); } .vol-mute input:checked + .track { background: #94a3b8; } .vol-mute input:checked + .track .node { transform: translateX(26px); }",
+    "js": ""
+  },
+  {
+    "id": "toggle-vintage-dial",
+    "name": "Vintage Rotary Notch",
+    "description": "Simulated hardware pointer dial tracking angular movement upon user input click.",
+    "html": "<label class=\"vintage-dial\"><input type=\"checkbox\"><span class=\"dial\"><span class=\"pointer\"></span></span></label>",
+    "css": ".vintage-dial { display: inline-block; cursor: pointer; } .vintage-dial input { display: none; } .vintage-dial .dial { display: block; width: 34px; height: 34px; background: #e5e7eb; border: 2px solid #9ca3af; border-radius: 50%; position: relative; transition: transform 0.2s ease; } .vintage-dial .pointer { position: absolute; top: 2px; left: 14px; width: 2px; height: 10px; background: #374151; } .vintage-dial input:checked + .dial { transform: rotate(90deg); }",
+    "js": ""
+  },
+  {
+    "id": "toggle-corporate-pill",
+    "name": "Enterprise Data Toggle",
+    "description": "Professional clean slate control setup prioritizing structural clarity above all.",
+    "html": "<label class=\"corp-pill\"><input type=\"checkbox\"><span class=\"base\"></span></label>",
+    "css": ".corp-pill { position: relative; display: inline-block; width: 44px; height: 24px; } .corp-pill input { opacity: 0; width: 0; height: 0; } .corp-pill .base { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #e2e8f0; border-radius: 4px; cursor: pointer; transition: background 0.15s ease; } .corp-pill .base:before { position: absolute; content: ''; height: 18px; width: 18px; left: 3px; bottom: 3px; background: #ffffff; border-radius: 2px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: transform 0.15s ease; } .corp-pill input:checked + .base { background: #1e3a8a; } .corp-pill input:checked + .base:before { transform: translateX(20px); }",
+    "js": ""
+  },
+  {
+    "id": "toggle-check-slide",
+    "name": "Checkmark Slide Track",
+    "description": "Standard utility line switch integrating active state validation inside the handle track.",
+    "html": "<label class=\"check-slide\"><input type=\"checkbox\"><span class=\"bg\"></span></label>",
+    "css": ".check-slide { position: relative; display: inline-block; width: 48px; height: 26px; } .check-slide input { opacity: 0; width: 0; height: 0; } .check-slide .bg { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #d1d5db; border-radius: 13px; cursor: pointer; transition: background 0.2s; } .check-slide .bg:before { position: absolute; content: ''; height: 20px; width: 20px; left: 3px; bottom: 3px; background: #ffffff; border-radius: 50%; transition: transform 0.2s ease; box-shadow: 0 1px 3px rgba(0,0,0,0.1); } .check-slide input:checked + .bg { background: #059669; } .check-slide input:checked + .bg:before { transform: translateX(22px); }",
+    "js": ""
+  },
+  {
+    "id": "toggle-sun-moon-flat",
+    "name": "Flat Light Dark Tab",
+    "description": "Simple geometric layout switching positions on a clean flat structural backplate.",
+    "html": "<label class=\"sun-moon-flat\"><input type=\"checkbox\"><span class=\"plate\"><span class=\"node\"></span></span></label>",
+    "css": ".sun-moon-flat { display: inline-block; cursor: pointer; } .sun-moon-flat input { display: none; } .sun-moon-flat .plate { display: block; width: 52px; height: 26px; background: #cbd5e1; border-radius: 13px; position: relative; transition: background 0.25s ease; } .sun-moon-flat .node { position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; background: #ffffff; border-radius: 50%; transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1); } .sun-moon-flat input:checked + .plate { background: #475569; } .sun-moon-flat input:checked + .plate .node { transform: translateX(26px); }",
+    "js": ""
+  },
+  {
+    "id": "toggle-inset-bezel",
+    "name": "Inset Bezel Switch",
+    "description": "Deeply recessed physical layout appearance hosting a solid sliding choice node.",
+    "html": "<label class=\"inset-bezel\"><input type=\"checkbox\"><span class=\"slot\"><span class=\"block\"></span></span></label>",
+    "css": ".inset-bezel { display: inline-block; cursor: pointer; } .inset-bezel input { display: none; } .inset-bezel .slot { display: block; width: 46px; height: 22px; background: #e5e7eb; border-radius: 4px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.15); position: relative; } .inset-bezel .block { position: absolute; top: 2px; left: 2px; width: 18px; height: 18px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 2px; box-shadow: 0 1px 2px rgba(0,0,0,0.1); transition: transform 0.15s ease; } .inset-bezel input:checked + .slot .block { transform: translateX(24px); }",
+    "js": ""
+  },
+  {
+    "id": "toggle-desk-lamp",
+    "name": "Desk Lamp Pull",
+    "description": "Vertical motion switch mimicking a physical pull-cord utility configuration.",
+    "html": "<label class=\"desk-lamp\"><input type=\"checkbox\"><span class=\"cord\"><span class=\"fob\"></span></span></label>",
+    "css": ".desk-lamp { display: inline-block; cursor: pointer; padding: 0 10px; } .desk-lamp input { display: none; } .desk-lamp .cord { display: block; width: 2px; height: 32px; background: #9ca3af; position: relative; transition: height 0.1s ease; } .desk-lamp .fob { position: absolute; bottom: -8px; left: -4px; width: 10px; height: 10px; background: #374151; border-radius: 50%; } .desk-lamp input:checked + .cord { height: 42px; background: #2563eb; } .desk-lamp input:checked + .cord .fob { background: #2563eb; }",
+    "js": ""
+  }
+]
