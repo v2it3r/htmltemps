@@ -1,6 +1,6 @@
 [
   { "slug": "buttons", "folder": "Buttons", "dataFile": "buttons.json" },
   { "slug": "inputs",  "folder": "Inputs",  "dataFile": "inputs.json"  },
-  { "slug": "loading", "folder": "Loading", "dataFile": "animations.json" }
+  { "slug": "loading", "folder": "Loading", "dataFile": "animations.json" },
   { "slug": "checkboxes", "folder": "Checkboxes", "dataFile": "boxes.json" }
 ]
