@@ -1,0 +1,10 @@
+[
+  {
+    "id": "spinner-ring",
+    "name": "Spinner Ring",
+    "description": "Clean rotating ring loader",
+    "html": "<div class=\"ring\"></div>",
+    "css": "@keyframes spin { to { transform: rotate(360deg); } } .ring { width: 48px; height: 48px; border: 2.5px solid #1e1e1e; border-top-color: #f5f5f5; border-radius: 50%; animation: spin 0.8s linear infinite; }",
+    "js": ""
+  }
+]
