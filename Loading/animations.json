@@ -2,113 +2,113 @@
   {
     "id": "spinner-ring",
     "name": "Concentric Ring",
-    "description": "Smooth modern mechanical line rotation track",
+    "description": "Smooth precision acceleration loop tracking line",
     "html": "<div class=\"ring\"></div>",
-    "css": ".ring { width: 44px; height: 44px; border: 3px solid rgba(255, 255, 255, 0.05); border-top-color: #6366f1; border-radius: 50%; animation: spin 0.6s cubic-bezier(0.4, 0.1, 0.3, 1) infinite; } @keyframes spin { to { transform: rotate(360deg); } }"
+    "css": ".ring { width: 44px; height: 44px; border: 3px solid rgba(255, 255, 255, 0.1); border-top-color: #ffffff; border-radius: 50%; animation: spin 0.65s cubic-bezier(0.4, 0.1, 0.3, 1) infinite; } @keyframes spin { to { transform: rotate(360deg); } }"
   },
   {
     "id": "spinner-dual-ring",
-    "name": "Dual Counter-Ring",
-    "description": "Two high-precision layered lines spinning on opposing orbits",
+    "name": "Dual Counter-Orbit",
+    "description": "Two monochromatic high-speed paths spinning on inverted orbits",
     "html": "<div class=\"dual-ring\"></div>",
-    "css": ".dual-ring { width: 46px; height: 46px; border: 3px solid transparent; border-top-color: #06b6d4; border-bottom-color: #a855f7; border-radius: 50%; animation: spin-clockwise 0.8s cubic-bezier(0.5, 0.1, 0.4, 0.9) infinite; position: relative; } .dual-ring::after { content: ''; position: absolute; inset: 4px; border: 2.5px solid transparent; border-left-color: #f43f5e; border-right-color: #f43f5e; border-radius: 50%; animation: spin-counter 0.6s linear infinite; } @keyframes spin-clockwise { to { transform: rotate(360deg); } } @keyframes spin-counter { to { transform: rotate(-360deg); } }"
+    "css": ".dual-ring { width: 44px; height: 44px; border: 2.5px solid transparent; border-top-color: #ffffff; border-bottom-color: rgba(255,255,255,0.3); border-radius: 50%; animation: spin-clockwise 0.9s cubic-bezier(0.4, 0.1, 0.4, 0.9) infinite; position: relative; } .dual-ring::after { content: ''; position: absolute; inset: 4px; border: 2px solid transparent; border-left-color: #ffffff; border-right-color: rgba(255,255,255,0.2); border-radius: 50%; animation: spin-counter 0.7s cubic-bezier(0.4, 0.1, 0.4, 0.9) infinite; } @keyframes spin-clockwise { to { transform: rotate(360deg); } } @keyframes spin-counter { to { transform: rotate(-360deg); } }"
   },
   {
     "id": "spinner-dots",
-    "name": "Fluid Velocity Dots",
-    "description": "Smooth cascading bounce metric dots with organic physics styling",
+    "name": "Velocity Step Cascade",
+    "description": "Fluid metric dot structures using unified organic physics delays",
     "html": "<div class=\"dots\"><span></span><span></span><span></span></div>",
-    "css": ".dots { display: flex; gap: 8px; align-items: center; } .dots span { width: 10px; height: 10px; background: #fff; border-radius: 50%; animation: dots-bounce 1.1s cubic-bezier(0.62, 0.05, 0.38, 0.95) infinite; } .dots span:nth-child(2) { animation-delay: 0.15s; background: rgba(255,255,255,0.7); } .dots span:nth-child(3) { animation-delay: 0.3s; background: rgba(255,255,255,0.4); } @keyframes dots-bounce { 0%, 100% { transform: translateY(0); } 40% { transform: translateY(-14px); } }"
+    "css": ".dots { display: flex; gap: 8px; align-items: center; } .dots span { width: 10px; height: 10px; background: #ffffff; border-radius: 50%; animation: dots-bounce 1.1s cubic-bezier(0.62, 0.05, 0.38, 0.95) infinite; } .dots span:nth-child(2) { animation-delay: 0.15s; opacity: 0.6; } .dots span:nth-child(3) { animation-delay: 0.3s; opacity: 0.3; } @keyframes dots-bounce { 0%, 100% { transform: translateY(0); } 40% { transform: translateY(-14px); } }"
   },
   {
     "id": "spinner-bar",
-    "name": "Audio Frequency Pulse",
-    "description": "Balanced architectural bar equalizer visualization",
+    "name": "Frequency Equalizer",
+    "description": "Symmetrical monolithic vertical bar rhythm layout",
     "html": "<div class=\"bars\"><span></span><span></span><span></span><span></span></div>",
-    "css": ".bars { display: flex; gap: 5px; align-items: center; height: 32px; } .bars span { width: 5px; height: 100%; background: linear-gradient(to top, #3b82f6, #60a5fa); border-radius: 4px; transform-origin: center; animation: bar-pulse 0.9s ease-in-out infinite alternate; } .bars span:nth-child(1) { animation-delay: -0.6s; } .bars span:nth-child(2) { animation-delay: -0.3s; } .bars span:nth-child(3) { animation-delay: -0.45s; } .bars span:nth-child(4) { animation-delay: -0.15s; } @keyframes bar-pulse { 0% { transform: scaleY(0.2); } 100% { transform: scaleY(1); } }"
+    "css": ".bars { display: flex; gap: 5px; align-items: center; height: 28px; } .bars span { width: 5px; height: 100%; background: #ffffff; border-radius: 3px; transform-origin: center; animation: bar-pulse 0.85s ease-in-out infinite alternate; } .bars span:nth-child(1) { animation-delay: -0.6s; opacity: 0.4; } .bars span:nth-child(2) { animation-delay: -0.3s; } .bars span:nth-child(3) { animation-delay: -0.45s; opacity: 0.7; } .bars span:nth-child(4) { animation-delay: -0.15s; opacity: 0.5; } @keyframes bar-pulse { 0% { transform: scaleY(0.25); } 100% { transform: scaleY(1); } }"
   },
   {
     "id": "spinner-square",
-    "name": "Matrix Isometric Flip",
-    "description": "3D geometric box rotation utilizing modern depth perspectives",
+    "name": "Isometric Matrix Flip",
+    "description": "3D geometric perspective tile translation with acceleration curves",
     "html": "<div class=\"sq-stage\"><div class=\"sq\"></div></div>",
-    "css": ".sq-stage { perspective: 120px; } .sq { width: 34px; height: 34px; background: #10b981; border-radius: 6px; box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3); animation: isometric-flip 1.4s cubic-bezier(0.7, 0, 0.3, 1) infinite; } @keyframes isometric-flip { 0% { transform: rotate(0); } 50% { transform: rotateX(180deg) rotateY(0); } 100% { transform: rotateX(180deg) rotateY(180deg); } }"
+    "css": ".sq-stage { perspective: 120px; } .sq { width: 32px; height: 32px; background: #ffffff; border-radius: 4px; box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1); animation: isometric-flip 1.3s cubic-bezier(0.7, 0, 0.3, 1) infinite; } @keyframes isometric-flip { 0% { transform: rotate(0); } 50% { transform: rotateX(180deg) rotateY(0); } 100% { transform: rotateX(180deg) rotateY(180deg); } }"
   },
   {
     "id": "spinner-wave",
-    "name": "Fluid Sine Wave",
-    "description": "Fluid scale metric bars representing mathematical sine functions",
+    "name": "Harmonic Sine Wave",
+    "description": "Sequential fluid linear arrays charting continuous math properties",
     "html": "<div class=\"wave\"><span></span><span></span><span></span><span></span><span></span></div>",
-    "css": ".wave { display: flex; gap: 5px; } .wave span { width: 5px; height: 30px; background: #f59e0b; border-radius: 4px; animation: sine-wave 1.2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite; } .wave span:nth-child(1) { animation-delay: -1.2s; } .wave span:nth-child(2) { animation-delay: -1.05s; } .wave span:nth-child(3) { animation-delay: -0.9s; } .wave span:nth-child(4) { animation-delay: -0.75s; } .wave span:nth-child(5) { animation-delay: -0.6s; } @keyframes sine-wave { 0%, 100% { transform: scaleY(0.3); } 50% { transform: scaleY(1); } }"
+    "css": ".wave { display: flex; gap: 5px; } .wave span { width: 5px; height: 26px; background: #ffffff; border-radius: 3px; animation: sine-wave 1.1s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite; } .wave span:nth-child(1) { animation-delay: -1.1s; opacity: 0.2; } .wave span:nth-child(2) { animation-delay: -0.95s; opacity: 0.4; } .wave span:nth-child(3) { animation-delay: -0.8s; opacity: 0.7; } .wave span:nth-child(4) { animation-delay: -0.65s; opacity: 0.9; } .wave span:nth-child(5) { animation-delay: -0.5s; } @keyframes sine-wave { 0%, 100% { transform: scaleY(0.3); } 50% { transform: scaleY(1); } }"
   },
   {
     "id": "spinner-ripple",
-    "name": "Echo Pulse Ripple",
-    "description": "Dual overlapping organic echoing wavefront ripples",
+    "name": "Echo Pulse Wavefront",
+    "description": "Layered micro-thickness expanding acoustic ring echoes",
     "html": "<div class=\"ripple\"><span></span><span></span></div>",
-    "css": ".ripple { width: 54px; height: 54px; position: relative; } .ripple span { position: absolute; inset: 0; border: 2.5px solid #ec4899; border-radius: 50%; opacity: 0; animation: wave-ripple 1.5s cubic-bezier(0.1, 0.8, 0.3, 1) infinite; } .ripple span:nth-child(2) { animation-delay: 0.75s; } @keyframes wave-ripple { 0% { transform: scale(0.1); opacity: 1; } 70% { opacity: 0.4; } 100% { transform: scale(1.3); opacity: 0; } }"
+    "css": ".ripple { width: 52px; height: 52px; position: relative; } .ripple span { position: absolute; inset: 0; border: 2px solid #ffffff; border-radius: 50%; opacity: 0; transform: scale(0.1); animation: wave-ripple 1.6s cubic-bezier(0.1, 0.8, 0.2, 1) infinite; } .ripple span:nth-child(2) { animation-delay: 0.8s; } @keyframes wave-ripple { 0% { transform: scale(0.1); opacity: 1; } 80% { opacity: 0.3; } 100% { transform: scale(1.3); opacity: 0; } }"
   },
   {
     "id": "spinner-dash",
-    "name": "Orbital Dash Stream",
-    "description": "SVG mathematical stroke morph tracker configuration",
+    "name": "Vector Stroke Morph",
+    "description": "Clean vector trim path arc compression mapping logic",
     "html": "<svg class=\"dash\" viewBox=\"0 0 50 50\"><circle cx=\"25\" cy=\"25\" r=\"20\" /></svg>",
-    "css": ".dash { width: 48px; height: 48px; animation: vector-spin 1.8s linear infinite; } .dash circle { fill: none; stroke: #6366f1; stroke-width: 4; stroke-linecap: round; animation: stroke-morph 1.4s cubic-bezier(0.4, 0, 0.2, 1) infinite; } @keyframes vector-spin { to { transform: rotate(360deg); } } @keyframes stroke-morph { 0% { stroke-dasharray: 1, 150; stroke-dashoffset: 0; } 50% { stroke-dasharray: 90, 150; stroke-dashoffset: -40; } 100% { stroke-dasharray: 90, 150; stroke-dashoffset: -120; } }"
+    "css": ".dash { width: 46px; height: 46px; animation: vector-spin 2s linear infinite; } .dash circle { fill: none; stroke: #ffffff; stroke-width: 4; stroke-linecap: round; animation: stroke-morph 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite; } @keyframes vector-spin { to { transform: rotate(360deg); } } @keyframes stroke-morph { 0% { stroke-dasharray: 1, 150; stroke-dashoffset: 0; } 50% { stroke-dasharray: 90, 150; stroke-dashoffset: -40; } 100% { stroke-dasharray: 90, 150; stroke-dashoffset: -120; } }"
   },
   {
     "id": "spinner-orbit",
-    "name": "Satellite Gravity Loop",
-    "description": "Kinetic mass tracking standard anchor ring path logic",
+    "name": "Satellite Ring Path",
+    "description": "Kinetic particle mass tethered to a structural perimeter channel",
     "html": "<div class=\"orbit\"><div class=\"sat\"></div></div>",
-    "css": ".orbit { width: 48px; height: 48px; border: 2px dashed rgba(255,255,255,0.08); border-radius: 50%; position: relative; animation: satellite-spin 1.2s cubic-bezier(0.3, 0.1, 0.3, 1) infinite; } .sat { width: 10px; height: 10px; background: #f43f5e; border-radius: 50%; position: absolute; top: -5px; left: calc(50% - 5px); box-shadow: 0 0 10px #f43f5e; } @keyframes satellite-spin { to { transform: rotate(360deg); } }"
+    "css": ".orbit { width: 46px; height: 46px; border: 1.5px dashed rgba(255, 255, 255, 0.15); border-radius: 50%; position: relative; animation: satellite-spin 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite; } .sat { width: 8px; height: 8px; background: #ffffff; border-radius: 50%; position: absolute; top: -4px; left: calc(50% - 4px); box-shadow: 0 0 8px rgba(255, 255, 255, 0.6); } @keyframes satellite-spin { to { transform: rotate(360deg); } }"
   },
   {
     "id": "spinner-fade",
-    "name": "Quantum Spin Lattice",
-    "description": "Double component phase shifter clock rendering layout",
+    "name": "Chamber Phase Lattice",
+    "description": "Double micro-line intersecting continuous clock render sequence",
     "html": "<div class=\"fade\"></div>",
-    "css": ".fade { width: 48px; height: 48px; position: relative; } .fade::before, .fade::after { content: ''; position: absolute; inset: 0; border-radius: 50%; border: 3.5px solid transparent; border-top-color: #38bdf8; animation: spin-fluid 0.9s cubic-bezier(0.42, 0, 0.58, 1) infinite; } .fade::after { animation-delay: -0.45s; opacity: 0.35; border-top-color: #818cf8; } @keyframes spin-fluid { to { transform: rotate(360deg); } }"
+    "css": ".fade { width: 44px; height: 44px; position: relative; } .fade::before, .fade::after { content: ''; position: absolute; inset: 0; border-radius: 50%; border: 3px solid transparent; border-top-color: #ffffff; animation: spin-fluid 0.85s cubic-bezier(0.4, 0, 0.5, 1) infinite; } .fade::after { animation-delay: -0.425s; opacity: 0.3; border-top-color: #ffffff; } @keyframes spin-fluid { to { transform: rotate(360deg); } }"
   },
   {
     "id": "spinner-progress",
-    "name": "Infinite Scanner Track",
-    "description": "Dynamic structural infinite pipeline loader",
+    "name": "Infinite Pipeline Tracker",
+    "description": "Clean non-blocking pipeline bar scan tracker utility",
     "html": "<div class=\"prog-box\"><div class=\"prog-bar\"></div></div>",
-    "css": ".prog-box { width: 120px; height: 4px; background: rgba(255, 255, 255, 0.05); border-radius: 4px; overflow: hidden; position: relative; } .prog-bar { position: absolute; left: 0; top: 0; height: 100%; width: 50%; background: linear-gradient(90deg, #10b981, #6ee7b7); border-radius: 4px; animation: continuous-scan 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite; } @keyframes continuous-scan { 0% { left: -50%; width: 30%; } 50% { width: 60%; } 100% { left: 100%; width: 30%; } }"
+    "css": ".prog-box { width: 110px; height: 4px; background: rgba(255, 255, 255, 0.1); border-radius: 4px; overflow: hidden; position: relative; } .prog-bar { position: absolute; left: 0; top: 0; height: 100%; width: 40%; background: #ffffff; border-radius: 4px; animation: continuous-scan 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite; } @keyframes continuous-scan { 0% { left: -40%; width: 30%; } 50% { width: 50%; } 100% { left: 100%; width: 30%; } }"
   },
   {
-    "id": "spinner-pulse-ring",
-    "name": "Beacon Core Pulse",
-    "description": "Radial expanding technical center status indicator",
+    "id": "spinner-beacon",
+    "name": "Beacon Core Signal",
+    "description": "Tactical perimeter outward beacon ring status projection",
     "html": "<div class=\"beacon\"><div class=\"core\"></div></div>",
-    "css": ".beacon { width: 44px; height: 44px; border-radius: 50%; background: rgba(139, 92, 246, 0.1); display: flex; align-items: center; justify-content: center; position: relative; } .beacon::before { content: ''; position: absolute; inset: 0; border-radius: 50%; border: 2px solid #8b5cf6; opacity: 1; animation: beacon-out 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite; } .core { width: 14px; height: 14px; background: #8b5cf6; border-radius: 50%; box-shadow: 0 0 12px #8b5cf6; } @keyframes beacon-out { to { transform: scale(1.5); opacity: 0; } }"
+    "css": ".beacon { width: 44px; height: 44px; border-radius: 50%; background: rgba(255, 255, 255, 0.03); display: flex; align-items: center; justify-content: center; position: relative; } .beacon::before { content: ''; position: absolute; inset: 0; border-radius: 50%; border: 1.5px solid #ffffff; opacity: 1; animation: beacon-out 1.4s cubic-bezier(0.16, 1, 0.3, 1) infinite; } .core { width: 12px; height: 12px; background: #ffffff; border-radius: 50%; box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); } @keyframes beacon-out { to { transform: scale(1.6); opacity: 0; } }"
   },
   {
-    "id": "spinner-infinity",
-    "name": "Infinity Nexus",
-    "description": "Interlocking dual-coordinate continuous node pathing",
-    "html": "<div class=\"inf-track\"><div class=\"inf-node\"></div><div class=\"inf-node\"></div></div>",
-    "css": ".inf-track { display: flex; gap: 12px; position: relative; } .inf-node { width: 16px; height: 16px; border-radius: 50%; background: #a855f7; animation: node-shift 1s ease-in-out infinite alternate; } .inf-node:nth-child(2) { background: #ec4899; animation-delay: -0.5s; } @keyframes node-shift { 0% { transform: scale(0.4) translateX(-10px); opacity: 0.3; } 100% { transform: scale(1.2) translateX(10px); box-shadow: 0 0 12px rgba(168, 85, 247, 0.6); } }"
+    "id": "spinner-shifter",
+    "name": "Quantum Linear Switch",
+    "description": "Interlocking dual node continuous translation metric balance",
+    "html": "<div class=\"shift-track\"><div class=\"shift-node\"></div><div class=\"shift-node\"></div></div>",
+    "css": ".shift-track { display: flex; gap: 14px; position: relative; } .shift-node { width: 14px; height: 14px; border-radius: 50%; background: #ffffff; animation: node-slide 0.9s ease-in-out infinite alternate; } .shift-node:nth-child(2) { animation-delay: -0.45s; opacity: 0.4; } @keyframes node-slide { 0% { transform: scale(0.5) translateX(-8px); opacity: 0.2; } 100% { transform: scale(1.1) translateX(8px); }"
   },
   {
-    "id": "spinner-eclipse",
-    "name": "Solar Eclipse Ring",
-    "description": "Coronal projection glow tracking geometry layout",
+    "id": "spinner-disk-slice",
+    "name": "Geometric Helix Core",
+    "description": "Single fragment segment slicing geometry loop layout",
+    "html": "<div class=\"disk-slice\"></div>",
+    "css": ".disk-slice { width: 42px; height: 42px; border-radius: 50%; background: radial-gradient(farthest-side, transparent 65%, #ffffff 70%) top/8px 8px no-repeat, border-box; border: 3px solid transparent; border-right-color: #ffffff; animation: slice-spin 0.7s cubic-bezier(0.3, 0.1, 0.3, 1) infinite; } @keyframes slice-spin { to { transform: rotate(360deg); } }"
+  },
+  {
+    "id": "spinner-block-grid",
+    "name": "Matrix Chamber Array",
+    "description": "Symmetrical four-quadrant alternating depth square scale configuration",
+    "html": "<div class=\"block-grid\"><span></span><span></span><span></span><span></span></div>",
+    "css": ".block-grid { width: 34px; height: 34px; display: grid; grid-template-columns: 1fr 1fr; gap: 4px; } .block-grid span { background: #ffffff; border-radius: 2px; animation: grid-depth 1.3s ease infinite; } .block-grid span:nth-child(2) { animation-delay: 0.2s; opacity: 0.7; } .block-grid span:nth-child(3) { animation-delay: 0.4s; opacity: 0.4; } .block-grid span:nth-child(4) { animation-delay: 0.6s; opacity: 0.2; } @keyframes grid-depth { 0%, 100% { transform: scale(1); } 50% { transform: scale(0.5); opacity: 0.2; } }"
+  },
+  {
+    "id": "spinner-eclipse-corona",
+    "name": "Corona Eclipse Halo",
+    "description": "Stark high-contrast masking loop framing an active solar ring",
     "html": "<div class=\"eclipse\"></div>",
-    "css": ".eclipse { width: 44px; height: 44px; background: #000; border-radius: 50%; position: relative; border: 1px solid rgba(255,255,255,0.03); } .eclipse::before { content: ''; position: absolute; inset: -3px; border-radius: 50%; background: linear-gradient(0deg, #f59e0b, #ef4444); z-index: -1; animation: coronal-spin 1s linear infinite; filter: blur(2px); } @keyframes coronal-spin { to { transform: rotate(360deg); } }"
-  },
-  {
-    "id": "spinner-dna",
-    "name": "Helical Particle Stream",
-    "description": "Double tracking vertical periodic phase displacement loader",
-    "html": "<div class=\"dna\"><span class=\"n1\"></span><span class=\"n2\"></span><span class=\"n3\"></span></div>",
-    "css": ".dna { display: flex; gap: 10px; } .dna span { width: 8px; height: 8px; border-radius: 50%; background: #10b981; animation: phase-shift 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate; } .dna .n2 { animation-delay: -0.25s; background: #06b6d4; } .dna .n3 { animation-delay: -0.5s; background: #3b82f6; } @keyframes phase-shift { 0% { transform: translateY(-12px) scale(0.6); opacity: 0.4; } 100% { transform: translateY(12px) scale(1.2); opacity: 1; } }"
-  },
-  {
-    "id": "spinner-grid-cube",
-    "name": "Chamber Expansion Matrix",
-    "description": "Multi-dimensional synchronized variable interval square expansion",
-    "html": "<div class=\"cube-grid\"><span></span><span></span><span></span><span></span></div>",
-    "css": ".cube-grid { width: 36px; height: 36px; display: grid; grid-template-columns: 1fr 1fr; gap: 4px; } .cube-grid span { background: #fff; border-radius: 3px; animation: grid-pop 1.2s ease infinite; } .cube-grid span:nth-child(2) { animation-delay: 0.2s; background: #cbd5e1; } .cube-grid span:nth-child(3) { animation-delay: 0.4s; background: #94a3b8; } .cube-grid span:nth-child(4) { animation-delay: 0.6s; background: #64748b; } @keyframes grid-pop { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(0.5); opacity: 0.3; } }"
+    "css": ".eclipse { width: 44px; height: 44px; background: #000000; border-radius: 50%; position: relative; border: 1px solid rgba(255,255,255,0.05); } .eclipse::before { content: ''; position: absolute; inset: -3px; border-radius: 50%; background: linear-gradient(0deg, #ffffff 0%, rgba(255,255,255,0.1) 100%); z-index: -1; animation: coronal-rotation 1.1s linear infinite; filter: blur(1.5px); } @keyframes coronal-rotation { to { transform: rotate(360deg); } }"
   }
 ]
