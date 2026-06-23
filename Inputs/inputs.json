@@ -6,5 +6,95 @@
     "html": "<div class=\"uf-wrap\"><input class=\"uf\" type=\"text\" placeholder=\"Your name\" /></div>",
     "css": ".uf-wrap { position: relative; width: 260px; } .uf { width: 100%; background: transparent; border: none; border-bottom: 1.5px solid #333; color: #f5f5f5; font-size: 14px; padding: 10px 0; outline: none; } .uf-wrap::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1.5px; background: #f5f5f5; transition: width 0.3s ease; } .uf:focus ~ .uf-wrap::after, .uf-wrap:focus-within::after { width: 100%; }",
     "js": ""
+  },
+
+  {
+    "id": "input-outline",
+    "name": "Outline Glow",
+    "description": "Soft glowing border on focus",
+    "html": "<input class=\"in-outline\" type=\"text\" placeholder=\"Email\" />",
+    "css": ".in-outline { width: 260px; padding: 12px 14px; background: transparent; border: 1.5px solid #444; border-radius: 6px; color: #f5f5f5; font-size: 14px; transition: 0.25s; } .in-outline:focus { border-color: #fff; box-shadow: 0 0 6px rgba(255,255,255,0.4); outline: none; }",
+    "js": ""
+  },
+
+  {
+    "id": "input-filled",
+    "name": "Soft Filled",
+    "description": "Muted filled input with hover + focus lift",
+    "html": "<input class=\"in-filled\" type=\"text\" placeholder=\"Username\" />",
+    "css": ".in-filled { width: 260px; padding: 12px 14px; background: #1a1a1a; border: none; border-radius: 6px; color: #fff; font-size: 14px; transition: 0.25s; } .in-filled:hover { background: #222; } .in-filled:focus { background: #262626; outline: 1.5px solid #fff; }",
+    "js": ""
+  },
+
+  {
+    "id": "input-pill",
+    "name": "Pill Input",
+    "description": "Rounded pill with subtle shadow",
+    "html": "<input class=\"in-pill\" type=\"text\" placeholder=\"Search\" />",
+    "css": ".in-pill { width: 260px; padding: 12px 20px; background: #111; border: none; border-radius: 999px; color: #fff; font-size: 14px; transition: 0.25s; } .in-pill:focus { background: #222; outline: none; box-shadow: 0 0 8px rgba(255,255,255,0.3); }",
+    "js": ""
+  },
+
+  {
+    "id": "input-bottom-glow",
+    "name": "Bottom Glow",
+    "description": "Glowing bottom bar on focus",
+    "html": "<input class=\"in-bglow\" type=\"text\" placeholder=\"Your city\" />",
+    "css": ".in-bglow { width: 260px; padding: 12px 0; background: transparent; border: none; border-bottom: 1.5px solid #444; color: #fff; font-size: 14px; transition: 0.25s; } .in-bglow:focus { border-bottom-color: #0ff; box-shadow: 0 4px 12px rgba(0,255,255,0.4); outline: none; }",
+    "js": ""
+  },
+
+  {
+    "id": "input-floating-label",
+    "name": "Floating Label",
+    "description": "Label floats upward on focus or typing",
+    "html": "<div class=\"fl-wrap\"><input class=\"fl\" type=\"text\" required /><label>Your name</label></div>",
+    "css": ".fl-wrap { position: relative; width: 260px; } .fl { width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1.5px solid #444; color: #fff; font-size: 14px; outline: none; } .fl + label { position: absolute; left: 0; top: 12px; color: #777; font-size: 14px; pointer-events: none; transition: 0.25s; } .fl:focus + label, .fl:not(:placeholder-shown) + label { top: -8px; font-size: 11px; color: #fff; }",
+    "js": ""
+  },
+
+  {
+    "id": "input-neon",
+    "name": "Neon Input",
+    "description": "Cyberpunk neon border + glow",
+    "html": "<input class=\"in-neon\" type=\"text\" placeholder=\"Access code\" />",
+    "css": ".in-neon { width: 260px; padding: 12px 14px; background: #000; border: 2px solid #0ff; color: #0ff; font-size: 14px; transition: 0.25s; } .in-neon:focus { box-shadow: 0 0 12px #0ff, 0 0 24px #0ff; outline: none; }",
+    "js": ""
+  },
+
+  {
+    "id": "input-soft-ui",
+    "name": "Soft UI",
+    "description": "Neumorphic inset input",
+    "html": "<input class=\"in-soft\" type=\"text\" placeholder=\"Soft UI\" />",
+    "css": ".in-soft { width: 260px; padding: 12px 14px; background: #e0e0e0; border-radius: 12px; border: none; color: #111; font-size: 14px; box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff; transition: 0.25s; } .in-soft:focus { box-shadow: inset 2px 2px 4px #bebebe, inset -2px -2px 4px #ffffff; outline: none; }",
+    "js": ""
+  },
+
+  {
+    "id": "input-icon-left",
+    "name": "Icon Left",
+    "description": "Input with left icon slot",
+    "html": "<div class=\"il-wrap\"><span>🔍</span><input class=\"il\" type=\"text\" placeholder=\"Search\" /></div>",
+    "css": ".il-wrap { display: flex; align-items: center; gap: 10px; width: 260px; padding: 10px 14px; background: #111; border-radius: 6px; } .il-wrap span { color: #fff; } .il { flex: 1; background: transparent; border: none; color: #fff; font-size: 14px; outline: none; }",
+    "js": ""
+  },
+
+  {
+    "id": "input-ripple",
+    "name": "Ripple Input",
+    "description": "Ripple animation on click inside input",
+    "html": "<div class=\"rip-wrap\"><input class=\"rip\" type=\"text\" placeholder=\"Click inside\" /></div>",
+    "css": ".rip-wrap { position: relative; width: 260px; } .rip { width: 100%; padding: 12px 14px; background: #111; border: none; border-radius: 6px; color: #fff; font-size: 14px; outline: none; position: relative; overflow: hidden; } .rip::after { content: ''; position: absolute; width: 10px; height: 10px; background: rgba(255,255,255,0.4); border-radius: 50%; transform: scale(0); opacity: 0; transition: transform 0.4s, opacity 0.8s; } .rip:active::after { transform: scale(20); opacity: 1; left: var(--x); top: var(--y); }",
+    "js": "document.addEventListener('click', e => { if(e.target.classList.contains('rip')) { const rect = e.target.getBoundingClientRect(); e.target.style.setProperty('--x', (e.clientX - rect.left) + 'px'); e.target.style.setProperty('--y', (e.clientY - rect.top) + 'px'); }});"
+  },
+
+  {
+    "id": "input-minimal",
+    "name": "Minimal Line",
+    "description": "Ultra minimal single-line input",
+    "html": "<input class=\"in-min\" type=\"text\" placeholder=\"Type...\" />",
+    "css": ".in-min { width: 260px; padding: 10px 0; background: transparent; border: none; border-bottom: 1px solid #555; color: #fff; font-size: 14px; transition: 0.25s; } .in-min:focus { border-bottom-color: #fff; outline: none; }",
+    "js": ""
   }
 ]
