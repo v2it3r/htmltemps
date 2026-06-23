@@ -4,97 +4,271 @@
     "name": "Primary",
     "description": "Modern primary button with smooth press",
     "html": "<button class=\"btn-primary\">Click me</button>",
-    "css": ".btn-primary { background: #2563eb; color: #fff; padding: 12px 28px; border-radius: 8px; border: none; font-size: 15px; font-weight: 600; transition: 0.18s ease; box-shadow: 0 2px 6px rgba(0,0,0,0.15); } .btn-primary:hover { background: #1d4ed8; transform: translateY(-1px); box-shadow: 0 4px 10px rgba(0,0,0,0.2); } .btn-primary:active { transform: translateY(0); box-shadow: 0 2px 6px rgba(0,0,0,0.15); }",
+    "css": ".btn-primary { background: #2563eb; color: #fff; padding: 12px 28px; border-radius: 8px; border: none; font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.18s ease; box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2); } .btn-primary:hover { background: #1d4ed8; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); } .btn-primary:active { transform: translateY(1px); box-shadow: 0 1px 3px rgba(37, 99, 235, 0.2); }",
     "js": ""
   },
-
   {
     "id": "btn-secondary",
     "name": "Secondary",
     "description": "Visible outline button with strong contrast",
     "html": "<button class=\"btn-secondary\">Click me</button>",
-    "css": ".btn-secondary { background: transparent; color: #e5e5e5; padding: 12px 28px; border-radius: 8px; border: 2px solid #e5e5e5; font-size: 15px; font-weight: 600; transition: 0.18s ease; } .btn-secondary:hover { background: #e5e5e5; color: #111; }",
+    "css": ".btn-secondary { background: transparent; color: #e5e5e5; padding: 12px 28px; border-radius: 8px; border: 2px solid #e5e5e5; font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.18s ease; } .btn-secondary:hover { background: #e5e5e5; color: #111; transform: translateY(-1px); } .btn-secondary:active { transform: translateY(1px); }",
     "js": ""
   },
-
   {
     "id": "btn-soft",
     "name": "Soft",
     "description": "Soft, tactile, rounded button",
     "html": "<button class=\"btn-soft\">Click me</button>",
-    "css": ".btn-soft { background: #2a2a2a; color: #fff; padding: 12px 28px; border-radius: 12px; border: 1px solid #3a3a3a; font-size: 15px; font-weight: 500; transition: 0.2s ease; } .btn-soft:hover { background: #333; border-color: #4a4a4a; }",
+    "css": ".btn-soft { background: #2a2a2a; color: #fff; padding: 12px 28px; border-radius: 12px; border: 1px solid #3a3a3a; font-size: 15px; font-weight: 500; cursor: pointer; transition: all 0.2s ease; } .btn-soft:hover { background: #333; border-color: #4a4a4a; transform: scale(1.02); } .btn-soft:active { transform: scale(0.98); }",
     "js": ""
   },
-
   {
     "id": "btn-glass",
     "name": "Glass",
     "description": "Frosted glass button with blur",
     "html": "<button class=\"btn-glass\">Click me</button>",
-    "css": ".btn-glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.08); color: #fff; padding: 12px 28px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.15); font-size: 15px; font-weight: 500; transition: 0.2s ease; } .btn-glass:hover { background: rgba(255,255,255,0.15); }",
+    "css": ".btn-glass { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); background: rgba(255,255,255,0.08); color: #fff; padding: 12px 28px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.15); font-size: 15px; font-weight: 500; cursor: pointer; transition: all 0.2s ease; } .btn-glass:hover { background: rgba(255,255,255,0.15); box-shadow: 0 0 15px rgba(255,255,255,0.1); } .btn-glass:active { transform: scale(0.97); }",
     "js": ""
   },
-
   {
     "id": "btn-gradient",
     "name": "Gradient",
     "description": "Clean gradient with subtle shine",
     "html": "<button class=\"btn-gradient\">Click me</button>",
-    "css": ".btn-gradient { background: linear-gradient(135deg, #6366f1, #8b5cf6); color: #fff; padding: 12px 28px; border-radius: 10px; border: none; font-size: 15px; font-weight: 600; transition: 0.2s ease; } .btn-gradient:hover { filter: brightness(1.1); }",
+    "css": ".btn-gradient { background: linear-gradient(135deg, #6366f1, #8b5cf6); color: #fff; padding: 12px 28px; border-radius: 10px; border: none; font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.2s ease; box-shadow: 0 4px 14px rgba(99, 102, 241, 0.3); } .btn-gradient:hover { filter: brightness(1.1); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4); } .btn-gradient:active { transform: translateY(1px); }",
     "js": ""
   },
-
   {
     "id": "btn-ghost",
     "name": "Ghost",
     "description": "Minimal ghost button with visible hover",
     "html": "<button class=\"btn-ghost\">Click me</button>",
-    "css": ".btn-ghost { background: transparent; color: #fff; padding: 12px 28px; border-radius: 8px; border: 1px solid #555; font-size: 15px; font-weight: 500; transition: 0.2s ease; } .btn-ghost:hover { background: rgba(255,255,255,0.08); border-color: #777; }",
+    "css": ".btn-ghost { background: transparent; color: #fff; padding: 12px 28px; border-radius: 8px; border: 1px solid #555; font-size: 15px; font-weight: 500; cursor: pointer; transition: all 0.2s ease; } .btn-ghost:hover { background: rgba(255,255,255,0.08); border-color: #777; } .btn-ghost:active { background: rgba(255,255,255,0.15); }",
     "js": ""
   },
-
   {
     "id": "btn-minimal",
     "name": "Minimal",
     "description": "Ultra-clean minimal button",
     "html": "<button class=\"btn-minimal\">Click me</button>",
-    "css": ".btn-minimal { background: #111; color: #fff; padding: 10px 24px; border-radius: 6px; border: 1px solid #222; font-size: 14px; font-weight: 500; transition: 0.2s ease; } .btn-minimal:hover { background: #1a1a1a; }",
+    "css": ".btn-minimal { background: #111; color: #fff; padding: 10px 24px; border-radius: 6px; border: 1px solid #222; font-size: 14px; font-weight: 500; cursor: pointer; transition: all 0.2s ease; } .btn-minimal:hover { background: #1a1a1a; border-color: #333; } .btn-minimal:active { background: #050505; }",
     "js": ""
   },
-
   {
     "id": "btn-ripple",
     "name": "Ripple",
     "description": "Material ripple but clean",
     "html": "<button class=\"btn-ripple\">Click me</button>",
-    "css": ".btn-ripple { position: relative; overflow: hidden; background: #3b82f6; color: #fff; padding: 12px 28px; border-radius: 8px; border: none; font-size: 15px; font-weight: 600; } .btn-ripple::after { content: ''; position: absolute; width: 10px; height: 10px; background: rgba(255,255,255,0.4); border-radius: 50%; transform: scale(0); opacity: 0; transition: transform 0.4s, opacity 0.8s; } .btn-ripple:active::after { transform: scale(20); opacity: 1; left: var(--x); top: var(--y); }",
-    "js": "document.addEventListener('click', e => { if(e.target.classList.contains('btn-ripple')) { const r = e.target.getBoundingClientRect(); e.target.style.setProperty('--x', (e.clientX - r.left) + 'px'); e.target.style.setProperty('--y', (e.clientY - r.top) + 'px'); }});"
+    "css": ".btn-ripple { position: relative; overflow: hidden; background: #3b82f6; color: #fff; padding: 12px 28px; border-radius: 8px; border: none; font-size: 15px; font-weight: 600; cursor: pointer; transition: background 0.2s; } .btn-ripple .ripple-effect { position: absolute; border-radius: 50%; background: rgba(255, 255, 255, 0.4); transform: scale(0); animation: ripple-animation 0.6s linear; pointer-events: none; } @keyframes ripple-animation { to { transform: scale(4); opacity: 0; } }",
+    "js": "document.querySelectorAll('.btn-ripple').forEach(button => { button.addEventListener('click', function(e) { const circle = document.createElement('span'); const diameter = Math.max(this.clientWidth, this.clientHeight); const radius = diameter / 2; circle.style.width = circle.style.height = `${diameter}px`; circle.style.left = `${e.clientX - this.getBoundingClientRect().left - radius}px`; circle.style.top = `${e.clientY - this.getBoundingClientRect().top - radius}px`; circle.classList.add('ripple-effect'); const prevRipple = this.querySelector('.ripple-effect'); if (prevRipple) prevRipple.remove(); this.appendChild(circle); }); });"
   },
-
   {
     "id": "btn-icon",
     "name": "Icon Button",
-    "description": "Icon + label with spacing",
-    "html": "<button class=\"btn-icon\"><span>⚡</span>Click me</button>",
-    "css": ".btn-icon { display: flex; align-items: center; gap: 10px; background: #1f2937; color: #fff; padding: 12px 28px; border-radius: 8px; border: none; font-size: 15px; font-weight: 600; transition: 0.2s ease; } .btn-icon:hover { background: #374151; }",
+    "description": "Sleek SVG arrow label button",
+    "html": "<button class=\"btn-icon\"><span>Continue</span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"><path d=\"M5 12h14M12 5l7 7-7 7\"/></svg></button>",
+    "css": ".btn-icon { display: inline-flex; align-items: center; gap: 8px; background: #1f2937; color: #fff; padding: 12px 24px; border-radius: 8px; border: none; font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.2s ease; } .btn-icon:hover { background: #374151; } .btn-icon hover svg { transform: translateX(2px); } .btn-icon svg { transition: transform 0.2s ease; } .btn-icon:active { transform: scale(0.98); }",
     "js": ""
   },
-
   {
     "id": "btn-elevated",
     "name": "Elevated",
     "description": "Raised button with realistic shadow",
     "html": "<button class=\"btn-elevated\">Click me</button>",
-    "css": ".btn-elevated { background: #fff; color: #111; padding: 12px 28px; border-radius: 10px; border: none; font-size: 15px; font-weight: 600; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: 0.2s ease; } .btn-elevated:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.2); }",
+    "css": ".btn-elevated { background: #fff; color: #111; padding: 12px 28px; border-radius: 10px; border: none; font-size: 15px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: all 0.2s ease; } .btn-elevated:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.14); } .btn-elevated:active { transform: translateY(0); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }",
     "js": ""
   },
-
   {
     "id": "btn-danger",
     "name": "Danger",
     "description": "Clean red destructive button",
     "html": "<button class=\"btn-danger\">Delete</button>",
-    "css": ".btn-danger { background: #dc2626; color: #fff; padding: 12px 28px; border-radius: 8px; border: none; font-size: 15px; font-weight: 600; transition: 0.18s ease; } .btn-danger:hover { background: #b91c1c; }",
+    "css": ".btn-danger { background: #dc2626; color: #fff; padding: 12px 28px; border-radius: 8px; border: none; font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.18s ease; box-shadow: 0 2px 6px rgba(220, 38, 38, 0.2); } .btn-danger:hover { background: #b91c1c; box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3); } .btn-danger:active { transform: scale(0.97); }",
+    "js": ""
+  },
+  {
+    "id": "btn-neo",
+    "name": "Neumorphic",
+    "description": "Modern crisp flat inset-shadow style",
+    "html": "<button class=\"btn-neo\">Click me</button>",
+    "css": ".btn-neo { background: #e0e0e0; color: #333; padding: 12px 28px; border-radius: 10px; border: none; font-size: 15px; font-weight: 600; cursor: pointer; box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; transition: all 0.15s ease; } .btn-neo:hover { box-shadow: 4px 4px 8px #c5c5c5, -4px -4px 8px #ffffff; } .btn-neo:active { box-shadow: inset 3px 3px 6px #c5c5c5, inset -3px -3px 6px #ffffff; }",
+    "js": ""
+  },
+  {
+    "id": "btn-cyber",
+    "name": "Cyberpunk",
+    "description": "Futuristic sharp angled accent design",
+    "html": "<button class=\"btn-cyber\">Click me</button>",
+    "css": ".btn-cyber { background: #fde047; color: #000; padding: 12px 30px; border-radius: 0; border: none; font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; clip-path: polygon(0 0, 90% 0, 100% 30%, 100% 100%, 10% 100%, 0 70%); transition: all 0.15s ease; position: relative; } .btn-cyber:hover { background: #facc15; transform: translate(-2px, -2px); box-shadow: 4px 4px 0px #000; } .btn-cyber:active { transform: translate(0, 0); box-shadow: none; }",
+    "js": ""
+  },
+  {
+    "id": "btn-pill-glow",
+    "name": "Pill Glow",
+    "description": "Fully rounded vibrant neon accent glow",
+    "html": "<button class=\"btn-pill-glow\">Click me</button>",
+    "css": ".btn-pill-glow { background: #06b6d4; color: #fff; padding: 12px 32px; border-radius: 50px; border: none; font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 0 0 rgba(6, 182, 212, 0); } .btn-pill-glow:hover { background: #0891b2; box-shadow: 0 0 20px rgba(6, 182, 212, 0.6); } .btn-pill-glow:active { transform: scale(0.96); }",
+    "js": ""
+  },
+  {
+    "id": "btn-border-draw",
+    "name": "Border Draw",
+    "description": "Hover animated tracing outline box",
+    "html": "<button class=\"btn-border-draw\"><span>Click me</span></button>",
+    "css": ".btn-border-draw { background: transparent; color: #fff; padding: 12px 28px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2); font-size: 15px; font-weight: 500; cursor: pointer; position: relative; transition: color 0.3s; } .btn-border-draw::before, .btn-border-draw::after { content: ''; position: absolute; width: 0; height: 0; border: 2px solid transparent; box-sizing: border-box; } .btn-border-draw::before { top: 0; left: 0; } .btn-border-draw::after { bottom: 0; right: 0; } .btn-border-draw:hover { color: #3b82f6; } .btn-border-draw:hover::before { width: 100%; height: 100%; border-top-color: #3b82f6; border-right-color: #3b82f6; transition: width 0.15s ease-out, height 0.15s ease-out 0.15s; } .btn-border-draw:hover::after { width: 100%; height: 100%; border-bottom-color: #3b82f6; border-left-color: #3b82f6; transition: width 0.15s ease-out 0.3s, height 0.15s ease-out 0.45s; }",
+    "js": ""
+  },
+  {
+    "id": "btn-retro",
+    "name": "Retro 3D",
+    "description": "Classic 90s thick solid shadow style",
+    "html": "<button class=\"btn-retro\">Click me</button>",
+    "css": ".btn-retro { background: #ff79c6; color: #000; padding: 12px 26px; border: 3px solid #000; border-radius: 0; font-size: 15px; font-weight: 700; cursor: pointer; box-shadow: 5px 5px 0px #000; transition: all 0.1s; } .btn-retro:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0px #000; } .btn-retro:active { transform: translate(5px, 5px); box-shadow: 0px 0px 0px #000; }",
+    "js": ""
+  },
+  {
+    "id": "btn-dashed",
+    "name": "Dashed Outline",
+    "description": "Clean dashed utility style boundary",
+    "html": "<button class=\"btn-dashed\">Click me</button>",
+    "css": ".btn-dashed { background: rgba(255,255,255,0.02); color: #9ca3af; padding: 12px 28px; border-radius: 8px; border: 2px dashed #4b5563; font-size: 15px; font-weight: 500; cursor: pointer; transition: all 0.2s ease; } .btn-dashed:hover { background: rgba(255,255,255,0.05); border-color: #9ca3af; color: #fff; } .btn-dashed:active { transform: scale(0.98); }",
+    "js": ""
+  },
+  {
+    "id": "btn-loading",
+    "name": "Async Loading",
+    "description": "Transforms into spinner upon click event",
+    "html": "<button class=\"btn-loading\" onclick=\"this.classList.add('loading')\"><span class=\"text\">Submit</span><span class=\"spinner\"></span></button>",
+    "css": ".btn-loading { background: #10b981; color: #fff; padding: 12px 28px; border-radius: 8px; border: none; font-size: 15px; font-weight: 600; cursor: pointer; position: relative; transition: all 0.2s; overflow: hidden; min-width: 120px; } .btn-loading .spinner { display: none; width: 18px; height: 18px; border: 3px solid rgba(255,255,255,0.3); border-radius: 50%; border-top-color: #fff; animation: spin 0.8s linear infinite; position: absolute; left: calc(50% - 9px); top: calc(50% - 9px); } .btn-loading.loading .text { opacity: 0; } .btn-loading.loading .spinner { display: block; } @keyframes spin { to { transform: rotate(360deg); } }",
+    "js": ""
+  },
+  {
+    "id": "btn-shine",
+    "name": "Shine Flash",
+    "description": "Hover linear white light sweep effect",
+    "html": "<button class=\"btn-shine\">Click me</button>",
+    "css": ".btn-shine { background: #4f46e5; color: #fff; padding: 12px 28px; border-radius: 8px; border: none; font-size: 15px; font-weight: 600; cursor: pointer; position: relative; overflow: hidden; transition: background 0.2s; } .btn-shine::after { content: ''; position: absolute; top: -50%; left: -60%; width: 30%; height: 200%; background: rgba(255,255,255,0.25); transform: rotate(25deg); transition: none; } .btn-shine:hover::after { left: 140%; transition: left 0.6s ease-in-out; } .btn-shine:active { transform: translateY(1px); }",
+    "js": ""
+  },
+  {
+    "id": "btn-double-border",
+    "name": "Double Layer",
+    "description": "Dual border offset framework styling",
+    "html": "<div class=\"btn-double-wrap\"><button class=\"btn-double\">Click me</button></div>",
+    "css": ".btn-double-wrap { display: inline-block; position: relative; background: transparent; padding: 3px; border: 1px solid #3b82f6; border-radius: 10px; } .btn-double { background: #3b82f6; color: #fff; padding: 10px 26px; border: 1px solid #60a5fa; border-radius: 6px; font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.2s ease; } .btn-double:hover { background: #2563eb; transform: scale(1.02); }",
+    "js": ""
+  },
+  {
+    "id": "btn-underlined",
+    "name": "Link Underline",
+    "description": "Minimal clean text with expanding underline",
+    "html": "<button class=\"btn-underlined\">Click me</button>",
+    "css": ".btn-underlined { background: transparent; color: #fff; padding: 8px 0; border: none; font-size: 16px; font-weight: 600; cursor: pointer; position: relative; } .btn-underlined::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: #6366f1; transition: width 0.25s ease; } .btn-underlined:hover::after { width: 100%; }",
+    "js": ""
+  },
+  {
+    "id": "btn-monochrome",
+    "name": "Monochrome Dark",
+    "description": "High contrast deep ink inverted block",
+    "html": "<button class=\"btn-monochrome\">Click me</button>",
+    "css": ".btn-monochrome { background: #ffffff; color: #000000; padding: 12px 28px; border-radius: 4px; border: 1px solid #ffffff; font-size: 15px; font-weight: 700; letter-spacing: 0.5px; cursor: pointer; transition: all 0.2s ease; } .btn-monochrome:hover { background: transparent; color: #ffffff; } .btn-monochrome:active { transform: scale(0.97); }",
+    "js": ""
+  },
+  {
+    "id": "btn-plat",
+    "name": "Platinum Matte",
+    "description": "Soft light luxury hardware metal aesthetic",
+    "html": "<button class=\"btn-plat\">Click me</button>",
+    "css": ".btn-plat { background: linear-gradient(180deg, #f3f4f6 0%, #e5e7eb 100%); color: #374151; padding: 12px 28px; border-radius: 8px; border: 1px solid #d1d5db; font-size: 15px; font-weight: 600; cursor: pointer; box-shadow: inset 0 1px 0 #ffffff, 0 2px 4px rgba(0,0,0,0.05); transition: all 0.15s; } .btn-plat:hover { background: linear-gradient(180deg, #e5e7eb 0%, #d1d5db 100%); } .btn-plat:active { box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); transform: translateY(1px); }",
+    "js": ""
+  },
+  {
+    "id": "btn-split",
+    "name": "Split Action",
+    "description": "Dual zone action and dropdown structure",
+    "html": "<div class=\"btn-split-container\"><button class=\"btn-split-main\">Save</button><button class=\"btn-split-opt\"><svg width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"><path d=\"M6 9l6 6 6-6\"/></svg></button></div>",
+    "css": ".btn-split-container { display: inline-flex; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.15); } .btn-split-main { background: #4b5563; color: #fff; border: none; padding: 12px 20px; font-size: 14px; font-weight: 600; cursor: pointer; border-right: 1px solid #374151; transition: background 0.2s; } .btn-split-main:hover { background: #374151; } .btn-split-opt { background: #4b5563; color: #fff; border: none; padding: 12px 12px; cursor: pointer; display: flex; align-items: center; transition: background 0.2s; } .btn-split-opt:hover { background: #374151; }",
+    "js": ""
+  },
+  {
+    "id": "btn-neon-dim",
+    "name": "Neon Ambient",
+    "description": "Muted neon frame with targeted hover glow",
+    "html": "<button class=\"btn-neon-dim\">Click me</button>",
+    "css": ".btn-neon-dim { background: transparent; color: #a855f7; padding: 12px 28px; border-radius: 8px; border: 1px solid #a855f7; font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.25s ease; } .btn-neon-dim:hover { background: rgba(168, 85, 247, 0.1); box-shadow: 0 0 15px rgba(168, 85, 247, 0.4), inset 0 0 8px rgba(168, 85, 247, 0.2); text-shadow: 0 0 5px rgba(168, 85, 247, 0.5); } .btn-neon-dim:active { transform: scale(0.98); }",
+    "js": ""
+  },
+  {
+    "id": "btn-badge",
+    "name": "Counter Hub",
+    "description": "Internal numeric count status circle label",
+    "html": "<button class=\"btn-badge\"><span>Inbox</span><span class=\"btn-badge-val\">14</span></button>",
+    "css": ".btn-badge { display: inline-flex; align-items: center; gap: 12px; background: #1e1b4b; color: #c7d2fe; padding: 10px 20px; border-radius: 8px; border: 1px solid #312e81; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.2s; } .btn-badge:hover { background: #312e81; color: #fff; } .btn-badge-val { background: #4f46e5; color: #fff; font-size: 11px; padding: 2px 7px; border-radius: 12px; font-weight: 700; }",
+    "js": ""
+  },
+  {
+    "id": "btn-depth",
+    "name": "Inner Bevel",
+    "description": "Carved countersunk physical panel look",
+    "html": "<button class=\"btn-depth\">Click me</button>",
+    "css": ".btn-depth { background: #1e293b; color: #94a3b8; padding: 12px 28px; border-radius: 8px; border: 1px solid #0f172a; font-size: 15px; font-weight: 600; cursor: pointer; box-shadow: inset 0 2px 4px rgba(0,0,0,0.5), 0 1px 1px rgba(255,255,255,0.05); transition: all 0.15s; } .btn-depth:hover { color: #f1f5f9; background: #334155; } .btn-depth:active { transform: translateY(0.5px); }",
+    "js": ""
+  },
+  {
+    "id": "btn-flair",
+    "name": "Side Accent",
+    "description": "Left block color strip geometric highlight",
+    "html": "<button class=\"btn-flair\">Click me</button>",
+    "css": ".btn-flair { background: #27272a; color: #fff; padding: 12px 28px 12px 36px; border-radius: 6px; border: none; font-size: 15px; font-weight: 600; cursor: pointer; position: relative; transition: background 0.2s; } .btn-flair::before { content: ''; position: absolute; left: 12px; top: 25%; width: 4px; height: 50%; background: #f43f5e; border-radius: 2px; transition: height 0.2s, top 0.2s; } .btn-flair:hover { background: #3f3f46; } .btn-flair:hover::before { height: 70%; top: 15%; }",
+    "js": ""
+  },
+  {
+    "id": "btn-jelly",
+    "name": "Elastic Jelly",
+    "description": "Playful squish animation structural bounce",
+    "html": "<button class=\"btn-jelly\">Click me</button>",
+    "css": ".btn-jelly { background: #ec4899; color: #fff; padding: 12px 28px; border-radius: 8px; border: none; font-size: 15px; font-weight: 600; cursor: pointer; transition: background 0.2s; } .btn-jelly:hover { background: #db2777; animation: jelly-bounce 0.5s ease-out; } @keyframes jelly-bounce { 0% { transform: scale(1); } 30% { transform: scaleX(1.25) scaleY(0.75); } 40% { transform: scaleX(0.75) scaleY(1.25); } 50% { transform: scaleX(1.15) scaleY(0.85); } 65% { transform: scaleX(0.95) scaleY(1.05); } 75% { transform: scaleX(1.05) scaleY(0.95); } 100% { transform: scale(1); } }",
+    "js": ""
+  },
+  {
+    "id": "btn-blur-back",
+    "name": "Rear Aurora",
+    "description": "Separated blurry color backdrop canvas glow",
+    "html": "<div class=\"btn-aurora-box\"><div class=\"btn-aurora-glow\"></div><button class=\"btn-aurora\">Click me</button></div>",
+    "css": ".btn-aurora-box { position: relative; display: inline-block; } .btn-aurora-glow { position: absolute; top: 4px; left: 4px; width: 100%; height: 100%; background: linear-gradient(90deg, #f59e0b, #e11d48); filter: blur(12px); opacity: 0.4; transition: opacity 0.3s; } .btn-aurora { position: relative; background: #111827; color: #fff; padding: 12px 28px; border-radius: 8px; border: 1px solid #374151; font-size: 15px; font-weight: 600; cursor: pointer; } .btn-aurora-box:hover .btn-aurora-glow { opacity: 0.8; } .btn-aurora-box:active { transform: scale(0.98); }",
+    "js": ""
+  },
+  {
+    "id": "btn-keyboard",
+    "name": "Keycap Native",
+    "description": "Mechanical command key hardware emulation",
+    "html": "<button class=\"btn-keyboard\">Ctrl + S</button>",
+    "css": ".btn-keyboard { background: #fafafa; color: #4b5563; padding: 10px 22px; border-radius: 6px; border: 1px solid #e5e7eb; border-bottom: 4px solid #d1d5db; font-family: monospace; font-size: 14px; font-weight: 700; cursor: pointer; transition: all 0.1s; } .btn-keyboard:hover { background: #f3f4f6; } .btn-keyboard:active { border-bottom-width: 1px; transform: translateY(3px); }",
+    "js": ""
+  },
+  {
+    "id": "btn-slide-down",
+    "name": "Fill Curtain",
+    "description": "Top-down vertical color blocking reveal",
+    "html": "<button class=\"btn-slide-down\"><span>Hover me</span></button>",
+    "css": ".btn-slide-down { background: transparent; color: #10b981; padding: 12px 28px; border-radius: 6px; border: 2px solid #10b981; font-size: 15px; font-weight: 600; cursor: pointer; position: relative; overflow: hidden; z-index: 1; transition: color 0.25s ease; } .btn-slide-down span { position: relative; z-index: 2; } .btn-slide-down::before { content: ''; position: absolute; top: -100%; left: 0; width: 100%; height: 100%; background: #10b981; z-index: 0; transition: top 0.25s ease; } .btn-slide-down:hover { color: #fff; } .btn-slide-down:hover::before { top: 0; }",
+    "js": ""
+  },
+  {
+    "id": "btn-sharp",
+    "name": "Brutalist Block",
+    "description": "Zero radius raw industrial high visibility",
+    "html": "<button class=\"btn-sharp\">Execute</button>",
+    "css": ".btn-sharp { background: #000; color: #fff; padding: 14px 32px; border: 2px solid #fff; border-radius: 0; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; cursor: pointer; transition: all 0.2s; } .btn-sharp:hover { background: #fff; color: #000; } .btn-sharp:active { transform: scale(0.96); }",
+    "js": ""
+  },
+  {
+    "id": "btn-outline-thick",
+    "name": "Bold Frame",
+    "description": "Thick frame boundaries with smooth color fill",
+    "html": "<button class=\"btn-outline-thick\">Confirm</button>",
+    "css": ".btn-outline-thick { background: transparent; color: #f97316; padding: 11px 26px; border-radius: 8px; border: 3px solid #f97316; font-size: 15px; font-weight: 700; cursor: pointer; transition: all 0.2s ease; } .btn-outline-thick:hover { background: #f97316; color: #fff; } .btn-outline-thick:active { transform: scale(0.97); }",
     "js": ""
   }
 ]
