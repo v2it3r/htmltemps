@@ -3,5 +3,6 @@
   { "slug": "inputs", "folder": "Inputs", "dataFile": "inputs.json" },
   { "slug": "loading", "folder": "Loading", "dataFile": "animations.json" },
   { "slug": "checkboxes", "folder": "Checkboxes", "dataFile": "boxes.json" },
-  { "slug": "toggles", "folder": "Toggles", "dataFile": "toggles.json" }
+  { "slug": "toggles", "folder": "Toggles", "dataFile": "toggles.json" },
+  { "slug": "cards", "folder": "Cards", "dataFile": "cards.json" }
 ]
