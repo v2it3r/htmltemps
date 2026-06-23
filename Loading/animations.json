@@ -1,114 +1,82 @@
 [
   {
-    "id": "spinner-ring",
-    "name": "Concentric Ice Ring",
-    "description": "Smooth precision acceleration loop tracking line with a sharp sapphire edge",
-    "html": "<div class=\"ring\"></div>",
-    "css": ".ring { width: 44px; height: 44px; border: 3px solid rgba(255, 255, 255, 0.08); border-top-color: #3b82f6; border-right-color: #ffffff; border-radius: 50%; animation: spin 0.65s cubic-bezier(0.4, 0.1, 0.3, 1) infinite; } @keyframes spin { to { transform: rotate(360deg); } }"
+    "id": "spinner-classic-amber",
+    "name": "Vintage Terminal Ring",
+    "description": "A single-color, high-contrast monochrome amber loop reminiscent of retro instrumentation displays.",
+    "html": "<div class=\"classic-amber\"></div>",
+    "css": ".classic-amber { width: 36px; height: 36px; border: 3px solid rgba(245, 158, 11, 0.15); border-top-color: #f59e0b; border-radius: 50%; animation: spin-classic 0.8s linear infinite; } @keyframes spin-classic { to { transform: rotate(360deg); } }",
+    "js": ""
   },
   {
-    "id": "spinner-dual-ring",
-    "name": "Cobalt Counter-Orbit",
-    "description": "Two interlocking crisp blue and white paths spinning on inverted tracks",
-    "html": "<div class=\"dual-ring\"></div>",
-    "css": ".dual-ring { width: 44px; height: 44px; border: 2.5px solid transparent; border-top-color: #ffffff; border-bottom-color: rgba(59, 130, 246, 0.4); border-radius: 50%; animation: spin-clockwise 0.9s cubic-bezier(0.4, 0.1, 0.4, 0.9) infinite; position: relative; } .dual-ring::after { content: ''; position: absolute; inset: 4px; border: 2px solid transparent; border-left-color: #60a5fa; border-right-color: rgba(255,255,255,0.1); border-radius: 50%; animation: spin-counter 0.7s cubic-bezier(0.4, 0.1, 0.4, 0.9) infinite; } @keyframes spin-clockwise { to { transform: rotate(360deg); } } @keyframes spin-counter { to { transform: rotate(-360deg); } }"
+    "id": "spinner-system-emerald",
+    "name": "System Emerald Pulse",
+    "description": "Clean, steady enterprise green utility layout utilizing single-color scale steps.",
+    "html": "<div class=\"sys-emerald\"><span></span><span></span><span></span></div>",
+    "css": ".sys-emerald { display: flex; gap: 6px; align-items: center; } .sys-emerald span { width: 8px; height: 8px; background: #10b981; border-radius: 50%; animation: emerald-jump 1.2s ease-in-out infinite; } .sys-emerald span:nth-child(2) { animation-delay: 0.2s; } .sys-emerald span:nth-child(3) { animation-delay: 0.4s; } @keyframes emerald-jump { 0%, 100% { transform: scale(0.7); opacity: 0.4; } 50% { transform: scale(1.2); opacity: 1; } }",
+    "js": ""
   },
   {
-    "id": "spinner-dots",
-    "name": "Photon Cascade",
-    "description": "Fluid metric dot structures using unified deep blue to pristine white delays",
-    "html": "<div class=\"dots\"><span></span><span></span><span></span></div>",
-    "css": ".dots { display: flex; gap: 8px; align-items: center; } .dots span { width: 10px; height: 10px; background: #ffffff; border-radius: 50%; animation: dots-bounce 1.1s cubic-bezier(0.62, 0.05, 0.38, 0.95) infinite; } .dots span:nth-child(1) { background: #ffffff; } .dots span:nth-child(2) { animation-delay: 0.15s; background: #60a5fa; } .dots span:nth-child(3) { animation-delay: 0.3s; background: #2563eb; } @keyframes dots-bounce { 0%, 100% { transform: translateY(0); } 40% { transform: translateY(-14px); } }"
+    "id": "spinner-classic-ruby",
+    "name": "Ruby Segment Bar",
+    "description": "Traditional single-color industrial processing layout composed of flat red blocks.",
+    "html": "<div class=\"ruby-bar\"><div class=\"ruby-fill\"></div></div>",
+    "css": ".ruby-bar { width: 80px; height: 6px; background: #fee2e2; border-radius: 2px; overflow: hidden; position: relative; } .ruby-fill { position: absolute; height: 100%; width: 35%; background: #ef4444; animation: ruby-slide 1.2s linear infinite; } @keyframes ruby-slide { 0% { left: -35%; } 100% { left: 100%; } }",
+    "js": ""
   },
   {
-    "id": "spinner-bar",
-    "name": "Telemetry Waveforms",
-    "description": "Symmetrical bright white and laser blue vertical bar rhythm layout",
-    "html": "<div class=\"bars\"><span></span><span></span><span></span><span></span></div>",
-    "css": ".bars { display: flex; gap: 5px; align-items: center; height: 28px; } .bars span { width: 5px; height: 100%; background: #ffffff; border-radius: 3px; transform-origin: center; animation: bar-pulse 0.85s ease-in-out infinite alternate; } .bars span:nth-child(1) { animation-delay: -0.6s; background: #2563eb; } .bars span:nth-child(2) { animation-delay: -0.3s; background: #ffffff; } .bars span:nth-child(3) { animation-delay: -0.45s; background: #60a5fa; } .bars span:nth-child(4) { animation-delay: -0.15s; background: #ffffff; } @keyframes bar-pulse { 0% { transform: scaleY(0.25); } 100% { transform: scaleY(1); } }"
+    "id": "spinner-cobalt-stark",
+    "name": "Stark Cobalt Frame",
+    "description": "A pure, single-color deep blue track geometric rotation design without accents.",
+    "html": "<div class=\"cobalt-stark\"></div>",
+    "css": ".cobalt-stark { width: 32px; height: 32px; border: 4px solid #1d4ed8; border-right-color: transparent; border-radius: 50%; animation: spin-classic 0.6s linear infinite; }",
+    "js": ""
   },
   {
-    "id": "spinner-square",
-    "name": "Cyber Isometric Cube",
-    "description": "3D geometric perspective tile translation with sharp blue trailing glow",
-    "html": "<div class=\"sq-stage\"><div class=\"sq\"></div></div>",
-    "css": ".sq-stage { perspective: 120px; } .sq { width: 32px; height: 32px; background: #ffffff; border-radius: 4px; box-shadow: 0 4px 16px rgba(59, 130, 246, 0.25); border: 1.5px solid #3b82f6; animation: isometric-flip 1.3s cubic-bezier(0.7, 0, 0.3, 1) infinite; } @keyframes isometric-flip { 0% { transform: rotate(0); } 50% { transform: rotateX(180deg) rotateY(0); background: #3b82f6; } 100% { transform: rotateX(180deg) rotateY(180deg); background: #ffffff; } }"
+    "id": "spinner-classic-slate",
+    "name": "Monochrome Slate Block",
+    "description": "Solid, dependable industrial dark slate square block mapping simple data rotations.",
+    "html": "<div class=\"slate-block\"></div>",
+    "css": ".slate-block { width: 24px; height: 24px; background: #475569; animation: slate-flip 1.2s ease-in-out infinite; } @keyframes slate-flip { 0% { transform: perspective(100px) rotateX(0deg); } 50% { transform: perspective(100px) rotateX(180deg); } 100% { transform: perspective(100px) rotateX(180deg) rotateY(180deg); } }",
+    "js": ""
   },
   {
-    "id": "spinner-wave",
-    "name": "Oceanic Sine Wave",
-    "description": "Sequential fluid linear arrays charting continuous blue-to-white math properties",
-    "html": "<div class=\"wave\"><span></span><span></span><span></span><span></span><span></span></div>",
-    "css": ".wave { display: flex; gap: 5px; } .wave span { width: 5px; height: 26px; background: #ffffff; border-radius: 3px; animation: sine-wave 1.1s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite; } .wave span:nth-child(1) { animation-delay: -1.1s; background: #1d4ed8; } .wave span:nth-child(2) { animation-delay: -0.95s; background: #3b82f6; } .wave span:nth-child(3) { animation-delay: -0.8s; background: #60a5fa; } .wave span:nth-child(4) { animation-delay: -0.65s; background: #93c5fd; } .wave span:nth-child(5) { animation-delay: -0.5s; background: #ffffff; } @keyframes sine-wave { 0%, 100% { transform: scaleY(0.3); } 50% { transform: scaleY(1); } }"
+    "id": "spinner-crimson-dot",
+    "name": "Crimson Radar Node",
+    "description": "Single-color warning beacon mimicking standard hardware diagnostic nodes.",
+    "html": "<div class=\"crimson-node\"></div>",
+    "css": ".crimson-node { width: 20px; height: 20px; background: #dc2626; border-radius: 50%; animation: crimson-glow 1.4s ease-in-out infinite; } @keyframes crimson-glow { 0%, 100% { transform: scale(0.8); opacity: 0.5; } 50% { transform: scale(1.2); opacity: 1; } }",
+    "js": ""
   },
   {
-    "id": "spinner-ripple",
-    "name": "Hydro Sonic Ripple",
-    "description": "Layered micro-thickness expanding electric blue acoustic ring echoes",
-    "html": "<div class=\"ripple\"><span></span><span></span></div>",
-    "css": ".ripple { width: 52px; height: 52px; position: relative; } .ripple span { position: absolute; inset: 0; border: 2px solid #3b82f6; border-radius: 50%; opacity: 0; transform: scale(0.1); animation: wave-ripple 1.6s cubic-bezier(0.1, 0.8, 0.2, 1) infinite; } .ripple span:nth-child(2) { border-color: #ffffff; animation-delay: 0.8s; } @keyframes wave-ripple { 0% { transform: scale(0.1); opacity: 1; } { opacity: 0.4; } 100% { transform: scale(1.3); opacity: 0; } }"
+    "id": "spinner-matrix-fall",
+    "name": "Classic Matrix Array",
+    "description": "Multi-colored setup featuring a deep green cascading stream mixed with classic matrix style yellow markers.",
+    "html": "<div class=\"matrix-container\"><span class=\"m-green\"></span><span class=\"m-yellow\"></span><span class=\"m-green\"></span></div>",
+    "css": ".matrix-container { display: flex; gap: 8px; } .matrix-container span { width: 4px; height: 16px; border-radius: 1px; animation: matrix-drop 1s ease-in-out infinite alternate; } .m-green { background: #22c55e; } .m-yellow { background: #eab308; animation-delay: -0.33s !important; } .matrix-container span:nth-child(1) { animation-delay: -0.66s; } @keyframes matrix-drop { 0% { transform: scaleY(0.3); opacity: 0.3; } 100% { transform: scaleY(1.3); opacity: 1; } }",
+    "js": ""
   },
   {
-    "id": "spinner-dash",
-    "name": "Vector Azure Morph",
-    "description": "Clean vector trim path arc compression mapping logic in vivid blue and white",
-    "html": "<svg class=\"dash\" viewBox=\"0 0 50 50\"><circle class=\"bg-track\" cx=\"25\" cy=\"25\" r=\"20\" /><circle class=\"accent-track\" cx=\"25\" cy=\"25\" r=\"20\" /></svg>",
-    "css": ".dash { width: 46px; height: 46px; animation: vector-spin 2s linear infinite; } .dash circle { fill: none; stroke-width: 4; stroke-linecap: round; } .dash .bg-track { stroke: rgba(59, 130, 246, 0.2); } .dash .accent-track { stroke: #ffffff; animation: stroke-morph 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite; } @keyframes vector-spin { to { transform: rotate(360deg); } } @keyframes stroke-morph { 0% { stroke-dasharray: 1, 150; stroke-dashoffset: 0; stroke: #3b82f6; } 50% { stroke-dasharray: 90, 150; stroke-dashoffset: -40; stroke: #ffffff; } 100% { stroke-dasharray: 90, 150; stroke-dashoffset: -120; stroke: #3b82f6; } }"
+    "id": "spinner-classic-tri",
+    "name": "Tri-Color Diagnostic",
+    "description": "A textbook multi-colored status layout combining clean blue, amber, and red steps.",
+    "html": "<div class=\"classic-tri\"><span></span><span></span><span></span></div>",
+    "css": ".classic-tri { display: flex; gap: 6px; } .classic-tri span { width: 10px; height: 10px; border-radius: 50%; } .classic-tri span:nth-child(1) { background: #2563eb; animation: tri-bounce 0.9s ease-in-out infinite; } .classic-tri span:nth-child(2) { background: #f59e0b; animation: tri-bounce 0.9s ease-in-out infinite; animation-delay: 0.3s; } .classic-tri span:nth-child(3) { background: #ef4444; animation: tri-bounce 0.9s ease-in-out infinite; animation-delay: 0.6s; } @keyframes tri-bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }",
+    "js": ""
   },
   {
-    "id": "spinner-orbit",
-    "name": "Deep Space Satellite",
-    "description": "Kinetic white particle mass tethered to a structural neon blue perimeter channel",
-    "html": "<div class=\"orbit\"><div class=\"sat\"></div></div>",
-    "css": ".orbit { width: 46px; height: 46px; border: 1.5px dashed rgba(59, 130, 246, 0.3); border-radius: 50%; position: relative; animation: satellite-spin 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite; } .sat { width: 8px; height: 8px; background: #ffffff; border-radius: 50%; position: absolute; top: -4px; left: calc(50% - 4px); box-shadow: 0 0 8px #3b82f6, 0 0 2px #ffffff; } @keyframes satellite-spin { to { transform: rotate(360deg); } }"
+    "id": "spinner-corporate-mix",
+    "name": "Enterprise Segment Block",
+    "description": "High-visibility multi-color system checker blending active teal and rich navy blocks.",
+    "html": "<div class=\"corp-mix\"><div class=\"c-teal\"></div><div class=\"c-navy\"></div></div>",
+    "css": ".corp-mix { display: flex; gap: 4px; transform: rotate(45deg); animation: mix-spin 1.5s ease infinite; } .corp-mix div { width: 12px; height: 12px; border-radius: 2px; } .c-teal { background: #0d9488; } .c-navy { background: #1e3a8a; } @keyframes mix-spin { 0% { transform: rotate(0deg); } 50% { transform: rotate(180deg); } 100% { transform: rotate(360deg); } }",
+    "js": ""
   },
   {
-    "id": "spinner-fade",
-    "name": "Electric Phase Lattice",
-    "description": "Double micro-line intersecting blue and white continuous clock sequences",
-    "html": "<div class=\"fade\"></div>",
-    "css": ".fade { width: 44px; height: 44px; position: relative; } .fade::before, .fade::after { content: ''; position: absolute; inset: 0; border-radius: 50%; border: 3px solid transparent; border-top-color: #ffffff; animation: spin-fluid 0.85s cubic-bezier(0.4, 0, 0.5, 1) infinite; } .fade::after { animation-delay: -0.425s; border-top-color: #3b82f6; } @keyframes spin-fluid { to { transform: rotate(360deg); } }"
-  },
-  {
-    "id": "spinner-progress",
-    "name": "Flowing Pipeline Scan",
-    "description": "Clean non-blocking linear blue scanner bar track layout",
-    "html": "<div class=\"prog-box\"><div class=\"prog-bar\"></div></div>",
-    "css": ".prog-box { width: 110px; height: 4px; background: rgba(255, 255, 255, 0.08); border-radius: 4px; overflow: hidden; position: relative; border: 1px solid rgba(59, 130, 246, 0.1); } .prog-bar { position: absolute; left: 0; top: 0; height: 100%; width: 40%; background: linear-gradient(90deg, #3b82f6, #ffffff); border-radius: 4px; animation: continuous-scan 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite; } @keyframes continuous-scan { 0% { left: -40%; width: 30%; } 50% { width: 50%; } 100% { left: 100%; width: 30%; } }"
-  },
-  {
-    "id": "spinner-beacon",
-    "name": "Pulse Node Signal",
-    "description": "Tactical sapphire blue core with a clean white expanding outer pulse ring",
-    "html": "<div class=\"beacon\"><div class=\"core\"></div></div>",
-    "css": ".beacon { width: 44px; height: 44px; border-radius: 50%; background: rgba(59, 130, 246, 0.05); display: flex; align-items: center; justify-content: center; position: relative; } .beacon::before { content: ''; position: absolute; inset: 0; border-radius: 50%; border: 1.5px solid #ffffff; opacity: 1; animation: beacon-out 1.4s cubic-bezier(0.16, 1, 0.3, 1) infinite; } .core { width: 12px; height: 12px; background: #3b82f6; border-radius: 50%; box-shadow: 0 0 12px #3b82f6; border: 1.5px solid #ffffff; } @keyframes beacon-out { to { transform: scale(1.6); opacity: 0; } }"
-  },
-  {
-    "id": "spinner-shifter",
-    "name": "Bipolar Quantum Node",
-    "description": "Interlocking blue and white nodes operating on a balanced translation cycle",
-    "html": "<div class=\"shift-track\"><div class=\"shift-node\"></div><div class=\"shift-node\"></div></div>",
-    "css": ".shift-track { display: flex; gap: 14px; position: relative; } .shift-node { width: 14px; height: 14px; border-radius: 50%; background: #ffffff; animation: node-slide 0.9s ease-in-out infinite alternate; } .shift-node:nth-child(2) { background: #3b82f6; animation-delay: -0.45s; box-shadow: 0 0 8px rgba(59, 130, 246, 0.6); } @keyframes node-slide { 0% { transform: scale(0.5) translateX(-8px); opacity: 0.3; } 100% { transform: scale(1.1) translateX(8px); opacity: 1; } }"
-  },
-  {
-    "id": "spinner-disk-slice",
-    "name": "Glacial Helix Segment",
-    "description": "Single fragmented blue and white segment slicing perimeter rotation track",
-    "html": "<div class=\"disk-slice\"></div>",
-    "css": ".disk-slice { width: 42px; height: 42px; border-radius: 50%; background: radial-gradient(farthest-side, transparent 65%, #3b82f6 70%) top/8px 8px no-repeat, border-box; border: 3px solid transparent; border-right-color: #ffffff; border-top-color: #3b82f6; animation: slice-spin 0.7s cubic-bezier(0.3, 0.1, 0.3, 1) infinite; } @keyframes slice-spin { to { transform: rotate(360deg); } }"
-  },
-  {
-    "id": "spinner-block-grid",
-    "name": "Stark Grid Array",
-    "description": "Symmetrical four-quadrant alternating white steps tracking over a dim blue backdrop",
-    "html": "<div class=\"block-grid\"><span></span><span></span><span></span><span></span></div>",
-    "css": ".block-grid { width: 34px; height: 34px; display: grid; grid-template-columns: 1fr 1fr; gap: 4px; } .block-grid span { background: #ffffff; border-radius: 2px; animation: grid-depth 1.3s ease infinite; } .block-grid span:nth-child(2) { animation-delay: 0.2s; background: #60a5fa; } .block-grid span:nth-child(3) { animation-delay: 0.4s; background: #2563eb; } .block-grid span:nth-child(4) { animation-delay: 0.6s; background: #ffffff; } @keyframes grid-depth { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(0.5); opacity: 0.2; } }"
-  },
-  {
-    "id": "spinner-eclipse-corona",
-    "name": "Ice Eclipse Corona",
-    "description": "High-contrast geometric mask framing a dynamic blue solar glow",
-    "html": "<div class=\"eclipse\"></div>",
-    "css": ".eclipse { width: 44px; height: 44px; background: #000000; border-radius: 50%; position: relative; border: 1px solid rgba(255,255,255,0.05); } .eclipse::before { content: ''; position: absolute; inset: -3px; border-radius: 50%; background: linear-gradient(0deg, #ffffff 0%, #3b82f6 100%); z-index: -1; animation: coronal-rotation 1.1s linear infinite; filter: blur(1.5px); } @keyframes coronal-rotation { to { transform: rotate(360deg); } }"
+    "id": "spinner-arcade-magenta",
+    "name": "Arcade Magenta Step",
+    "description": "Vibrant retro-style magenta single-color sequence highlighting execution pathways.",
+    "html": "<div class=\"arcade-mag\"><div></div><div></div></div>",
+    "css": ".arcade-mag { width: 32px; height: 16px; position: relative; } .arcade-mag div { position: absolute; width: 12px; height: 12px; background: #db2777; border-radius: 2px; animation: mag-shift 0.8s linear infinite alternate; } .arcade-mag div:nth-child(2) { animation-delay: -0.4s; } @keyframes mag-shift { 0% { left: 0px; } 100% { left: 20px; } }",
+    "js": ""
   }
 ]
