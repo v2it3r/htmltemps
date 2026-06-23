@@ -1,0 +1,10 @@
+[
+  {
+    "id": "btn-solid",
+    "name": "Solid Fill",
+    "description": "Solid white button with hover invert",
+    "html": "<button class=\"btn\">Click me</button>",
+    "css": ".btn { background: #f5f5f5; color: #080808; border: none; padding: 12px 28px; cursor: pointer; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; transition: all 0.2s; } .btn:hover { background: #080808; color: #f5f5f5; outline: 1.5px solid #f5f5f5; }",
+    "js": ""
+  }
+]
